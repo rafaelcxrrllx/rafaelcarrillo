@@ -1,0 +1,144 @@
+.nowPlayingCard {
+    flex-shrink: 0;
+    border-radius: 22px;
+    border: 2px solid #c5e3fe;
+    box-shadow: 5px 5px 0 #c5e3fe;
+    align-items: center;
+    width: 300px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.5s ease;
+    font-family: Playfair Display;
+    color: #c5e3fe;
+    margin-top: 32px;
+}
+
+.nowPlayingCard:hover {
+    box-shadow: 10px 10px 0 #c5e3fe;
+    transform: translateX(0px) translateY(-10px);
+    transition: all 0.5s ease;
+}
+  
+.nowPlayingCard a {
+    color: #c5e3fe;
+    text-decoration: none;
+    font-family: Playfair Display;
+}
+
+.nowPlayingCard a:hover {
+    color: #c5e3fe;
+    text-decoration: underline;
+}
+
+.nowPlayingImage img {
+    border-radius: 8px;
+    border: 1px solid #c5e3fe;
+    box-shadow: 3px 3px 0  #c5e3fe;
+    transition: all 0.5s ease;
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    margin: 10px;
+}
+
+.eyes-offline {
+    border-radius: 8px;
+    border: 1px solid #c5e3fe;
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    margin: 10px;
+}
+
+#nowPlayingDetails {
+    justify-content: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 54%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 54%;
+    height: 100%;
+}
+
+.nowPlayingTitle, .playlistName {
+    flex-shrink: 0;
+    color: #c5e3fe;
+    white-space: nowrap;
+    text-align: left;
+    font-size: 20px;
+    width: 100%;
+}
+
+.nowPlayingTitle, .playlistName::after {
+  content: "";
+  display: inline-block;
+  width: 100%; 
+  animation: scroll-right 10s linear infinite; 
+  animation-delay: 3s;
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(0%);  /* Start from the right */
+  }
+
+  33% {
+    transform: translateX(-100%);  /* Move to the left */
+  }
+  
+
+  66% {
+    transform: translateX(0%);  /* Move to the left */
+  }
+
+  100% {
+    transform: translateX(0%);  /* Move to the left */
+  }
+  
+}
+
+
+.nowPlayingArtist, .playlistHeader {
+    text-align: left;
+    flex-shrink: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.nowPlayingTime {
+    text-align: left;
+    color: #c5e3fe;
+}
+
+.nowPlayingState {
+    text-align: center;
+    width: 20%;
+    padding: 10px;
+    color: #c5e3fe;
+}
+
+.soundbar{
+    /* filter: invert(100%); */
+    width: 100%;
+}
+
+.nowPlayingState img {
+    width: 100%;
+}
+
+.pause {
+    width: 50% !important;
+}
+
+.spotify-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}

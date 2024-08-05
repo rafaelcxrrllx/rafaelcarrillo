@@ -1,0 +1,215 @@
+.text-entry {  
+    display: inline-block;
+    width: 100%;
+    padding: 16px 14px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: black;
+    font-size: large;
+    border-style: none;
+    border-color: #c5e3fe;
+    border-style: solid;
+    background-color: #070F19;
+}
+
+.contact-container {
+    background-color: #070F19;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 3%;
+    text-align: left;
+    padding-bottom: 7%;
+}
+
+.Link {
+    text-decoration: none;
+}
+
+#btn {
+    background-color: #070F19 !important;
+    border: 1px solid  #c5e3fe;
+    color: #c5e3fe;
+    font-size: 16px;
+}
+
+#btn:hover {
+    background-color: #c5e3fe !important;
+    color: #fff;
+}
+
+
+.send-btn {
+    width: 50%;
+    height: 50px;
+    margin: 6px 6px 6px 6px;
+    border-radius: 0%;
+    border-width: 1px;
+}
+
+
+.message-confirmed-header {
+    position: absolute;
+    padding-left: 0%;
+    padding-right: 15%;
+    margin-top: 0%;
+}
+
+.message-confirmed-header button {
+    width: 25vw; 
+    padding: 16px 14px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 45px;
+    color: #c5e3fe;
+    font-size: large;
+    border-style: none;
+    border-color: #c5e3fe;
+    border-style: solid;
+    background-color: #070F19;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    width: fit-content;
+}
+
+#btn button:hover {
+    color: f3f2ed;
+    border-style: solid;
+    border-color: f3f2ed;
+    background-color:  #070F19;
+}
+
+#btn {
+    width: 200px;
+    height: 50px;
+    margin: 6px 6px 6px 6px;
+    border-radius: 0%;
+    border-width: 1px;
+    text-decoration: none;
+}
+
+.message-confirmed-header h4{
+    color: #c5e3fe;
+}
+
+
+.header h4 {
+    color: #c5e3fe;
+}
+
+
+.contact {
+    display: flex;  
+    flex-direction: column;  
+}
+
+.text-entry {
+    color:  #c5e3fe !important; 
+}
+
+
+.contact input {
+    margin-top: 20px;
+    width: 100%;
+    font-family: Playfair Display;
+}
+
+.phone input{
+    margin-top: 20px;
+    width: 100%;
+    font-family: Playfair Display;
+
+}
+
+.message input{
+    margin-top: 20px;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 50px;
+    top: 0;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-family: Playfair Display;
+}
+
+/* Small screens (phones) */
+@media (max-width: 600px) {
+
+    .contact-container {
+        background-color: #070F19;
+        padding-left: 5%;
+        padding-right: 15%;
+        padding-top: 3%;
+        text-align: left;
+        padding-bottom: 7%;
+    }
+    .message-confirmed-header button {
+        width: 50vw; 
+    }
+
+
+    .contact {
+        display: flex;  
+        flex-direction: column;  
+    }
+
+
+    .contact input {
+        margin-top: 20px;
+        width: 100%;
+        font-family: Playfair Display;
+
+    }
+
+    .phone input{
+        margin-top: 20px;
+        width: 100%;
+        font-family: Playfair Display;
+
+    }
+
+    .message input{
+        margin-top: 20px;
+        width: 100%;
+        height: 100px;
+        margin-bottom: 50px;
+        top: 0;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        font-family: Playfair Display;
+
+    }
+}
+
+
+@media (min-width: 1025px) {
+
+    .contact input {
+        margin-top: 20px;
+        width: 100%;
+        font-family: Playfair Display;
+
+    }
+
+    .phone input{
+        margin-top: 20px;
+        width: 100%;
+        font-family: Playfair Display;
+
+    }
+
+    .message input{
+        margin-top: 20px;
+        width: 100%;
+        height: 100px;
+        margin-bottom: 50px;
+        top: 0;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        font-family: Playfair Display;
+
+    }
+
+}  

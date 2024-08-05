@@ -1,0 +1,64 @@
+.collection-item img {
+    width: 80%;
+    border-radius: 6px;
+}
+
+.collection-item {
+    position: relative;
+}
+
+.videoCover {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: -120px;
+}
+
+.videoCover video{
+    width: 100%;
+}
+
+.middleTitle {
+    position: absolute;
+    color:  #c5e3fe !important;
+    z-index: 1;
+    top: 300px;
+    left: 32px;
+    display: flex;
+}
+
+.middleTitle h1 {
+    color:  #c5e3fe !important;
+}
+
+.vidCred {
+    position: absolute;
+    color: #c5e3fe !important;
+    z-index: 1;
+    top: 60%;
+    right: 16px;
+    display: none;
+}
+
+
+
+@media (max-width: 600px) {
+
+    .vidCred {
+        position: absolute;
+        z-index: 1;
+        top: 60%;
+        right: 16px;
+        display: flex;
+    }
+}
+
+@media (min-width: 1025px) {
+    .collection-item img {
+        width: 33%;
+    }
+
+    .vidCred {
+        display: none;
+    }
+}

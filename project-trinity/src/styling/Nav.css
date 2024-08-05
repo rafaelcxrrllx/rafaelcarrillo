@@ -1,0 +1,132 @@
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+#flourescent {
+  mix-blend-mode: difference;
+  background-color: rgb(132, 92, 188);
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+.add-links {
+  overflow: hidden;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #070F19;
+  padding: 12px 32px 12px 32px;
+  position: -webkit-sticky; /* For Safari */
+  top: 0;
+  align-items: flex-start;  
+}
+
+.navbar-left, .navbar-center, .navbar-emblem, .navbar-logo {
+  flex: 1000;
+  text-align: center;
+}
+
+.nav-menu {
+  display: none;
+}
+
+.navbar-emblem {
+  text-align: center;
+  max-width: fit-content;
+}
+
+.navbar a {
+  text-decoration: none;
+  padding: 14px 12px;
+  display: block;
+  font-family: Playfair Display;
+  color: #c5e3fe !important;
+}
+
+  
+.hover-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-underline::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #c5e3fe; /* Adjust the color as needed */
+  visibility: hidden;
+}
+
+.hover-underline:hover::after {
+  visibility: visible;
+  width: 100%;
+}
+
+.flourescent-nav {
+  height: 25px;
+  flex-shrink: 0;
+  background: linear-gradient(90deg, #5D95A4 0%, #C97838 100%);
+  width: 100%;
+  display: block;
+}
+
+.landing-page-link {
+  color: #c5e3fe;
+}
+
+#emblem {
+  width: 50px;
+}
+
+@media (max-width: 600px) {
+  #emblem {
+    width: 50px;
+    padding-left: 0px;
+  }
+
+  .navbar {
+    justify-content: space-between;
+    z-index: 1;
+  }
+
+}
+
+@media (min-width: 1025px) {
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+  }
+
+  .navbar-emblem {
+    text-align: left;
+    float: left;
+  }
+
+  .nav-menu {
+    float: right;
+    display: flex;
+    padding: 16px;
+  }   
+  
+  .menu-container {
+    display: none;
+  }
+
+  #flourescent {
+    mix-blend-mode: difference;
+    background-color: rgb(71, 97, 175);
+  }
+
+}

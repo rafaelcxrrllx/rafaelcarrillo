@@ -1,0 +1,179 @@
+
+.trinity-container {
+    text-align: center;
+    width: 100%;
+    box-shadow: 0px 1px 1px 0px rgba(126, 126, 126, 0.10);
+}
+
+.home-container {
+    text-align: center;
+    z-index: 1;
+}
+
+#home {
+    margin-top: -33px;
+}
+
+.hero-container {
+    box-shadow: 0px 1px 1px 0px rgba(126, 126, 126, 0.10);
+    padding-bottom: 16px;
+}
+
+#recent-work-title {
+    margin-top: 24px;
+    font-size: 16px;
+}
+
+.spaced {
+    letter-spacing: 14px;
+    margin-bottom: 7px;
+}
+
+.spinning-logo {
+    animation: spin 7s infinite linear;
+    transform-style: preserve-3d;
+    padding-top: 50px;
+}
+
+@keyframes spin {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+}
+
+.less-spaced {
+    letter-spacing: 7px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#stars {
+    width: 144px;
+}
+
+.slogan {
+    word-spacing: 14px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+}
+
+
+.flourescent {
+    height: 25px;
+    flex-shrink: 0;
+    background: linear-gradient(90deg, #5D95A4 0%, #C97838 100%);
+}
+
+
+
+.row {
+    padding: 32px;
+}
+
+.home {
+    padding: 32px
+}
+
+.home-title {
+    font-size: 32px;
+    padding-top: 32px;
+}
+
+.subtitle {
+    font-size: 26px;
+}
+
+.container {
+    padding-top: 32px; 
+}
+
+
+
+/* Small screens (phones) */
+@media (max-width: 600px) {
+   #desktop-flour {
+    display: none;
+    }
+
+   .home-title {
+    padding-top: 0px;
+    }
+
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .row {
+        display: block;
+    }
+
+    .col {
+        display: block;
+        width: 100%;
+    }
+
+
+    #hero {
+        width: 100%;
+    }
+
+    #mobile-flour {
+        display: none;
+    }
+
+    .subtitle {
+        padding-left: 32px;
+        padding-right: 32px;
+        line-height: 1.5;
+    }
+  }
+  
+  
+@media (min-width: 1025px) {
+
+    .row {
+        display: flex;
+    }
+
+    .col {
+        display: block;
+        width: 50%;
+
+    }
+
+    .col-container {
+        padding-right: 64px;
+    }
+
+    #hero {
+        width: 50%;
+        float: right;
+    }
+
+    #mobile-flour {
+        display: none;
+    }
+
+    .subtitle {
+        padding-left: 10px;
+        padding-right: 100px;
+        line-height: 1.5;
+    }
+
+    #desktop-flour {
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 44px;
+    }
+
+    .home-title {
+        padding-left: 10px;
+        padding-right: 100px;
+    }
+
+    
+}  
+

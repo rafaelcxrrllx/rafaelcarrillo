@@ -1,0 +1,65 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #070F19;
+    overflow-x: hidden;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: Playfair Display;
+    color: #c5e3fe;
+
+}
+
+h3, h4 {
+    font-family: Playfair Display;
+    color: #c5e3fe;
+}
+
+p, li {
+    font-family: Playfair Display;
+    color: #c5e3fe;
+}
+
+Link {
+    color: #c5e3fe;
+}
+
+.content {
+    flex: 1;
+}
+
+.border-line {
+    text-decoration: solid;
+    box-shadow: 0px 1px 1px 0px rgba(126, 126, 126, 0.10);
+}
+
+#btn:hover {
+    background-color:  #070F19;
+    color: #c5e3fe;
+    cursor: pointer;
+    transition: 0.3s;
+    border-style: solid;
+    border-color: #c5e3fe;
+    border-width: 3px;
+}
+
+a:visited {
+    color: #c5e3fe; /* Link color after it has been visited */
+}
+
+.landing-page-link {
+    color: #c5e3fe;
+  }
+
+.landing-page-link {
+    text-decoration: none;
+    display: inline-block;
+}
