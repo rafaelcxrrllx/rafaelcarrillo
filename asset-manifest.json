@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b8099feb.css",
-    "main.js": "/static/js/main.49eeac2e.js",
+    "main.css": "/static/css/main.dce23082.css",
+    "main.js": "/static/js/main.dc89c978.js",
     "static/js/453.b29e5ee2.chunk.js": "/static/js/453.b29e5ee2.chunk.js",
     "static/media/trinity.mp4": "/static/media/trinity.93fc53cae79fe1f9bba0.mp4",
     "static/media/seed.JPG": "/static/media/seed.bdffd269cfe828924817.JPG",
@@ -153,8 +153,8 @@
     "static/media/scorpio.svg": "/static/media/scorpio.d5871e88ec5383fac48d51309bcbf621.svg",
     "static/media/capricorn.svg": "/static/media/capricorn.f3c2032d86559d9c20160b4c0b108710.svg",
     "static/media/taurus.svg": "/static/media/taurus.e17ddc73a254987b5552fb0956a0bed0.svg",
-    "static/media/leo.svg": "/static/media/leo.342b5e2d0be880ebc1a50f6ca3493bb6.svg",
     "index.html": "/index.html",
+    "static/media/leo.svg": "/static/media/leo.342b5e2d0be880ebc1a50f6ca3493bb6.svg",
     "static/media/libra.svg": "/static/media/libra.80a3392bb8f636b3de4f72e6b1513ffe.svg",
     "static/media/gemini.svg": "/static/media/gemini.0bc72868bbf7f4ac806f5ffacd17fa14.svg",
     "static/media/pisces.svg": "/static/media/pisces.fbdc451d509e1cd3883942e117408094.svg",
@@ -165,12 +165,12 @@
     "static/media/arrow-back.svg": "/static/media/arrow-back.cb2785ec6b6a46d1e200e59a446ee910.svg",
     "static/media/arrow-right.svg": "/static/media/arrow-right.5d4605e414299831bea9b5770a5da6f1.svg",
     "static/media/arrow.svg": "/static/media/arrow.5d4605e414299831bea9b5770a5da6f1.svg",
-    "main.b8099feb.css.map": "/static/css/main.b8099feb.css.map",
-    "main.49eeac2e.js.map": "/static/js/main.49eeac2e.js.map",
+    "main.dce23082.css.map": "/static/css/main.dce23082.css.map",
+    "main.dc89c978.js.map": "/static/js/main.dc89c978.js.map",
     "453.b29e5ee2.chunk.js.map": "/static/js/453.b29e5ee2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b8099feb.css",
-    "static/js/main.49eeac2e.js"
+    "static/css/main.dce23082.css",
+    "static/js/main.dc89c978.js"
   ]
 }
