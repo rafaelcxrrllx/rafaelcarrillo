@@ -3,8 +3,8 @@
   position: relative;
   right: 0;
   top: 0;
-  margin-top: 36px;
-  margin-right: 12px;
+  margin-top: 20px;
+  margin-right: 16px;
 }
   
 .hamburger {
@@ -29,14 +29,14 @@
 .hamburger-menu {
   list-style: none;
   padding: 0;
-  margin-top: 20px;
-  padding-bottom: 10px;
+  margin-top: 12px;
+  padding-bottom: 12px;
   left: 0;
 }
 
 .hamburger-menu li {
   width: 35px;
-  height: 25px;
+  height: 12px;
   margin: 48px 0;
   transition: 0.4s;
   display: flex;

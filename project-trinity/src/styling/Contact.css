@@ -113,13 +113,13 @@
 .contact input {
     margin-top: 20px;
     width: 100%;
-    font-family: Playfair Display;
+    font-family: Karla;
 }
 
 .phone input{
     margin-top: 20px;
     width: 100%;
-    font-family: Playfair Display;
+    font-family: Karla;
 
 }
 
@@ -131,7 +131,7 @@
     top: 0;
     padding-top: 10px;
     padding-bottom: 30px;
-    font-family: Playfair Display;
+    font-family: Karla;
 }
 
 /* Small screens (phones) */
@@ -159,14 +159,14 @@
     .contact input {
         margin-top: 20px;
         width: 100%;
-        font-family: Playfair Display;
+        font-family: Karla;
 
     }
 
     .phone input{
         margin-top: 20px;
         width: 100%;
-        font-family: Playfair Display;
+        font-family: Karla;
 
     }
 
@@ -178,7 +178,7 @@
         top: 0;
         padding-top: 10px;
         padding-bottom: 30px;
-        font-family: Playfair Display;
+        font-family: Karla;
 
     }
 }
@@ -189,14 +189,14 @@
     .contact input {
         margin-top: 20px;
         width: 100%;
-        font-family: Playfair Display;
+        font-family: Karla;
 
     }
 
     .phone input{
         margin-top: 20px;
         width: 100%;
-        font-family: Playfair Display;
+        font-family: Karla;
 
     }
 
@@ -208,7 +208,7 @@
         top: 0;
         padding-top: 10px;
         padding-bottom: 30px;
-        font-family: Playfair Display;
+        font-family: Karla;
 
     }
 
