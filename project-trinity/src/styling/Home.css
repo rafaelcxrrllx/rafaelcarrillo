@@ -106,7 +106,7 @@
 
     .main-title {
         color: #101720;
-        font-size: 13vw;
+        font-size: 14vw;
         margin: 64px 32px 0px 32px;
     }
 
@@ -116,7 +116,7 @@
 @media (min-width: 601px) and (max-width: 1024px) {
     .main-title {
         color: #101720;
-        font-size: 13vw;
+        font-size: 15vw;
         margin: 64px 32px 0px 32px;
     }
   }
@@ -126,7 +126,7 @@
 
     .main-title {
         color: #101720;
-        font-size: 11vw;
+        font-size: 15vw;
         margin: 64px 32px 0px 32px;
     }
 

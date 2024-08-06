@@ -197,7 +197,7 @@ const NowPlaying = () => {
           <img alt="blinking eyes" src={eyes}/> 
       : <a></a>}
         </div>
-        <div id='nowPlayingDetails'>
+        <div className='header' id='nowPlayingDetails'>
           
           {/* Song Title displayed based on playerState */}
           <div style={{ animationDuration: `${duration}s`}} className={`nowPlayingTitle ${title.length > 15 ? 'marquee-content' : ' '}`}>

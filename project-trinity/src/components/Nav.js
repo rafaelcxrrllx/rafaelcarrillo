@@ -61,11 +61,23 @@ useEffect(() => {
   return (
     <nav className="navbar">
       <div className="navbar-emblem">
-        <Link className='landing-page-link' to="/home"><p className='logo'>RAFAEL CARRILLO</p></Link>
-        <div className="left-menu">
+        <Link 
+          className='landing-page-link' to="/home">
+            <motion.p 
+            initial={{ y: '1vw', opacity: 0 }} // Initial opacity set to 0
+            animate={{ y: 0, opacity:  1 }} // Animate opacity to 1
+            transition={{ duration: 2, delay: 1.5 }}
+            className='logo'>RAFAEL CARRILLO
+          </motion.p>
+        </Link>
+        <motion.div 
+           initial={{ y: '1vw', opacity: 0 }} // Initial opacity set to 0
+           animate={{ y: 0, opacity:  1 }} // Animate opacity to 1
+           transition={{ duration: 2, delay: 1.5 }}
+          className="left-menu">
           <Link id='landing-page-link' className="hover-underline" to="/about"> about </Link>
           {/* <Link id='landing-page-link' className="hover-underline" to="/about"> work </Link> */}
-        </div>
+        </motion.div>
         <motion.div 
         id="menu"
         initial={{ height: 0, opacity: 0 }}
@@ -89,14 +101,22 @@ useEffect(() => {
       </motion.div>
       </div>
       <div className="nav-menu">
-        <div className='nav-right-container'>
+        <motion.div
+           initial={{ y: '1vw', opacity: 0 }} // Initial opacity set to 0
+           animate={{ y: 0, opacity:  1 }} // Animate opacity to 1
+           transition={{ duration: 2, delay: 1.5 }} 
+          className='nav-right-container'>
         <Link id='landing-page-link' className="hover-underline" to="/contact"> contact </Link>
         <li><Link className='landing-page-link'>los angeles, ca </Link></li> 
-        </div>
+        </motion.div>
       </div>
       <div className='menu-container'>
         <div>
-          <div className="hamburger-container" onClick={handleToggleMenu}>
+          <motion.div 
+            initial={{ y: '1vw', opacity: 0 }} // Initial opacity set to 0
+            animate={{ y: 0, opacity:  1 }} // Animate opacity to 1
+            transition={{ duration: 2, delay: 1.5 }}
+            className="hamburger-container" onClick={handleToggleMenu}>
             <motion.ul 
             className="hamburger">
               <motion.li 
@@ -110,7 +130,7 @@ useEffect(() => {
                 transition={{ duration: 0 }}></motion.li> */}
               
             </motion.ul>
-          </div>
+          </motion.div>
         </div>
       </div>
     </nav>

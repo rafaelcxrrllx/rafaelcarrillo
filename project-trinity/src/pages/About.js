@@ -8,7 +8,6 @@ import '../styling/About.css'
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import {motion} from 'framer-motion'
-
 // Assets
 import headshot from '../assets/headshot.png'
 
