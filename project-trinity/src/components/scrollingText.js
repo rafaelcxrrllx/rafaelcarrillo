@@ -12,7 +12,7 @@ function ScrollingText() {
 
     <div>
       <div> 
-        <div id='scroll-container'>
+        <div className='extra-bold' id='scroll-container'>
             <div class='scroll' id='scroll-one'>
                 <div class='scroll-item'>MOBILE APPS</div>
                 <div class='scroll-item'>WEB DESIGN</div>
@@ -21,6 +21,10 @@ function ScrollingText() {
                 <div class='scroll-item'>3D ILLUSTRATION </div>
                 <div class='scroll-item'>BRANDING</div>
                 <div class='scroll-item'>FIGMA</div>
+                <div class='scroll-item'>PYTHON</div>
+                <div class='scroll-item'>HTML</div>
+                <div class='scroll-item'>CSS</div>
+                <div class='scroll-item'>JAVASCRIPT</div>
             </div>
             <div class='scroll' id='scroll-two'>
                 
@@ -30,7 +34,11 @@ function ScrollingText() {
                 <div class='scroll-item'>GITHUB</div>
                 <div class='scroll-item'>PROTOTYPES</div>
                 <div class='scroll-item'>WIREFRAMES</div>
+                <div class='scroll-item'>FIGMA</div>
                 <div class='scroll-item'>COLOR THEORY</div>
+                <div class='scroll-item'>JAVA</div>
+                <div class='scroll-item'>C++</div>
+                <div class='scroll-item'>TEAMWORK</div>
              
             </div>
             <div class='fade'></div>
