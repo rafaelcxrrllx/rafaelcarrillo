@@ -9,6 +9,7 @@
     white-space: nowrap;
     color: #fff;
     margin-top: 32px;
+    margin-bottom: 0px;
 }
 #scroll-container .scroll {
     /* background: #000; */

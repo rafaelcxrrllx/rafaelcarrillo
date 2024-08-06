@@ -6,8 +6,8 @@ footer {
 .footer-container {
     display: flex;
     justify-content: space-between;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
     padding-bottom: 8px;
     padding-top: 8px;
     align-items: center;
@@ -29,11 +29,6 @@ footer {
 @media (max-width: 600px) {
     .footer-container img {
         font-size: 8px;
-    }
-
-    footer {
-        padding-bottom: 16px;
-
     }
 
     .footer-container {

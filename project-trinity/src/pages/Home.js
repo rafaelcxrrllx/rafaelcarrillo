@@ -33,28 +33,17 @@ function Home() {
       
       <h1 className='main-title'>USER EXPERIENCE DESIGNER©</h1>
       <p>CURRENTLY AVAILABLE FOR CRAFTING EXPERIENCES</p>
+      
+      <Carousel/>
       <ScrollingText/>
 
-      <div id="desktop-row" className='row'>
-          <div className='col'>
-          <Carousel/>
-          </div>
-          <div className='col'>
-              <div className='col-container'>
-              <p className='home-title'>Rafael Carrillo</p>
-              
-              <div id="mobile-flour" className='flourescent'></div>
-              <p className='subtitle'><i>UXUI Designer / Full-Stack Developer </i>based out of <b>Los Angeles California.</b></p>
-              
-              </div>
-          </div>
-      </div>
 
   
-      <div id="desktop-flour" className='flourescent'></div>
       <div className='spotify-container'>
         <SpotifyNow/>
       </div>
+
+      
       
       
       </motion.div>

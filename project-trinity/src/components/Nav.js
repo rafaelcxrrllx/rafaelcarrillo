@@ -64,7 +64,7 @@ useEffect(() => {
         <Link className='landing-page-link' to="/home"><p className='logo'>RAFAEL CARRILLO</p></Link>
         <div className="left-menu">
           <Link id='landing-page-link' className="hover-underline" to="/about"> about </Link>
-          <Link id='landing-page-link' className="hover-underline" to="/about"> work </Link>
+          {/* <Link id='landing-page-link' className="hover-underline" to="/about"> work </Link> */}
         </div>
         <motion.div 
         id="menu"
@@ -80,10 +80,10 @@ useEffect(() => {
           transition={{ duration: 1 }}
           className="hamburger-menu">
        
-          <li><Link className='landing-page-link' to="/about"> about </Link></li> 
-          <li><Link className='landing-page-link' to="/contact"> work </Link></li>
-          <li><Link className='landing-page-link' to="/contact"> contact </Link></li>
-          <li className='location'>los angeles, ca</li> 
+          <li className='extra-bold'><Link className='landing-page-link' to="/about"> about </Link></li> 
+          {/* <li className='extra-bold'><Link className='landing-page-link' to="/work"> work </Link></li> */}
+          <li className='extra-bold'><Link className='landing-page-link' to="/contact"> contact </Link></li>
+          <li className='extra-bold' id="location">los angeles, ca</li> 
           
         </motion.ul>
       </motion.div>

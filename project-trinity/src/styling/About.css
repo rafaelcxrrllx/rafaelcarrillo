@@ -72,17 +72,18 @@
 }
 
 .about-description-container {
-    margin-left: 12px;
-    margin-right: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 .statement-container {
-    margin-left: 24px;
-    margin-right: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 .about-main-container {
-    margin-left: 32px;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 #about-logo {
