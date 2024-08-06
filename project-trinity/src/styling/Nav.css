@@ -14,7 +14,7 @@ nav {
 }
 
 .hamburger-menu li{
-  font-size: 24px !important;
+  font-size: 16px !important;
 }
 
 .location {
@@ -37,8 +37,8 @@ body.menu-open {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #070F19;
-  padding: 0px 12px 12px 32px;
+  background-color: #EFEFEF;
+  padding: 0px 16px 0px 16px;
   position: -webkit-sticky; /* For Safari */
   top: 0;
   align-items: flex-start;  
@@ -54,8 +54,11 @@ body.menu-open {
 }
 
 .nav-menu a {
-    padding: 0px 12px;
+    padding: 0px 0px;
+    margin-left: 12px;
 }
+
+
 
 .navbar-emblem {
   text-align: center;
@@ -81,7 +84,7 @@ body.menu-open {
   height: 1px;
   bottom: 0;
   left: 0;
-  background-color: #c5e3fe; /* Adjust the color as needed */
+  background-color: #101720; /* Adjust the color as needed */
   visibility: hidden;
 }
 
@@ -99,7 +102,7 @@ body.menu-open {
 }
 
 .landing-page-link {
-  color: #c5e3fe;
+  color: #101720;
 }
 
 #emblem {
@@ -121,10 +124,10 @@ body.menu-open {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #070F19;
+    background-color: #EFEFEF;
     position: -webkit-sticky; /* For Safari */
     top: 0;
-    align-items: flex-start;  
+    align-items: flex-start; 
   }
 
 }
@@ -170,6 +173,7 @@ body.menu-open {
     float: right;
     display: flex;
     padding: 16px;
+    padding-right: 0px;
   }   
   
   .menu-container {

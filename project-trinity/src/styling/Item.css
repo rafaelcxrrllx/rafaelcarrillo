@@ -26,14 +26,14 @@
 }
 
 #AddToBag {
-  background-color: #070F19;
-  border: 1px solid  #c5e3fe;
-  color:  #c5e3fe;
+  background-color: #EFEFEF;
+  border: 1px solid  #101720;
+  color:  #101720;
   font-family: Karla;
 }
 
 #AddToBag:hover {
-  background-color:  #c5e3fe;
+  background-color:  #101720;
   color: #ffffff;
   cursor: pointer;
   transition: 0.3s;
@@ -88,9 +88,9 @@
   
 .styled-table thead tr {
   color: #0B2545;
-  border-bottom: .5px solid #c5e3fe;
+  border-bottom: .5px solid #101720;
   text-align: left;
-  border-top: .5px solid #c5e3fe;
+  border-top: .5px solid #101720;
 
 }
 
@@ -100,7 +100,7 @@
 }
 
 .styled-table tbody tr {
-  border-bottom: 1px solid #c5e3fe;
+  border-bottom: 1px solid #101720;
 }
 
 #shirt-size {
@@ -114,7 +114,7 @@
 .buttons {
   display: flex;
   justify-content: space-between;
-  color: #c5e3fe;
+  color: #101720;
   position: sticky;
   bottom: 0;
   padding: 12px 6px 24px 6px;
@@ -220,7 +220,7 @@
     display: inline-flex;
     justify-content: center;
     width: 100%;
-    background-color: #c5e3fe;
+    background-color: #101720;
     margin-bottom: 100px;
   }
 

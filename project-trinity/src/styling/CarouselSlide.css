@@ -12,11 +12,11 @@
 }
 
 .slick-prev:before, .slick-next:before {
-  color: #c5e3fe; /* Customize arrow color */
+  color: #101720; /* Customize arrow color */
 }
 
 .slick-dots li button:before {
-  color: #c5e3fe; /* Customize dot color */
+  color: #101720; /* Customize dot color */
 }
 
 .slick-slide img {

@@ -22,19 +22,19 @@ function Home() {
 
   return (
     <div>
-            
-
-            <LoadingScreen/>
+      <LoadingScreen/>
       <Nav/>
-      
-      {/* <MasonryLayout/> */}
       <motion.div 
-      initial={{ y: '1vw', opacity: 0 }} // Initial opacity set to 0
-      animate={{ y: 0, opacity:  1 }} // Animate opacity to 1
-      transition={{ duration: 2, delay: 1.5 }}
-      className='home-container'
-      id="home">
+        initial={{ y: '1vw', opacity: 0 }} // Initial opacity set to 0
+        animate={{ y: 0, opacity:  1 }} // Animate opacity to 1
+        transition={{ duration: 2, delay: 1.5 }}
+        className='home-container'
+        id="home">
       
+      <h1 className='main-title'>USER EXPERIENCE DESIGNER©</h1>
+      <p>CURRENTLY AVAILABLE FOR CRAFTING EXPERIENCES</p>
+      <ScrollingText/>
+
       <div id="desktop-row" className='row'>
           <div className='col'>
           <Carousel/>
@@ -57,7 +57,6 @@ function Home() {
       </div>
       
       
-      {/* <ScrollingText/> */}
       </motion.div>
       <Footer/>
     </div>

@@ -5,7 +5,7 @@ import '../styling/styles.css'
 import '../styling/Footer.css'
 
 // Assets
-import instagram from '../assets/icons/instagram.svg';
+import linkedin from '../assets/icons/linkedIn.svg';
 
 
 
@@ -15,12 +15,14 @@ function Footer() {
 
     <footer>
       <div className='footer-container'>
+     
+
           <div>
-              <a href='https://www.instagram.com/rafaelcxrrllx/'><img src={instagram} alt="instagram logo"/></a>
+              <a href='https://www.linkedin.com/in/rafaelcxrrllx/'><img src={linkedin} alt="instagram logo"/></a>
           </div>
           <div>
-              <p>
-              © 2024 TRINITY
+              <p className='logo'>
+              2024 © RAFAEL CARRILLO
               </p>
           </div>
       </div>

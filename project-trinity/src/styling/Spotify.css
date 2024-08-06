@@ -1,8 +1,8 @@
 .nowPlayingCard {
     flex-shrink: 0;
     border-radius: 22px;
-    border: 2px solid #c5e3fe;
-    box-shadow: 5px 5px 0 #c5e3fe;
+    border: 2px solid #101720;
+    box-shadow: 5px 5px 0 #101720;
     align-items: center;
     width: 300px;
     height: 80px;
@@ -10,31 +10,31 @@
     justify-content: space-between;
     transition: all 0.5s ease;
     font-family: Karla;
-    color: #c5e3fe;
+    color: #101720;
     margin-top: 32px;
 }
 
 .nowPlayingCard:hover {
-    box-shadow: 10px 10px 0 #c5e3fe;
+    box-shadow: 10px 10px 0 #101720;
     transform: translateX(0px) translateY(-10px);
     transition: all 0.5s ease;
 }
   
 .nowPlayingCard a {
-    color: #c5e3fe;
+    color: #101720;
     text-decoration: none;
     font-family: Karla;
 }
 
 .nowPlayingCard a:hover {
-    color: #c5e3fe;
+    color: #101720;
     text-decoration: underline;
 }
 
 .nowPlayingImage img {
     border-radius: 8px;
-    border: 1px solid #c5e3fe;
-    box-shadow: 3px 3px 0  #c5e3fe;
+    border: 1px solid #101720;
+    box-shadow: 3px 3px 0  #101720;
     transition: all 0.5s ease;
     width: 60px;
     height: 60px;
@@ -44,7 +44,7 @@
 
 .eyes-offline {
     border-radius: 8px;
-    border: 1px solid #c5e3fe;
+    border: 1px solid #101720;
     box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
     transition: all 0.5s ease;
     width: 60px;
@@ -68,7 +68,7 @@
 
 .nowPlayingTitle, .playlistName {
     flex-shrink: 0;
-    color: #c5e3fe;
+    color: #101720;
     white-space: nowrap;
     text-align: left;
     font-size: 20px;
@@ -114,14 +114,14 @@
 
 .nowPlayingTime {
     text-align: left;
-    color: #c5e3fe;
+    color: #101720;
 }
 
 .nowPlayingState {
     text-align: center;
     width: 20%;
     padding: 10px;
-    color: #c5e3fe;
+    color: #101720;
 }
 
 .soundbar{

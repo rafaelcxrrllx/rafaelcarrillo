@@ -10,6 +10,12 @@
     z-index: 1;
 }
 
+.main-title {
+    color: #101720;
+    font-size: 64px;
+    margin: 64px 32px 0px 32px;
+}
+
 #home {
     margin-top: -33px;
 }

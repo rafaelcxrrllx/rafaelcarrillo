@@ -8,13 +8,13 @@
     color: black;
     font-size: large;
     border-style: none;
-    border-color: #c5e3fe;
+    border-color: #101720;
     border-style: solid;
-    background-color: #070F19;
+    background-color: #EFEFEF;
 }
 
 .contact-container {
-    background-color: #070F19;
+    background-color: #EFEFEF;
     padding-left: 20%;
     padding-right: 20%;
     padding-top: 3%;
@@ -27,14 +27,14 @@
 }
 
 #btn {
-    background-color: #070F19 !important;
-    border: 1px solid  #c5e3fe;
-    color: #c5e3fe;
+    background-color: #EFEFEF !important;
+    border: 1px solid  #101720;
+    color: #101720;
     font-size: 16px;
 }
 
 #btn:hover {
-    background-color: #c5e3fe !important;
+    background-color: #101720 !important;
     color: #fff;
 }
 
@@ -61,12 +61,12 @@
     justify-content: center;
     align-items: center;
     border-radius: 45px;
-    color: #c5e3fe;
+    color: #101720;
     font-size: large;
     border-style: none;
-    border-color: #c5e3fe;
+    border-color: #101720;
     border-style: solid;
-    background-color: #070F19;
+    background-color: #EFEFEF;
     margin-bottom: 20px;
     margin-top: 30px;
     transition: transform 0.3s ease-in-out;
@@ -78,7 +78,7 @@
     color: f3f2ed;
     border-style: solid;
     border-color: f3f2ed;
-    background-color:  #070F19;
+    background-color:  #EFEFEF;
 }
 
 #btn {
@@ -91,12 +91,12 @@
 }
 
 .message-confirmed-header h4{
-    color: #c5e3fe;
+    color: #101720;
 }
 
 
 .header h4 {
-    color: #c5e3fe;
+    color: #101720;
 }
 
 
@@ -106,7 +106,7 @@
 }
 
 .text-entry {
-    color:  #c5e3fe !important; 
+    color:  #101720 !important; 
 }
 
 
@@ -138,7 +138,7 @@
 @media (max-width: 600px) {
 
     .contact-container {
-        background-color: #070F19;
+        background-color: #EFEFEF;
         padding-left: 5%;
         padding-right: 15%;
         padding-top: 3%;

@@ -24,10 +24,10 @@
     position: absolute;
     background: linear-gradient(
         90deg,
-        #070F19,
+        #EFEFEF,
         transparent 10%,
         transparent 90%,
-        #070F19
+        #EFEFEF
     );
     inset: 0;
     pointer-events: none;
@@ -54,7 +54,7 @@
     margin: 0rem 1rem;
     border-radius: 0.4rem;
     white-space: nowrap;
-    color: #c5e3fe;
+    color: #101720;
 }
 
 
