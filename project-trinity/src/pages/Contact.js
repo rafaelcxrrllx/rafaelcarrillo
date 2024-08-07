@@ -94,15 +94,6 @@ return (
                 transition={{ duration: 1 }}> Message has been sent. We will get back to you soon.
             </motion.h4>
 
-            <Link className="Link" to="/shop">
-                <motion.button 
-                    onClick={handleHide} 
-                    type="submit" 
-                    id="btn" 
-                    className='send-btn'> 
-                    Keep Shopping
-                </motion.button> 
-            </Link>
         </div>
 
         <motion.form 
