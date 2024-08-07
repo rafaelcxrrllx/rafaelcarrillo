@@ -120,10 +120,10 @@ useEffect(() => {
             <motion.ul 
             className="hamburger">
               <motion.li 
-                animate={{  y: menuOpen ? 2: 0, x: menuOpen ? 1: 0, rotate: menuOpen ? 45: 0, scale: menuOpen ? .7: 1}}
+                animate={{  y: menuOpen ? 2: 0, x: menuOpen ? 1: 0, rotate: menuOpen ? 45: 0, scale: menuOpen ? .9: 1}}
                 transition={{ duration: 0 }}></motion.li>
               <motion.li 
-                animate={{y: menuOpen ? -7: 0, x: menuOpen ? -0: 0, rotate: menuOpen ? -45: 0, scale: menuOpen ? .7: 1}}
+                animate={{y: menuOpen ? -7: 0, x: menuOpen ? -0: 0, rotate: menuOpen ? -45: 0, scale: menuOpen ? .9: 1}}
                 transition={{ duration: 0 }}></motion.li>
                 {/* <motion.li 
                 animate={{y: menuOpen ? 1: 0, rotate: menuOpen ? 0: 0}}
