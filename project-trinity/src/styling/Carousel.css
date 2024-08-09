@@ -50,7 +50,7 @@
 
 @media (min-width: 601px) and (max-width: 1024px) {
   .carousel {
-    width: 100%;
+    width: 550px;
     float: right;
     margin-bottom: 32px;
   }
@@ -58,7 +58,7 @@
 
 @media (min-width: 1025px) {
   .carousel {
-    width: 50%;
+    width: 550px;
   }
 
 }

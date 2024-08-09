@@ -54,7 +54,7 @@ body.menu-open {
 }
 
 .nav-menu a {
-    padding: 0px 0px;
+    padding-bottom: 16px;
     margin-left: 12px;
 }
 

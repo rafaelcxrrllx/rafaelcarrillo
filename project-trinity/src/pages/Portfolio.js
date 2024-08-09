@@ -10,7 +10,6 @@ import Nav from '../components/Nav';
 
 // Assets
 import hero from '../assets/hero-shot.jpeg'
-import stars from '../assets/stars.svg'
 import Footer from '../components/Footer';
 import { motion } from 'framer-motion';
 import logo from '../assets/logo.svg'
