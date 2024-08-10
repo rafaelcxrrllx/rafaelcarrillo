@@ -29,8 +29,7 @@ function Home() {
         animate={{ y: 0, opacity:  1 }} // Animate opacity to 1
         transition={{ duration: 2, delay: 1.5 }}
         className='home-container'
-        id="home">
-      
+        id="home">      
       <h1 className='main-title'>USER EXPERIENCE DESIGNER©</h1>
       <p className='header'>CURRENTLY AVAILABLE FOR CRAFTING EXPERIENCES</p>
       
