@@ -20,7 +20,7 @@
   height: 100vh;
   margin-left: -16px;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   flex-direction: row-reverse;
   align-content: flex-start;
   align-items: center;
@@ -42,7 +42,7 @@
   transition: 0.4s;
   display: flex;
   font-size: 32px;
-  justify-content: center;
+  justify-content: left;
 }
 
 
