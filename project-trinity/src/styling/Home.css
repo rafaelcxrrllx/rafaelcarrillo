@@ -14,8 +14,22 @@
     color: #101720;
     font-size: 64px;
     margin: 64px 32px 0px 32px;
+    
 }
 
+.offer-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.offer1 {
+    width: 75%;
+    margin-top: 84px;
+    margin-bottom: 24px;
+
+}
 #home {
     margin-top: -33px;
 }
@@ -128,6 +142,13 @@
         color: #101720;
         font-size: 15vw;
         margin: 64px 32px 0px 32px;
+    }
+
+    .offer1 {
+        width: 50%;
+        margin-top: 64px;
+        font-size: 1.5vw;
+    
     }
 
     

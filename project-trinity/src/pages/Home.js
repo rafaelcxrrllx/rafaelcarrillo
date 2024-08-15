@@ -34,6 +34,27 @@ function Home() {
       <p className='header'>CURRENTLY AVAILABLE FOR CRAFTING EXPERIENCES</p>
       
       <Carousel/>
+      <div className='offer-container'>
+        <div className='offer1'>
+          <h1>
+            I love creating cool solutions
+            and solving complex problems
+            for people - like you.
+          </h1>
+        </div>
+     
+      </div>
+
+      <div className='offer-container'>
+        <div className='offer1'>
+          <h1>
+          I deliver impactful results, 
+          through strategic thinking and 
+          data-driven insights.
+          </h1>
+        </div>
+     
+      </div>
       <ScrollingText/>
 
 

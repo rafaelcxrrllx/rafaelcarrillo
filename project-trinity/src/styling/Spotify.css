@@ -11,7 +11,8 @@
     transition: all 0.5s ease;
     font-family: Karla;
     color: #101720;
-    margin-top: 32px;
+    margin-top: 128px;
+    margin-bottom: 128px;
 }
 
 .nowPlayingCard:hover {
