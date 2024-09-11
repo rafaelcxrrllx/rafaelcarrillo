@@ -37,6 +37,7 @@
     padding: 0;      /* Remove default padding */
     justify-content: center;  /* Centers content horizontally */
     align-items: center;      /* Centers content vertically */
+    margin-bottom: -200px !important;
 }
 
 .main-title {
@@ -184,6 +185,8 @@
     .landing-page {
         height: 140vh;
         width: 100vw;
+        margin-bottom: -400px !important;
+
     }
 
     #vine-one {
@@ -235,6 +238,8 @@
     .landing-page {
         height: 140vh;
         width: 100vw;
+        margin-bottom: -300px !important;
+
     }
 
     #vine-one {
@@ -259,13 +264,13 @@
 
     .main-title {
         color: #51C447;
-        font-size: 155px;
+        font-size: 120px;
         margin: 64px 32px 0px 32px;
         line-height: .8;
         letter-spacing: -4px;
-        padding-top: 150px;
-        margin-left: 108px;
-        margin-right: 108px;
+        padding-top: 175px;
+        margin-left: 64px;
+        margin-right: 64px;
 
     }
 

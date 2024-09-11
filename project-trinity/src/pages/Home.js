@@ -72,7 +72,7 @@ function Home() {
         </dotlottie-player>
       </div>
 
-        <h1 className='main-title'>USER EXPERIENCE DESIGNER©</h1>
+        <h1 className='main-title'>USER <br/>EXPERIENCE DESIGNER©</h1>
         <p className='header'>CURRENTLY AVAILABLE FOR CRAFTING EXPERIENCES</p>
       </section>  
 
