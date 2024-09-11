@@ -14,7 +14,7 @@ nav {
 }
 
 .hamburger-menu li{
-  font-size: 16px !important;
+  font-size: 14px !important;
 }
 
 #location {
@@ -24,6 +24,8 @@ nav {
 
 .logo {
   font-weight: 800;
+  font-size: 16px;
+  margin-top: 15px;
 }
 body.menu-open {
   overflow: hidden;
@@ -41,7 +43,8 @@ body.menu-open {
   padding: 0px 16px 0px 16px;
   position: -webkit-sticky; /* For Safari */
   top: 0;
-  align-items: flex-start;  
+  align-items: flex-start; 
+
 }
 
 .navbar-left, .navbar-center, .navbar-emblem, .navbar-logo {
@@ -54,8 +57,10 @@ body.menu-open {
 }
 
 .nav-menu a {
-    padding-bottom: 16px;
-    margin-left: 12px;
+    padding-bottom: 0px;
+    margin-left: 24px;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 
@@ -69,6 +74,8 @@ body.menu-open {
   text-decoration: none;
   display: block;
   font-family: Karla;
+  font-weight: 600;
+  font-size: 14px;
 }
 
   
@@ -107,6 +114,7 @@ body.menu-open {
 
 #emblem {
   width: 50px;
+
 }
 
 @media (max-width: 600px) {
@@ -142,8 +150,8 @@ body.menu-open {
 
   .left-menu { 
     display: flex;
-    padding-left: 16px;
-    gap: 12px;
+    padding-left: 24px;
+    gap: 20px;
   }
 
   .nav-right-container {

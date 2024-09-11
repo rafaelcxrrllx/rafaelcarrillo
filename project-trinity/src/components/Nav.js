@@ -75,8 +75,10 @@ useEffect(() => {
            animate={{ y: 0, opacity:  1 }} // Animate opacity to 1
            transition={{ duration: 2, delay: 1.5 }}
           className="left-menu">
-          <Link id='landing-page-link' className="hover-underline" to="/about"> about </Link>
-          {/* <Link id='landing-page-link' className="hover-underline" to="/about"> work </Link> */}
+          <Link id='landing-page-link' className="hover-underline" to="/about"> ABOUT </Link>
+          <Link id='landing-page-link' className="hover-underline" to="/about"> WORK </Link>
+          <Link id='landing-page-link' className="hover-underline" to="/about"> RESUME </Link>
+
         </motion.div>
         <motion.div 
         id="menu"
@@ -92,9 +94,9 @@ useEffect(() => {
           transition={{ duration: 1 }}
           className="hamburger-menu">
        
-          <li className='extra-bold'><Link className='landing-page-link' to="/about"> about </Link></li> 
-          {/* <li className='extra-bold'><Link className='landing-page-link' to="/work"> work </Link></li> */}
-          <li className='extra-bold'><Link className='landing-page-link' to="/contact"> contact </Link></li>
+          <li className='extra-bold'><Link className='landing-page-link' to="/about"> ABOUT </Link></li> 
+          <li className='extra-bold'><Link className='landing-page-link' to="/work"> WORK </Link></li>
+          <li className='extra-bold'><Link className='landing-page-link' to="/contact"> CONTACT </Link></li>
           <li className='extra-bold' id="location">los angeles, ca</li> 
           
         </motion.ul>
@@ -106,8 +108,8 @@ useEffect(() => {
            animate={{ y: 0, opacity:  1 }} // Animate opacity to 1
            transition={{ duration: 2, delay: 1.5 }} 
           className='nav-right-container'>
-        <Link id='landing-page-link' className="hover-underline" to="/contact"> contact </Link>
-        <Link id='landing-page-link'> los angeles, ca </Link>
+        <Link id='landing-page-link' className="hover-underline" to="/contact"> CONTACT </Link>
+        <Link id='landing-page-link'> LOS ANGELES, CA </Link>
         </motion.div>
       </div>
       <div className='menu-container'>

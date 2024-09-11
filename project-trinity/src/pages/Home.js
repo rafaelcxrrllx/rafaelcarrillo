@@ -16,9 +16,26 @@ import ScrollingText from '../components/scrollingText';
 import ScrollToTop from '../components/ScrollToTop';
 import LoadingScreen from '../components/LoadingScreen';
 
+import React, { useEffect, useRef } from 'react';
+
+
 
 function Home() {
   // "homepage": "https://rafaelcxrrllx.github.io/trinityla",
+  const lottiePlayerRef = useRef(null);
+
+
+  useEffect(() => {
+    // Set a delay of 2 seconds (2000ms) before playing the animation
+    const timer = setTimeout(() => {
+      if (lottiePlayerRef.current) {
+        lottiePlayerRef.current.play(); // Start the animation
+      }
+    }, 3000); // 2000ms = 2 seconds
+
+    // Cleanup the timer when component unmounts
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <div>
@@ -29,9 +46,36 @@ function Home() {
         animate={{ y: 0, opacity:  1 }} // Animate opacity to 1
         transition={{ duration: 2, delay: 1.5 }}
         className='home-container'
-        id="home">      
-      <h1 className='main-title'>USER EXPERIENCE DESIGNER©</h1>
-      <p className='header'>CURRENTLY AVAILABLE FOR CRAFTING EXPERIENCES</p>
+        id="home">    
+      <section className='landing-page'>
+      <div id="vine-one" >
+        <dotlottie-player 
+          
+          src="https://lottie.host/c9f78807-0c1f-411c-b164-5a82b3bae9ed/ZXcOSYPY8t.json"
+          background="transparent" 
+          speed=".5" 
+          style={{width: 400, height: 400}} 
+          autoPlay
+          ref={lottiePlayerRef}>
+        </dotlottie-player>
+      </div>
+
+      <div id="vine-two" >
+        <dotlottie-player 
+          
+          src="https://lottie.host/c9f78807-0c1f-411c-b164-5a82b3bae9ed/ZXcOSYPY8t.json"
+          background="transparent" 
+          speed=".5" 
+          style={{width: 400, height: 400, transform: 'scaleX(-1) scaleY(-1)', }} 
+          autoPlay
+          ref={lottiePlayerRef}>
+        </dotlottie-player>
+      </div>
+
+        <h1 className='main-title'>USER EXPERIENCE DESIGNER©</h1>
+        <p className='header'>CURRENTLY AVAILABLE FOR CRAFTING EXPERIENCES</p>
+      </section>  
+
       
       <Carousel/>
       <div className='offer-container'>
