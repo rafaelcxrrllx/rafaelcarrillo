@@ -10,6 +10,10 @@
 
 }
 
+.hot-links {
+    text-decoration: none;
+}
+
 #indent {
     margin-left: 32px;
 }
@@ -35,6 +39,11 @@
 
 .icons-container img{
     margin-right: 12px;
+}
+
+.icons-container {
+    margin-left: 28px !important;
+
 }
 
 #vine-one {
@@ -249,9 +258,9 @@
 
     .introduction-text {
         margin: 16px;
-        margin-top: 200px;
-        margin-bottom: 164px;
-        margin-left: 64px;
+        /* margin-top: 200px; */
+        margin-bottom: 64px;
+        margin-left: 32px;
     }
 
     #indent {

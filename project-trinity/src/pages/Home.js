@@ -80,7 +80,7 @@ function Home() {
       </section>  
 
       <section className='introduction-page'>
-      <div id="vine-three" >
+      {/* <div id="vine-three" >
         <dotlottie-player 
           
           src="https://lottie.host/c9f78807-0c1f-411c-b164-5a82b3bae9ed/ZXcOSYPY8t.json"
@@ -102,7 +102,7 @@ function Home() {
           autoPlay
           ref={lottiePlayerRef}>
         </dotlottie-player>
-      </div>
+      </div> */}
         <div className='introduction-text'>
         <h1>
           Hi! I’m Rafael. 
@@ -110,24 +110,24 @@ function Home() {
         <h2 className='gray-text'>
           I love <span className='green-font'>🎨 design</span>, <span className='green-font'>💻 technology</span>, <br/> and <span className='green-font'>solving problems </span>utilizing a <br/> human-centered process. 🌎
         </h2>
-        <h3>
+        <h4>
         EDUCATION
-        </h3>
-        <h2 className='school'>
+        </h4>
+        <h3 className='school'>
           University of California, Irvine - 2024
-        </h2>
-        <h3 id="indent" className='gray-text'>
+        </h3>
+        <h4 id="indent" className='gray-text'>
           Bachelor of Science in Informatics <br/>
           Minor in Informations and Computer Science <br/>
           Specialization in Human-Computer Interaction <br/>
-        </h3>
-        <h3>
+        </h4>
+        <h4>
         FIND ME
-        </h3>
+        </h4>
         <div id="indent" className='icons-container'>
-          <img src={instagram} alt="instagram" />
-          <img src={linkedIn} alt="LinkedIn" />
-          <img src={github} alt="GitHub" />
+          <a class="hot-links" href="https://www.instagram.com/rafaelcxrrllx/"><img src={instagram} alt="instagram" /> </a> 
+          <a class="hot-links" href="https://www.linkedin.com/in/rafaelcxrrllx/"><img src={linkedIn} alt="LinkedIn" /> </a>
+          <a class="hot-links" href="https://github.com/rafaelcxrrllx"><img src={github} alt="GitHub" /> </a>
         </div>
         </div>
         <Carousel/>
