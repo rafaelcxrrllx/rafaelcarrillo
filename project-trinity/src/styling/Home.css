@@ -5,6 +5,38 @@
     box-shadow: 0px 1px 1px 0px rgba(126, 126, 126, 0.10);
 }
 
+.introduction-page {
+    text-align: left;
+
+}
+
+#indent {
+    margin-left: 32px;
+}
+
+#vine-three {
+    position: absolute;
+    margin-top: -300px;
+    left: 0;
+    margin-left: -12px;
+}
+
+#vine-four {
+    position: absolute;
+    margin-top: 27vh;
+    right: 0;
+    margin-right: -12px;
+}
+
+
+.school {
+    color: #51C447;
+}
+
+.icons-container img{
+    margin-right: 12px;
+}
+
 #vine-one {
     position: absolute;
     top: 0;
@@ -24,6 +56,16 @@
 .home-container {
     text-align: center;
     z-index: 1;
+}
+
+.green-font {
+    color: #51C447;
+    text-decoration: underline #51C447;
+   
+}
+
+.gray-text {
+    color: #a4a4a4;
 }
 
 .landing-page {
@@ -204,6 +246,17 @@
         right: 0;
         margin-right: -12px;
     }
+
+    .introduction-text {
+        margin: 16px;
+        margin-top: 200px;
+        margin-bottom: 164px;
+        margin-left: 64px;
+    }
+
+    #indent {
+        margin-left: 0px;
+    }
     
 
 }
@@ -221,6 +274,14 @@
         margin-top: 124px;
         margin-left: 84px;
         margin-right: 84px;
+
+    }
+
+    .introduction-text {
+        margin: 16px;
+        margin-top: 133px;
+        margin-bottom: 164px;
+        margin-left: 64px;
 
     }
 
@@ -257,6 +318,35 @@
         right: 0;
         margin-right: -12px;
     }
+
+    .introduction-page {
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    #vine-three {
+        position: absolute;
+        margin-top: -550px;
+        left: 0;
+        margin-left: -12px;
+    }
+
+    #vine-four {
+        position: absolute;
+        margin-top: 50vh;
+        right: 0;
+        margin-right: -12px;
+        z-index: 1;
+    }
+
+
+    #indent {
+        margin-left: 32px;
+    }
+
   }
   
   
@@ -289,6 +379,28 @@
         padding: 0;      /* Remove default padding */
         justify-content: center;  /* Centers content horizontally */
         align-items: center;      /* Centers content vertically */
+    }
+
+    .introduction-page {
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #vine-three {
+        position: absolute;
+        margin-top: -450px;
+        left: 0;
+        margin-left: -12px;
+    }
+    
+    #vine-four {
+        position: absolute;
+        margin-top: 65vh;
+        right: 0;
+        margin-right: -12px;
+        z-index: 1;
     }
 
     
