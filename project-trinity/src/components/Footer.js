@@ -17,9 +17,9 @@ function Footer() {
       <div className='footer-container'>
      
 
-          <div>
+          {/* <div>
               <a href='https://www.linkedin.com/in/rafaelcxrrllx/'><img src={linkedin} alt="instagram logo"/></a>
-          </div>
+          </div> */}
           <div>
               <p className='logo'>
               2024 © RAFAEL CARRILLO

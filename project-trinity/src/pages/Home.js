@@ -20,24 +20,51 @@ import linkedIn from '../assets/icons/linkedIn.svg'
 import github from '../assets/icons/github.svg'
 
 import React, { useEffect, useRef } from 'react';
+import Vines from '../components/Vines';
 
 
 
 function Home() {
   // "homepage": "https://rafaelcxrrllx.github.io/trinityla",
   const lottiePlayerRef = useRef(null);
+  const vinePlayerRef = useRef(null);
 
 
   useEffect(() => {
-    // Set a delay of 2 seconds (2000ms) before playing the animation
-    const timer = setTimeout(() => {
-      if (lottiePlayerRef.current) {
-        lottiePlayerRef.current.play(); // Start the animation
-      }
-    }, 3000); // 2000ms = 2 seconds
+    const lottieElement = lottiePlayerRef.current;
+    const vineElement = vinePlayerRef.current;
 
-    // Cleanup the timer when component unmounts
-    return () => clearTimeout(timer);
+    const handlePlayAnimation = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          lottieElement.play();
+          vineElement.play();
+        } else {
+          lottieElement.stop();
+          vineElement.stop();
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(handlePlayAnimation, {
+      threshold: 0.5, // Trigger when 50% of the element is visible
+    });
+
+    if (lottieElement) {
+      observer.observe(lottieElement);
+    }
+    if (vineElement) {
+      observer.observe(vineElement);
+    }
+
+    return () => {
+      if (lottieElement) {
+        observer.unobserve(lottieElement);
+      }
+      if (vineElement) {
+        observer.unobserve(vineElement);
+      }
+    };
   }, []);
 
   return (
@@ -59,50 +86,19 @@ function Home() {
           speed=".5" 
           style={{width: 400, height: 400}} 
           autoPlay
-          ref={lottiePlayerRef}>
+          ref={vinePlayerRef}
+          >
         </dotlottie-player>
       </div>
 
-      <div id="vine-two" >
-        <dotlottie-player 
-          
-          src="https://lottie.host/c9f78807-0c1f-411c-b164-5a82b3bae9ed/ZXcOSYPY8t.json"
-          background="transparent" 
-          speed=".5" 
-          style={{width: 400, height: 400, transform: 'scaleX(-1) scaleY(-1)', }} 
-          autoPlay
-          ref={lottiePlayerRef}>
-        </dotlottie-player>
-      </div>
+      <Vines/>
 
         <h1 className='main-title'>USER <br/>EXPERIENCE DESIGNER©</h1>
         <p className='header'>CURRENTLY AVAILABLE FOR CRAFTING EXPERIENCES</p>
       </section>  
 
       <section className='introduction-page'>
-      {/* <div id="vine-three" >
-        <dotlottie-player 
-          
-          src="https://lottie.host/c9f78807-0c1f-411c-b164-5a82b3bae9ed/ZXcOSYPY8t.json"
-          background="transparent" 
-          speed=".5" 
-          style={{width: 400, height: 400}} 
-          autoPlay
-          ref={lottiePlayerRef}>
-        </dotlottie-player>
-      </div>
-
-      <div id="vine-four" >
-        <dotlottie-player 
-          
-          src="https://lottie.host/c9f78807-0c1f-411c-b164-5a82b3bae9ed/ZXcOSYPY8t.json"
-          background="transparent" 
-          speed=".5" 
-          style={{width: 400, height: 400, transform: 'scaleX(-1) scaleY(-1)', }} 
-          autoPlay
-          ref={lottiePlayerRef}>
-        </dotlottie-player>
-      </div> */}
+    
         <div className='introduction-text'>
         <h1>
           Hi! I’m Rafael. 
@@ -132,23 +128,34 @@ function Home() {
         </div>
         <Carousel/>
       </section>
+      <br/>
       <div className='offer-container'>
-        <div className='offer1'>
+        <div id="offer-one" className='offer1'>
           <h1>
-            I love creating cool solutions
-            and solving complex problems
-            for people - like you.
+          I specialize in designing human experiences <br/>
+          and solving complex problems <br/>
+          for people - like you.
           </h1>
         </div>
      
       </div>
+      <div className='plant'>
+      <dotlottie-player
+        src="https://lottie.host/f2a5a80b-467e-4cca-b79f-00923d794bf1/oMiEMYm3Lx.json"
+        background="transparent"
+        speed="0.5"
+        id="plant-svg"
+        style={{ width: 250, height: 250 }}
+        ref={lottiePlayerRef}
+      ></dotlottie-player>
+      </div>
 
       <div className='offer-container'>
-        <div className='offer1'>
+        <div id="offer-two" className='offer1'>
           <h1>
-          I deliver impactful results, 
-          through strategic thinking and 
-          data-driven insights.
+          I deliver results, <br/>
+          through design thinking, <br/>
+          data-driven insights and shared empathy.
           </h1>
         </div>
      
