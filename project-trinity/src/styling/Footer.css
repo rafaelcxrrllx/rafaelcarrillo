@@ -1,6 +1,25 @@
 footer {
     justify-content: space-between;
     bottom: 0;
+    box-shadow: 0px -1px 1px 0px rgba(126, 126, 126, 0.10);
+    padding-top: 64px;
+    position: relative;
+    z-index: 3;
+
+}
+
+.footer-icons-container a{
+    padding: 8px;
+}
+
+.connect-title {
+    font-size: 32px;
+}
+
+#quote {
+    text-decoration: none;
+    margin-top: 64px;
+    margin-bottom: 32px;
 }
 
 .footer-container {
@@ -14,7 +33,7 @@ footer {
     align-content: center;
     margin-top: 16px;
     position: relative;
-    z-index: 2;
+    z-index: 3;
     box-shadow: 0px -1px 1px 0px rgba(126, 126, 126, 0.10);
 }
 

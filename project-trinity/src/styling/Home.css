@@ -282,7 +282,7 @@
 
     .introduction-text {
         margin: 16px;
-        /* margin-top: 200px; */
+        margin-top: 32px;
         margin-bottom: 64px;
         margin-left: 32px;
     }
@@ -300,8 +300,8 @@
     #plant-svg {
         width: 100px !important;
         height: 100px !important;
-        margin-top: -25px;
-        margin-bottom: -25px;
+        margin-top: -50px;
+        margin-bottom: -50px;
     }
     
 
