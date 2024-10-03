@@ -5,7 +5,6 @@ import '../styling/styles.css'
 import '../styling/Home.css'
 
 // Components
-import Carousel from '../carousels/Carousel';
 import Nav from '../components/Nav';
 
 // Assets
@@ -15,12 +14,11 @@ import SpotifyNow from '../components/SpotifyNow';
 import ScrollingText from '../components/scrollingText';
 import ScrollToTop from '../components/ScrollToTop';
 import LoadingScreen from '../components/LoadingScreen';
-import instagram from '../assets/icons/instagram.svg'
-import linkedIn from '../assets/icons/linkedIn.svg'
-import github from '../assets/icons/github.svg'
+
 
 import React, { useEffect, useRef } from 'react';
 import Vines from '../components/Vines';
+import Introduction from '../components/Introduction';
 
 
 
@@ -97,37 +95,7 @@ function Home() {
         <p className='header'>CURRENTLY AVAILABLE FOR CRAFTING EXPERIENCES</p>
       </section>  
 
-      <section className='introduction-page'>
-    
-        <div className='introduction-text'>
-        <h1>
-          Hi! I’m Rafael. 
-        </h1>
-        <h2 className='gray-text'>
-          I love <span className='green-font'>🎨 design</span>, <span className='green-font'>💻 technology</span>, <br/> and <span className='green-font'>solving problems </span>utilizing a <br/> human-centered process. 🌎
-        </h2>
-        <h4>
-        EDUCATION
-        </h4>
-        <h3 className='school'>
-          University of California, Irvine - 2024
-        </h3>
-        <h4 id="indent" className='gray-text'>
-          Bachelor of Science in Informatics <br/>
-          Minor in Informations and Computer Science <br/>
-          Specialization in Human-Computer Interaction <br/>
-        </h4>
-        <h4>
-        FIND ME
-        </h4>
-        <div id="indent" className='icons-container'>
-          <a class="hot-links" href="https://www.instagram.com/rafaelcxrrllx/"><img src={instagram} alt="instagram" /> </a> 
-          <a class="hot-links" href="https://www.linkedin.com/in/rafaelcxrrllx/"><img src={linkedIn} alt="LinkedIn" /> </a>
-          <a class="hot-links" href="https://github.com/rafaelcxrrllx"><img src={github} alt="GitHub" /> </a>
-        </div>
-        </div>
-        <Carousel/>
-      </section>
+      <Introduction/>
       <br/>
       <div className='offer-container'>
         <div id="offer-one" className='offer1'>
