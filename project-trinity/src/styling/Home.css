@@ -55,6 +55,11 @@
 
 }
 
+.title {
+    text-align: left;
+    margin-left: 48px;
+}
+
 #vine-one {
     position: absolute;
     top: 0;
@@ -326,9 +331,9 @@
 
     .introduction-text {
         margin: 16px;
-        margin-top: 133px;
-        margin-bottom: 164px;
-        margin-left: 64px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-left: 32px;
 
     }
 

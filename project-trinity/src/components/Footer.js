@@ -64,23 +64,9 @@ function Footer() {
     animate={{ y: 0, opacity:  1 }} // Animate opacity to 1
     transition={{ duration: 2, delay: 1.5 }}>
       <section className="footer-section">
-      {/* <div id="vine-one" >
-        <dotlottie-player 
-          
-          src="https://lottie.host/c9f78807-0c1f-411c-b164-5a82b3bae9ed/ZXcOSYPY8t.json"
-          background="transparent" 
-          speed=".5" 
-          style={{width: 400, height: 400}} 
-          autoPlay
-          ref={vinePlayerRefFooter}
-          >
-        </dotlottie-player>
-      </div>
-
-      <VinesFooter/> */}
-
      
-       <h1 className='connect-title'>
+     
+<h1 className='connect-title'>
           Let's Connect!
         </h1>
          <div className='footer-icons-container'>
@@ -91,6 +77,7 @@ function Footer() {
       <h3 className='green-font' id="quote">
         “Work is love made visible.” - Khalil Gibran
       </h3>
+      
       <div className='footer-container'>
           <div>
               <p className='logo'>

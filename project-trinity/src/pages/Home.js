@@ -14,6 +14,7 @@ import SpotifyNow from '../components/SpotifyNow';
 import ScrollingText from '../components/scrollingText';
 import ScrollToTop from '../components/ScrollToTop';
 import LoadingScreen from '../components/LoadingScreen';
+import CaseStudy from '../components/CaseStudy';
 
 
 import React, { useEffect, useRef } from 'react';
@@ -129,7 +130,15 @@ function Home() {
      
       </div>
       <ScrollingText/>
+      <br/>
 
+      <div className='title'>
+        <h1>
+          RELEVANT EXPERIENCE
+        </h1>
+      </div>
+
+      <CaseStudy/>
 
   
       <div className='spotify-container'>

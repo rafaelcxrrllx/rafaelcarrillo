@@ -41,7 +41,7 @@ const Introduction = () => {
     <motion.section
       ref={sectionRef}
       initial={{ opacity: 0, y: 50 }}      // Start hidden with y offset (below)
-      animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 50 }} // Fade in and move up
+      animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 25 }} // Fade in and move up
       transition={{ duration: 2, ease: "easeOut" }} // Smooth transition
       className='introduction-page'
     >
