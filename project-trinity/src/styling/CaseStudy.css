@@ -64,6 +64,7 @@
     .section {
         display: block;
         flex-direction: row-reverse;
+        padding: 12px;
     }
 
     .mobile-title {
