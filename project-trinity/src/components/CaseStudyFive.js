@@ -8,14 +8,14 @@ import '../styling/CaseStudy.css'
 
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import xotics from '../assets/xotics.png'
-import xoticsLogo from '../assets/xotic-logo.jpg'
+import portfolio from '../assets/portfolio.png'
+import portfolioLogo from '../assets/portfolio-cover.svg'
 
-import tools from '../assets/case-tools.svg'
+import tools from '../assets/portfolio-tools.svg'
 
 
 
-function CaseStudy() {
+function CaseStudyFive() {
 
   return (
 
@@ -27,20 +27,20 @@ function CaseStudy() {
        
         <div>
         <div className='case-title'>
-        <img className='case-logo' src={xoticsLogo} alt="image of xotics logo"/>
-        <h1 className='desktop-title'> XOTIC DIP</h1>
+        <img className='case-logo' src={portfolioLogo} alt="image of e-coach logo"/>
+        <h1 className='desktop-title'> PORTFOLIO V1.0</h1>
         </div>
-        <img className='case-img' src={xotics} alt="image of xotics website prototype"/>
+        <img className='case-img' src={portfolio} alt="image of e-coach website prototype"/>
         </div>
         <div className='case-text'>
         <div className='mobile-title'>
-        <img className='case-logo' src={xoticsLogo} alt="image of xotics logo"/>
-        <h1> XOTIC DIP</h1>
+        <img className='case-logo' src={portfolioLogo} alt="image of xotics logo"/>
+        <h1>E-Coach</h1>
         </div>
        
-          <b><a target='_blank' class="hot-links" href="https://rafaelcxrrllx.github.io/xotics/"><p>🔗 xoticdip.com</p> </a></b>
+          <b><a target='_blank' class="hot-links" href="https://rafaelcxrrllx.github.io/trinity/"><p>🔗 PORTFOLIO V1.0</p> </a></b>
           <p className='case-description'>
-          Designed and Developed Xotic Dip, an exotic car parts e-commerce with a featured product, checkout process, and unique design with responsive layout.
+            Visit my first portfolio ever designed and developed where I present case studies on my past projects! See how my skills in design and development have improved exponentially!
           </p>
           <div className='case-tools'>
           <p> <b>BUILT WITH:</b> </p>
@@ -55,4 +55,4 @@ function CaseStudy() {
   );
 }
 
-export default CaseStudy;
+export default CaseStudyFive;

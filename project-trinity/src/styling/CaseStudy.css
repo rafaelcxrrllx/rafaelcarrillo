@@ -1,5 +1,4 @@
 .section {
-    border-top: 1px solid rgba(126, 126, 126, 0.10);  /* Border at the top */
     border-bottom: 1px solid rgba(126, 126, 126, 0.10);
     display: flex;
     align-items: center;
@@ -18,6 +17,11 @@
     text-align: left;
     text-transform: uppercase;
 
+}
+
+.title {
+    border-bottom: 1px solid rgba(126, 126, 126, 0.10);  /* Border at the top */
+    padding-bottom: 32px;
 }
 
 .case-title {
@@ -41,7 +45,7 @@
     
 }
 .case-img-tools {
-    width: 200px;
+    width: 250px;
     margin-left: 12px;
 }
 
@@ -76,6 +80,15 @@
 
     .case-img {
         width: 350px;
+    }
+
+    .title {
+        font-size: 14px;
+        margin-left: 12px;
+    }
+
+    .case-description {
+        padding: 4px;
     }
 }
 
@@ -115,6 +128,13 @@
     text-decoration: underline;
 }
 .case-img {
-    width: 700px;
+    width: 600px;
 }
+
+.case-img-tools {
+    width: 250px;
+    margin-left: 12px;
+}
+
+
 }  

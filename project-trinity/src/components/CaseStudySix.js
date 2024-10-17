@@ -8,14 +8,14 @@ import '../styling/CaseStudy.css'
 
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import xotics from '../assets/xotics.png'
-import xoticsLogo from '../assets/xotic-logo.jpg'
+import trinity from '../assets/trinity.png'
+import trinityLogo from '../assets/trinity-cover.svg'
 
 import tools from '../assets/case-tools.svg'
 
 
 
-function CaseStudy() {
+function CaseStudySix() {
 
   return (
 
@@ -27,20 +27,20 @@ function CaseStudy() {
        
         <div>
         <div className='case-title'>
-        <img className='case-logo' src={xoticsLogo} alt="image of xotics logo"/>
-        <h1 className='desktop-title'> XOTIC DIP</h1>
+        <img className='case-logo' src={trinityLogo} alt="image of Trinity LA logo"/>
+        <h1 className='desktop-title'> TRINITY LA</h1>
         </div>
-        <img className='case-img' src={xotics} alt="image of xotics website prototype"/>
+        <img className='case-img' src={trinity} alt="image of Trinity LA website prototype"/>
         </div>
         <div className='case-text'>
         <div className='mobile-title'>
-        <img className='case-logo' src={xoticsLogo} alt="image of xotics logo"/>
-        <h1> XOTIC DIP</h1>
+        <img className='case-logo' src={trinityLogo} alt="image of Trinity LA logo"/>
+        <h1>TRINITY LA</h1>
         </div>
        
-          <b><a target='_blank' class="hot-links" href="https://rafaelcxrrllx.github.io/xotics/"><p>🔗 xoticdip.com</p> </a></b>
+          <b><a target='_blank' class="hot-links" href="https://trinitylosangeles.net/"><p>🔗 TRINITYLOSANGELES.NET</p> </a></b>
           <p className='case-description'>
-          Designed and Developed Xotic Dip, an exotic car parts e-commerce with a featured product, checkout process, and unique design with responsive layout.
+          Designer, Developer, and Founder of TRINITY LA, A personal brand BUILT WITH React.js, featuring a unique design, responsive layout and optimized UI/UX elements to enhance user experience and increase user engagement.
           </p>
           <div className='case-tools'>
           <p> <b>BUILT WITH:</b> </p>
@@ -55,4 +55,4 @@ function CaseStudy() {
   );
 }
 
-export default CaseStudy;
+export default CaseStudySix;

@@ -8,14 +8,14 @@ import '../styling/CaseStudy.css'
 
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import xotics from '../assets/xotics.png'
-import xoticsLogo from '../assets/xotic-logo.jpg'
+import trash from '../assets/s2t.png'
+import xoticsLogo from '../assets/s2t-cover.jpg'
 
-import tools from '../assets/case-tools.svg'
+import tools from '../assets/trash-tools.svg'
 
 
 
-function CaseStudy() {
+function CaseStudyTwo() {
 
   return (
 
@@ -27,20 +27,20 @@ function CaseStudy() {
        
         <div>
         <div className='case-title'>
-        <img className='case-logo' src={xoticsLogo} alt="image of xotics logo"/>
-        <h1 className='desktop-title'> XOTIC DIP</h1>
+        <img className='case-logo' src={xoticsLogo} alt="image of stand up to trash logo"/>
+        <h1 className='desktop-title'> STAND UP TO TRASH</h1>
         </div>
-        <img className='case-img' src={xotics} alt="image of xotics website prototype"/>
+        <img className='case-img' src={trash} alt="image of stand up to trash website prototype"/>
         </div>
         <div className='case-text'>
         <div className='mobile-title'>
-        <img className='case-logo' src={xoticsLogo} alt="image of xotics logo"/>
-        <h1> XOTIC DIP</h1>
+        <img className='case-logo' src={xoticsLogo} alt="image of stand up to trash logo"/>
+        <h1> STAND UP TO TRASH</h1>
         </div>
        
-          <b><a target='_blank' class="hot-links" href="https://rafaelcxrrllx.github.io/xotics/"><p>🔗 xoticdip.com</p> </a></b>
+          <b><a target='_blank' class="hot-links" href="https://www.figma.com/design/7DJkxfrm9LYiX336gzjKdI/Final-Designs-%26-Prototype?node-id=0-1&t=Ue6GtNETsdTKWVyT-1"><p>🔗 Figma Prototype</p> </a></b>
           <p className='case-description'>
-          Designed and Developed Xotic Dip, an exotic car parts e-commerce with a featured product, checkout process, and unique design with responsive layout.
+          Led the design process, from requirements, WIREFRAMES, prototyping, and usability testing, transitionING from manual data collection on paper to an efficient database-driven web application.
           </p>
           <div className='case-tools'>
           <p> <b>BUILT WITH:</b> </p>
@@ -55,4 +55,4 @@ function CaseStudy() {
   );
 }
 
-export default CaseStudy;
+export default CaseStudyTwo;
