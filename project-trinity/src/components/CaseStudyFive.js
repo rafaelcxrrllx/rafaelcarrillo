@@ -35,7 +35,7 @@ function CaseStudyFive() {
         <div className='case-text'>
         <div className='mobile-title'>
         <img className='case-logo' src={portfolioLogo} alt="image of xotics logo"/>
-        <h1>E-Coach</h1>
+        <h1>PORTFOLIO V1.0</h1>
         </div>
        
           <b><a target='_blank' class="hot-links" href="https://rafaelcxrrllx.github.io/trinity/"><p>🔗 PORTFOLIO V1.0</p> </a></b>
