@@ -77,7 +77,7 @@ useEffect(() => {
           className="left-menu">
           <a id='landing-page-link' className="hover-underline" href="#about"> ABOUT </a>
           <a id='landing-page-link' className="hover-underline" href="#work"> WORK </a>
-          <a id='landing-page-link' download="Resume.pdf" className="hover-underline" href={require("../assets/Resume/Resume.pdf")}> RESUME </a>
+          <a id='landing-page-link' download="RafaelCarrillo.pdf" className="hover-underline" href={require("../assets/Resume/Resume.pdf")}> RESUME </a>
         </motion.div>
         <motion.div 
         id="menu"
