@@ -8,6 +8,8 @@ import '../styling/Footer.css'
 import instagram from '../assets/icons/instagram.svg'
 import linkedIn from '../assets/icons/linkedIn.svg'
 import github from '../assets/icons/github.svg'
+import copy from '../assets/icons/copy.svg'
+
 import { motion } from 'framer-motion';
 import React, { useEffect, useRef } from 'react';
 import VinesFooter from '../components/VinesFooter';
@@ -15,6 +17,13 @@ import VinesFooter from '../components/VinesFooter';
 
 
 function Footer() {
+
+  const handleCopy = (event) => {
+    const content = event.target.innerText; // Get the text inside the div
+    navigator.clipboard.writeText(content) // Copy to clipboard
+      .then(() => alert('Email copied to clipboard!'))
+      .catch((err) => console.error('Failed to copy text: ', err));
+  };
 
   const lottiePlayerRefFooter = useRef(null);
   const vinePlayerRefFooter = useRef(null);
@@ -66,12 +75,23 @@ function Footer() {
       <section className="footer-section">
      
      
-<h1 className='connect-title'>
+<h1 id="contact" className='connect-title'>
           Let's Connect!
         </h1>
-         <div className='footer-icons-container'>
-         <a class="hot-links" href="https://www.instagram.com/rafaelcxrrllx/"><img src={instagram} alt="instagram" /> </a> 
+         
+         <div 
+            class="clipboard"
+          >
+              <h4 className='green-font' 
+                onClick={handleCopy} 
+                style={{ cursor: 'pointer' }}
+                id="quote">
+              rafaelcarrillo09@gmail.com <img className='copy' src={copy} alt="copy" />
+            </h4>
+          </div>
+          <div className='footer-icons-container'>
           <a class="hot-links" href="https://www.linkedin.com/in/rafaelcxrrllx/"><img src={linkedIn} alt="LinkedIn" /> </a>
+          <a class="hot-links" href="https://www.instagram.com/rafaelcxrrllx/"><img src={instagram} alt="instagram" /> </a> 
           <a class="hot-links" href="https://github.com/rafaelcxrrllx"><img src={github} alt="GitHub" /> </a>
         </div>
       <h3 className='green-font' id="quote">

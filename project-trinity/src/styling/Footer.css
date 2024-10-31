@@ -7,6 +7,10 @@ footer {
 
 }
 
+.footer-icons-container {
+    display: block;
+}
+
 .footer-icons-container a{
     padding: 8px;
 }
@@ -19,6 +23,37 @@ footer {
     text-decoration: none;
     margin-top: 64px;
     margin-bottom: 32px;
+}
+
+.clipboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: fit-content;
+    padding-top: 0px;
+    margin-bottom: 0px;
+}
+
+.clipboard h4:hover {
+    box-shadow: 3px 3px 0 #51C447;
+    transform: translateX(0px) translateY(-10px);
+    transition: all 0.5s ease;
+}
+
+.clipboard h4 {
+    color: #EFEFEF;
+    padding: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: #51C447; 
+    border-radius: 48px;
+    transition: all 0.5s ease;
+
+}
+
+.copy {
+    margin-bottom: -5px;
+    margin-left: 5px;
 }
 
 .footer-container {

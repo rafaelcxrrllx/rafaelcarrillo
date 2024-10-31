@@ -20,7 +20,9 @@ function Nav() {
 
 const [menuOpen, setMenuOpen] = useState(false);
 
-
+const handleMenuItemClick = () => {
+  setMenuOpen(false); // Close the menu when a list item is clicked
+};
 
 const handleToggleMenu = () => {
   setMenuOpen(!menuOpen);
@@ -93,10 +95,11 @@ useEffect(() => {
           transition={{ duration: 1 }}
           className="hamburger-menu">
        
-          <li className='extra-bold'><Link className='landing-page-link' to="/about"> ABOUT </Link></li> 
-          <li className='extra-bold'><Link className='landing-page-link' to="/work"> WORK </Link></li>
-          <li className='extra-bold'><Link className='landing-page-link' to="/contact"> CONTACT </Link></li>
-          <li className='extra-bold' id="location">los angeles, ca</li> 
+          <li onClick={handleMenuItemClick} className='extra-bold'><a id='landing-page-link' href="#about"> ABOUT </a> </li> 
+          <li onClick={handleMenuItemClick} className='extra-bold'><a id='landing-page-link' href="#work"> WORK </a></li>
+          <li onClick={handleMenuItemClick} className='extra-bold'><a id='landing-page-link' download="RafaelCarrillo.pdf" href={require("../assets/Resume/Resume.pdf")}> RESUME </a></li>
+          <li onClick={handleMenuItemClick} className='extra-bold'><a id='landing-page-link' href="#contact"> CONTACT </a></li>
+          <li className='extra-bold' id="location">LOS ANGELES, CA</li> 
           
         </motion.ul>
       </motion.div>
@@ -107,7 +110,7 @@ useEffect(() => {
            animate={{ y: 0, opacity:  1 }} // Animate opacity to 1
            transition={{ duration: 2, delay: 1.5 }} 
           className='nav-right-container'>
-        <Link id='landing-page-link' className="hover-underline" to="/contact"> CONTACT </Link>
+        <a id='landing-page-link' className="hover-underline" href="#contact"> CONTACT </a>
         <Link id='landing-page-link'> LOS ANGELES, CA </Link>
         </motion.div>
       </div>
