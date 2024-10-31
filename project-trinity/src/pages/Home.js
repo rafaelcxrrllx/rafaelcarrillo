@@ -100,8 +100,11 @@ function Home() {
 
         <h1 className='main-title'>USER <br/>EXPERIENCE DESIGNER©</h1>
         <p className='header'>CURRENTLY AVAILABLE FOR CRAFTING EXPERIENCES</p>
+        
       </section>  
-
+      <div id='about'></div>
+      <div id="about-modifier"></div>
+      
       <Introduction/>
       <br/>
       <div className='offer-container'>
@@ -135,9 +138,11 @@ function Home() {
         </div>
      
       </div>
+      <div id="work"></div>
+
       <ScrollingText/>
       <br/>
-
+    
       <div className='title'>
         <h1>
           RELEVANT EXPERIENCE

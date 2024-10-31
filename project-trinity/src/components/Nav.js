@@ -75,8 +75,8 @@ useEffect(() => {
            animate={{ y: 0, opacity:  1 }} // Animate opacity to 1
            transition={{ duration: 2, delay: 1.5 }}
           className="left-menu">
-          <Link id='landing-page-link' className="hover-underline" to="/about"> ABOUT </Link>
-          <Link id='landing-page-link' className="hover-underline" to="/about"> WORK </Link>
+          <a id='landing-page-link' className="hover-underline" href="#about"> ABOUT </a>
+          <a id='landing-page-link' className="hover-underline" href="#work"> WORK </a>
           <a id='landing-page-link' download="Resume.pdf" className="hover-underline" href={require("../assets/Resume/Resume.pdf")}> RESUME </a>
         </motion.div>
         <motion.div 

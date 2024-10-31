@@ -5,6 +5,14 @@ html, body {
     overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+#about-modifier {
+    margin-top: 64px;
+}
+
 
 body {
     display: flex;
