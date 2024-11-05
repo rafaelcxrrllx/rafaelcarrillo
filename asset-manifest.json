@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b93e038c.css",
-    "main.js": "/static/js/main.ea11ff39.js",
+    "main.js": "/static/js/main.8846b8d4.js",
     "static/js/453.1d42ff05.chunk.js": "/static/js/453.1d42ff05.chunk.js",
     "static/media/headshot.png": "/static/media/headshot.a4b648d777ddb282b593.png",
     "static/media/hero-shot.jpeg": "/static/media/hero-shot.15748469a282a3681ef2.jpeg",
@@ -16,7 +16,7 @@
     "static/media/eCoach.png": "/static/media/eCoach.32889b4994566800dee6.png",
     "static/media/trinity-eyes.gif": "/static/media/trinity-eyes.f9f2329dd22261cb24c6.gif",
     "static/media/portfolio-cover.svg": "/static/media/portfolio-cover.18f3e3411b4ec12064c97707ce97927d.svg",
-    "static/media/Resume.pdf": "/static/media/Resume.ddc79cc487a48e4b906d.pdf",
+    "static/media/Resume.pdf": "/static/media/Resume.57129e13e3dfd61b3043.pdf",
     "static/media/xotic-logo.jpg": "/static/media/xotic-logo.60e7408610dbe005d453.jpg",
     "static/media/svusd-cover.jpg": "/static/media/svusd-cover.5b5c23ee9661bfe21800.jpg",
     "static/media/s2t-cover.jpg": "/static/media/s2t-cover.b9c26fde0095562d5b58.jpg",
@@ -35,11 +35,11 @@
     "index.html": "/index.html",
     "static/media/pause.svg": "/static/media/pause.8e087a0cce122ba46954fd13abfbe338.svg",
     "main.b93e038c.css.map": "/static/css/main.b93e038c.css.map",
-    "main.ea11ff39.js.map": "/static/js/main.ea11ff39.js.map",
+    "main.8846b8d4.js.map": "/static/js/main.8846b8d4.js.map",
     "453.1d42ff05.chunk.js.map": "/static/js/453.1d42ff05.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b93e038c.css",
-    "static/js/main.ea11ff39.js"
+    "static/js/main.8846b8d4.js"
   ]
 }
