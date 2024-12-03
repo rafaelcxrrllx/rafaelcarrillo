@@ -1,59 +1,63 @@
 footer {
     justify-content: space-between;
     bottom: 0;
-    box-shadow: 0px -1px 1px 0px rgba(126, 126, 126, 0.10);
-    padding-top: 64px;
     position: relative;
+    text-align: left;
+    margin-left: 96px;
+    margin-right: 96px;
 
-}
-
-.footer-icons-container {
-    display: block;
-}
-
-.footer-icons-container a{
-    padding: 8px;
 }
 
 .connect-title {
     font-size: 32px;
+    color: #C5E3FE;
 }
 
 #quote {
     text-decoration: none;
-    margin-top: 64px;
-    margin-bottom: 32px;
+    color: #C5E3FE;
 }
 
 .clipboard {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     max-height: fit-content;
     padding-top: 0px;
     margin-bottom: 0px;
+
 }
 
 .clipboard h4:hover {
-    box-shadow: 3px 3px 0 #51C447;
+    box-shadow: 3px 3px 0 #C5E3FE;
     transform: translateX(0px) translateY(-10px);
     transition: all 0.5s ease;
+    
 }
 
 .clipboard h4 {
-    color: #EFEFEF;
+    color: #C5E3FE;
     padding: 12px;
     padding-left: 24px;
     padding-right: 24px;
-    background-color: #51C447; 
-    border-radius: 48px;
+    background-color: #212121; 
+    border-radius: 8px;
     transition: all 0.5s ease;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #C5E3FE;
 
 }
 
 .copy {
     margin-bottom: -5px;
     margin-left: 5px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footer-container {
@@ -65,14 +69,19 @@ footer {
     padding-top: 8px;
     align-items: center;
     align-content: center;
-    margin-top: 16px;
+    margin-top: 96px;
     position: relative;
     z-index: 3;
-    box-shadow: 0px -1px 1px 0px rgba(126, 126, 126, 0.10);
+    border-top: 1px solid #C5E3FE;
+
+}
+
+.footer-img {
+    width: 400px;
 }
 
 .footer-container p {
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .footer-container img {
@@ -80,13 +89,42 @@ footer {
 }
 
 @media (max-width: 600px) {
-    .footer-container img {
-        font-size: 8px;
-    }
 
     .footer-container {
         padding-bottom: 4px;
-        margin-top: 50px;
+        margin-top: 96px;
+    }
+
+    .footer-container p {
+        font-size: 14px;
+    }
+
+    footer {
+        
+        margin-left: 24px;
+        margin-right: 24px;
+    
+    }
+
+    .footer-content {
+        display: block;
+        text-align: center;
+    }
+
+    .clipboard {
+        display: block;
+        max-height: fit-content;
+        margin-left: 32px;
+        margin-right: 32px;
+    
+    }
+
+    .footer-img {
+        width: 200px;
+    }
+
+    #quote {
+        font-size: 16px;
     }
 
 }

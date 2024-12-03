@@ -3,16 +3,24 @@ import '../styling/styles.css'
 
 // Local Styling
 import '../styling/Home.css'
+import '../styling/heroShot.css'
+
 
 // Components
-import Nav from '../components/Nav';
+import NavBar from '../components/NavBar';
+import HeroShot from '../components/HeroShot';
+import Projects from '../components/Projects';
+import Bio from '../components/Bio';
+
+
 
 // Assets
 import Footer from '../components/Footer';
 import { motion } from 'framer-motion';
 import SpotifyNow from '../components/SpotifyNow';
 import ScrollingText from '../components/scrollingText';
-import ScrollToTop from '../components/ScrollToTop';
+import InfiniteScroll from '../components/InfiniteScroll';
+
 import LoadingScreen from '../components/LoadingScreen';
 import CaseStudy from '../components/CaseStudy';
 import CaseStudyTwo from '../components/CaseStudyTwo';
@@ -23,149 +31,37 @@ import CaseStudySix from '../components/CaseStudySix';
 
 
 
-import React, { useEffect, useRef } from 'react';
-import Vines from '../components/Vines';
+import React from 'react';
 import Introduction from '../components/Introduction';
 
 
 
 function Home() {
-  // "homepage": "https://rafaelcxrrllx.github.io/trinityla",
-  const lottiePlayerRef = useRef(null);
-  const vinePlayerRef = useRef(null);
-
-
-  useEffect(() => {
-    const lottieElement = lottiePlayerRef.current;
-    const vineElement = vinePlayerRef.current;
-
-    const handlePlayAnimation = (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          lottieElement.play();
-          vineElement.play();
-        } else {
-          lottieElement.stop();
-          vineElement.stop();
-        }
-      });
-    };
-
-    const observer = new IntersectionObserver(handlePlayAnimation, {
-      threshold: 0.5, // Trigger when 50% of the element is visible
-    });
-
-    if (lottieElement) {
-      observer.observe(lottieElement);
-    }
-    if (vineElement) {
-      observer.observe(vineElement);
-    }
-
-    return () => {
-      if (lottieElement) {
-        observer.unobserve(lottieElement);
-      }
-      if (vineElement) {
-        observer.unobserve(vineElement);
-      }
-    };
-  }, []);
 
   return (
     <div>
-      <LoadingScreen/>
-      <Nav/>
-      <motion.div 
-        initial={{ y: '1vw', opacity: 0 }} // Initial opacity set to 0
-        animate={{ y: 0, opacity:  1 }} // Animate opacity to 1
-        transition={{ duration: 2, delay: 1.5 }}
-        className='home-container'
-        id="home">    
-      <section className='landing-page'>
-      <div id="vine-one" >
-        <dotlottie-player 
-          
-          src="https://lottie.host/c9f78807-0c1f-411c-b164-5a82b3bae9ed/ZXcOSYPY8t.json"
-          background="transparent" 
-          speed=".5" 
-          style={{width: 400, height: 400}} 
-          autoPlay
-          ref={vinePlayerRef}
-          >
-        </dotlottie-player>
-      </div>
 
-      <Vines/>
-
-        <h1 className='main-title'>USER <br/>EXPERIENCE DESIGNER©</h1>
-        <p className='header'>CURRENTLY AVAILABLE FOR CRAFTING EXPERIENCES</p>
-        
-      </section>  
-      <div id='about'></div>
-      <div id="about-modifier"></div>
+      <NavBar/>
+      <HeroShot/>
+      {/* <div className='intro-text'>
+        <p>
+        I am a passionate designer, a life-long coder, and a lover of all things creative. 
+        My curiosity for the human and technology led me to earn a Degree in Human-Computer Interaction 
+        which taught me about the remarkable intersection of the human experience and computers.
+        </p>
+      </div> */}
       
-      <Introduction/>
-      <br/>
-      <div className='offer-container'>
-        <div id="offer-one" className='offer1'>
-          <h1>
-          I specialize in designing human experiences <br/>
-          and solving complex problems <br/>
-          for people - like you.
-          </h1>
-        </div>
-     
-      </div>
-      <div className='plant'>
-      <dotlottie-player
-        src="https://lottie.host/f2a5a80b-467e-4cca-b79f-00923d794bf1/oMiEMYm3Lx.json"
-        background="transparent"
-        speed="0.5"
-        id="plant-svg"
-        style={{ width: 250, height: 250 }}
-        ref={lottiePlayerRef}
-      ></dotlottie-player>
-      </div>
-
-      <div className='offer-container'>
-        <div id="offer-two" className='offer1'>
-          <h1>
-          I deliver results, <br/>
-          through design thinking, <br/>
-          data-driven insights and shared empathy.
-          </h1>
-        </div>
-     
-      </div>
-      <div id="work"></div>
-
-      <ScrollingText/>
-      <br/>
-    
-      <div className='title'>
-        <h1>
-          RELEVANT EXPERIENCE
-        </h1>
-      </div>
-
-      <CaseStudy/>
-      <CaseStudyTwo/>
-      <CaseStudyThree/>
-      <CaseStudyFour/>
-      <CaseStudySix/>
-      <CaseStudyFive/>
-
-  
+      <Projects/>
+      <Bio/>
+      <InfiniteScroll/>
       <div className='spotify-container'>
         <SpotifyNow/>
       </div>
+      <Footer/>
 
       
       
       
-      </motion.div>
-      <Footer/>
     </div>
   );
 }

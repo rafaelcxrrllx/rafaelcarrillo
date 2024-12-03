@@ -1,0 +1,49 @@
+.scrolling-container {
+    margin-top: 96px;
+    margin-left: 96px;
+    margin-right: 96px;
+    width: auto;
+    height: 72px;
+    overflow: hidden;
+    position: relative;
+    background-color: #212121;
+    border-top: 1px solid #C5E3FE;
+    border-bottom: 1px solid #C5E3FE;
+
+  }
+  
+  .scrolling-text {
+    position: absolute;
+    white-space: nowrap;
+    animation: scrollText 30s linear infinite;
+    font-size: 20px;
+    color: #C5E3FE;
+    
+  }
+  
+  @keyframes scrollText {
+    0% {
+      left: 100%;
+    }
+    100% {
+      left: -100%;
+    }
+  }
+
+  @media (max-width: 810px) {
+
+    .scrolling-container {
+        margin-top: 48px;
+        margin-bottom: 24px;
+        margin-left: 24px;
+        margin-right: 24px;
+        height: 60px;
+
+    }
+
+    .scrolling-text {
+        font-size: 16px; 
+        animation: scrollText 15s linear infinite;
+       
+      }
+  }

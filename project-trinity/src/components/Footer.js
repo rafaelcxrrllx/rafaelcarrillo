@@ -5,9 +5,7 @@ import '../styling/styles.css'
 import '../styling/Footer.css'
 
 // Assets
-import instagram from '../assets/icons/instagram.svg'
-import linkedIn from '../assets/icons/linkedIn.svg'
-import github from '../assets/icons/github.svg'
+import logo from '../assets/footer-logo.png'
 import copy from '../assets/icons/copy.svg'
 
 import { motion } from 'framer-motion';
@@ -75,36 +73,40 @@ function Footer() {
       <section className="footer-section">
      
      
-<h1 id="contact" className='connect-title'>
-          Let's Connect!
+    <div className='footer-content'>
+      <div>
+      <h1 id="contact" className='connect-title'>
+          Let's Connect
         </h1>
-         
-         <div 
-            class="clipboard"
-          >
-              <h4 className='green-font' 
-                onClick={handleCopy} 
-                style={{ cursor: 'pointer' }}
-                id="quote">
-              rafaelcarrillo09@gmail.com <img className='copy' src={copy} alt="copy" />
-            </h4>
-          </div>
-          <div className='footer-icons-container'>
-          <a class="hot-links" href="https://www.linkedin.com/in/rafaelcxrrllx/"><img src={linkedIn} alt="LinkedIn" /> </a>
-          <a class="hot-links" href="https://github.com/rafaelcxrrllx"><img src={github} alt="GitHub" /> </a>
-          <a class="hot-links" href="https://www.instagram.com/rafaelcxrrllx/"><img src={instagram} alt="instagram" /> </a> 
-        </div>
-      <h3 className='green-font' id="quote">
-        “Work is love made visible.” - Khalil Gibran
-      </h3>
+          
+          <div 
+              class="clipboard"
+            >
+                <h4 className='green-font' 
+                  onClick={handleCopy} 
+                  style={{ cursor: 'pointer' }}
+                  id="quote">
+                rafaelcarrillo09@gmail.com <img className='copy' src={copy} alt="copy" />
+              </h4>
+            </div>
+          
+        <h3 id="quote">
+          <i>“Work is love made visible.” </i>- Khalil Gibran
+        </h3>
+      </div>
+      <div>
+      <img className='footer-img' src={logo} alt="image of logo" />
+      </div>
+    </div>
       
       <div className='footer-container'>
           <div>
               <p className='logo'>
-              2024 © RAFAEL CARRILLO
+              © 2024 by Rafael Carrillo | Built with pure code
               </p>
           </div>
       </div>
+
       </section>
     </motion.footer>
   );

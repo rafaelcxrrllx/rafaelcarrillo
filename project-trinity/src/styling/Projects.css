@@ -1,0 +1,140 @@
+
+.project-divider {
+    text-align: left;
+    margin-left: 96px;
+    margin-right: 96px;
+    margin-top: 60vh;
+    border-bottom: 1px solid #C5E3FE; /* Sets a 2px solid black bottom border */
+    position: relative;
+    z-index: 2;
+}
+
+.soft-title {
+    font-weight: normal;
+}
+
+.project-divider h1 {
+    font-weight: bold;
+
+}
+
+.project-section h1, p {
+    line-height: 1.5;
+}
+
+.project-img {
+    width: 100%;
+}
+
+
+
+.mobile-project-section {
+    display: none;
+}
+
+.project-section {
+    text-align: left;
+    margin-top: 96px;
+    margin-bottom: 96px;
+    display: block;
+}
+
+.project-categories {
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    margin-left: 96px;
+    margin-right: 96px;
+
+}
+
+.project-position {
+    opacity: 60%;
+}
+
+.project-categories p {
+    margin-left: 0px !important;
+    margin-right: 12px !important;
+    background-color: #C5E3FE;
+    color: #212121;
+    border-radius: 4px;
+    padding: 8px 24px;
+    font-weight: bold;
+}
+
+.project-section .button {
+    background-color: #212121;
+    border-color: #C5E3FE;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    border-style: solid;
+    width: fit-content;
+}
+
+.project-section h1, p, .button{
+    color: #C5E3FE;   
+    margin-left: 96px;
+    margin-right: 96px;
+}
+
+@media (max-width: 810px) {
+    .project-divider {
+        text-align: left;
+        margin-left: 24px;
+        margin-right: 24px;
+        margin-top: 24px;
+        margin-top: 110vh;
+
+    }
+
+    .project-section {
+        display: none;
+    }
+
+
+    .project-img {
+        width: 100%;
+       
+    }
+
+    .project-title {
+        font-size: 20px;
+    }
+
+    .mobile-project-section {
+        text-align: left;
+        margin-top: 48px;
+        margin-bottom: 48px;
+        display: block;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .mobile-project-section .button {
+        background-color: #212121;
+        border-color: #C5E3FE;
+        padding: 12px 24px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+        border-style: solid;
+        width: fit-content;
+        margin-left: 0px;
+    }
+
+    .project-position {
+        margin-left: 0px;
+    }
+    
+    .mobile-project-section h1, p, .button{
+        color: #C5E3FE;   
+        margin-left: 0px;
+        margin-right: 12px;
+    }
+
+    .mobile-project-section h1 {
+        line-height: 1.5;
+    }
+}

@@ -1,8 +1,8 @@
 .nowPlayingCard {
     flex-shrink: 0;
     border-radius: 22px;
-    border: 2px solid #101720;
-    box-shadow: 5px 5px 0 #101720;
+    border: 2px solid #C5E3FE;
+    box-shadow: 5px 5px 0 #C5E3FE;
     align-items: center;
     width: 300px;
     height: 80px;
@@ -10,32 +10,32 @@
     justify-content: space-between;
     transition: all 0.5s ease;
     font-family: Karla;
-    color: #101720;
-    margin-top: 128px;
-    margin-bottom: 128px;
+    color: #C5E3FE;
+    margin-top: 96px;
+    margin-bottom: 96px;
 }
 
 .nowPlayingCard:hover {
-    box-shadow: 10px 10px 0 #101720;
+    box-shadow: 10px 10px 0 #C5E3FE;
     transform: translateX(0px) translateY(-10px);
     transition: all 0.5s ease;
 }
   
 .nowPlayingCard a {
-    color: #101720;
+    color: #C5E3FE;
     text-decoration: none;
     font-family: Karla;
 }
 
 .nowPlayingCard a:hover {
-    color: #101720;
+    color: #C5E3FE;
     text-decoration: underline;
 }
 
 .nowPlayingImage img {
     border-radius: 8px;
-    border: 1px solid #101720;
-    box-shadow: 3px 3px 0  #101720;
+    border: 1px solid #C5E3FE;
+    box-shadow: 3px 3px 0  #C5E3FE;
     transition: all 0.5s ease;
     width: 60px;
     height: 60px;
@@ -45,7 +45,7 @@
 
 .eyes-offline {
     border-radius: 8px;
-    border: 1px solid #101720;
+    border: 1px solid #C5E3FE;
     box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
     transition: all 0.5s ease;
     width: 60px;
@@ -72,7 +72,7 @@
 
 .nowPlayingTitle, .playlistName {
     flex-shrink: 0;
-    color: #101720;
+    color: #C5E3FE;
     white-space: nowrap;
     text-align: left;
     font-size: 16px;
@@ -118,14 +118,14 @@
 
 .nowPlayingTime {
     text-align: left;
-    color: #101720;
+    color: #C5E3FE;
 }
 
 .nowPlayingState {
     text-align: center;
     width: 20%;
     padding: 10px;
-    color: #101720;
+    color: #C5E3FE;
 }
 
 .soundbar{
@@ -145,4 +145,12 @@
     display: flex;
     text-align: center;
     justify-content: center;
+}
+
+@media (max-width: 810px) {
+    .nowPlayingCard {
+       
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
 }

@@ -25,10 +25,10 @@
     position: absolute;
     background: linear-gradient(
         90deg,
-        #EFEFEF,
+        #212121,
         transparent 10%,
         transparent 90%,
-        #EFEFEF
+        #212121
     );
     inset: 0;
     pointer-events: none;
@@ -55,7 +55,7 @@
     margin: 0rem 1rem;
     border-radius: 0.4rem;
     white-space: nowrap;
-    color: #101720;
+    color: #C5E3FE
 }
 
 

@@ -1,0 +1,91 @@
+
+
+.introduction-page {
+    background-image: url('../assets/hero-img.jpg'); /* Set your image path */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: top; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    width: 100vw; /* Full width of the viewport */
+    height: 120vh; /* Full height of the viewport */
+    margin: 0; /* Removes default margins */
+    padding: 0; /* Removes default padding */
+    margin-top: -124px;
+    z-index: 1;
+    position: relative;
+
+}
+
+.slogan {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0px;
+    margin-right: 24px;
+    position: relative;
+    display: relative;
+    z-index: 2;
+    margin-top: -74vh;
+}
+
+.slogan p{
+    color: #C5E3FE;
+    word-spacing: 2px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 24px ;
+    margin-right: 24px ;
+    line-height: 1 !important;
+}
+
+.slogan-year {
+    font-size: 92px !important;
+    margin-top: 0px;
+    font-weight: bold;
+}
+
+
+
+
+
+  @media (max-width: 810px) {
+
+      .introduction-page {
+        background-image: url('../assets/mobile-hero-img.jpg'); /* Set your image path */
+        background-size: cover; /* Ensures the image covers the entire background */
+        background-position: top; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents tiling */
+        width: 100vw; /* Full width of the viewport */
+        height: 120vh; /* Full height of the viewport */
+        margin: 0; /* Removes default margins */
+        padding: 0; /* Removes default padding */
+        margin-top: -104px;
+    }
+
+    .slogan {
+        display: block;
+        justify-content: space-between;
+        margin-left: 24px;
+        margin-right: 24px;
+        position: relative;
+        display: relative;
+        z-index: 2;
+        margin-top: -115vh;
+        text-align: right;
+        top: 0;
+    }
+
+    .slogan p {
+       margin: 4px;
+       font-size: 12px;
+       font-weight: bold;
+       margin-right: 0px;
+       margin-left: 0px;
+    }
+
+    .slogan-year {
+        font-size: 46px !important;
+        margin-top: 0px;
+        font-weight: bold;
+    }
+
+
+  }
