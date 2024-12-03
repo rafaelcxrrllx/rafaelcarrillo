@@ -134,6 +134,7 @@ function NavBar() {
           animate={menuOpen ? { y: 0, opacity:  1 }: {y: '3vw', opacity: 0} } // Animate opacity to 1
           transition={{ duration: 1 }}
           className="hamburger-menu">
+          <li onClick={handleMenuItemClick} className='extra-bold'><a className='logo-img' href="#home"> <img src={logo} alt="logo" /> </a> </li> 
           <li onClick={handleMenuItemClick} className='extra-bold'><a id='landing-page-link' href="#home"> Home </a> </li> 
           <li onClick={handleMenuItemClick} className='extra-bold'><a id='landing-page-link' href="#projects"> Projects </a></li>
           <li onClick={handleMenuItemClick} className='extra-bold'><a id='landing-page-link' download="RafaelCarrillo.pdf" href={require("../assets/Resume/Resume.pdf")}> Resume </a></li>
