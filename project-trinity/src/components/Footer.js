@@ -102,7 +102,7 @@ function Footer() {
       <div className='footer-container'>
           <div>
               <p className='logo'>
-              © 2024 by Rafael Carrillo | Built with pure code
+              © 2024 Rafael Carrillo | Built with pure code
               </p>
           </div>
       </div>
