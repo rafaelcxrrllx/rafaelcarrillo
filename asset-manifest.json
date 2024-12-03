@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b8467514.css",
-    "main.js": "/static/js/main.12954338.js",
+    "main.js": "/static/js/main.edb9c48b.js",
     "static/js/453.1d42ff05.chunk.js": "/static/js/453.1d42ff05.chunk.js",
     "static/media/art-img.svg": "/static/media/art-img.c48a8f1554055b836df317a0d3c67950.svg",
     "static/media/mobile-art-img.svg": "/static/media/mobile-art-img.633c5dad9a636d22e5950308d67256ef.svg",
@@ -29,7 +29,7 @@
     "static/media/trinity-eyes.gif": "/static/media/trinity-eyes.f9f2329dd22261cb24c6.gif",
     "static/media/portfolio-cover.svg": "/static/media/portfolio-cover.18f3e3411b4ec12064c97707ce97927d.svg",
     "static/media/Resume.pdf": "/static/media/Resume.6797b00db8a63a363a93.pdf",
-    "static/media/footer-logo.png": "/static/media/footer-logo.36e77299929ba4094f60.png",
+    "static/media/footer-logo.png": "/static/media/footer-logo.cc2685d4eecdda0ce2f0.png",
     "static/media/xotic-logo.jpg": "/static/media/xotic-logo.60e7408610dbe005d453.jpg",
     "static/media/svusd-cover.jpg": "/static/media/svusd-cover.5b5c23ee9661bfe21800.jpg",
     "static/media/s2t-cover.jpg": "/static/media/s2t-cover.b9c26fde0095562d5b58.jpg",
@@ -51,11 +51,11 @@
     "static/media/closeMenu.svg": "/static/media/closeMenu.1019b710b0ade6d19aba43aa2b85ed5c.svg",
     "static/media/menu.svg": "/static/media/menu.6f36eb8a12439f7497e7b2cf09f827a2.svg",
     "main.b8467514.css.map": "/static/css/main.b8467514.css.map",
-    "main.12954338.js.map": "/static/js/main.12954338.js.map",
+    "main.edb9c48b.js.map": "/static/js/main.edb9c48b.js.map",
     "453.1d42ff05.chunk.js.map": "/static/js/453.1d42ff05.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b8467514.css",
-    "static/js/main.12954338.js"
+    "static/js/main.edb9c48b.js"
   ]
 }
