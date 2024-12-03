@@ -71,7 +71,7 @@ footer {
     align-content: center;
     margin-top: 96px;
     position: relative;
-    z-index: 3;
+    z-index: 1;
     border-top: 1px solid #C5E3FE;
 
 }
