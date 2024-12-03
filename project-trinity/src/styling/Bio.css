@@ -5,7 +5,7 @@
     margin-bottom: 96px;
     border-bottom: 1px solid #C5E3FE; /* Sets a 2px solid black bottom border */
     position: relative;
-    z-index: 2;
+    z-index: 0;
     margin-top: 96px;
 }
 

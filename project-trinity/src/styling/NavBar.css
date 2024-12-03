@@ -5,12 +5,12 @@
   padding: 24px;
   padding-right: 24px;
   position: relative;
-  z-index: 4;
+  z-index: 1;
 }
 
 .logo {
   position: relative;
-  z-index: 4;
+  z-index: 1;
 }
 
 .logo-img img{
@@ -36,6 +36,8 @@
   position: -webkit-sticky; /* For Safari */
   align-items: center; 
   padding-left: 24px;
+  z-index: 1;
+  position: relative;
 
 }
 
