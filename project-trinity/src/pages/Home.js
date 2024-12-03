@@ -43,14 +43,6 @@ function Home() {
 
       <NavBar/>
       <HeroShot/>
-      {/* <div className='intro-text'>
-        <p>
-        I am a passionate designer, a life-long coder, and a lover of all things creative. 
-        My curiosity for the human and technology led me to earn a Degree in Human-Computer Interaction 
-        which taught me about the remarkable intersection of the human experience and computers.
-        </p>
-      </div> */}
-      
       <Projects/>
       <Bio/>
       <InfiniteScroll/>

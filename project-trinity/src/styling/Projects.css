@@ -6,7 +6,7 @@
     margin-top: 60vh;
     border-bottom: 1px solid #C5E3FE; /* Sets a 2px solid black bottom border */
     position: relative;
-    z-index: 2;
+    z-index: 1;
 }
 
 .soft-title {

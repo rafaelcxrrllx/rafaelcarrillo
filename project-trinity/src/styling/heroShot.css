@@ -22,7 +22,7 @@
     margin-right: 24px;
     position: relative;
     display: relative;
-    z-index: 2;
+    z-index: 1;
     margin-top: -74vh;
 }
 
@@ -67,7 +67,7 @@
         margin-right: 24px;
         position: relative;
         display: relative;
-        z-index: 2;
+        z-index: 1;
         margin-top: -115vh;
         text-align: right;
         top: 0;

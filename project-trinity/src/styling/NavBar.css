@@ -5,7 +5,7 @@
   padding: 24px;
   padding-right: 24px;
   position: relative;
-  z-index: 999;
+  z-index: 4;
 }
 
 .logo {
@@ -83,7 +83,7 @@
     justify-content: space-around; /* Even spacing for the links */
     padding: 10px 20px; /* Adds padding */
     border-radius: 10px; /* Optional: Rounded corners for the bar */
-    z-index: 1000; /* Ensures it stays on top of other content */
+    z-index: 4; /* Ensures it stays on top of other content */
   }
 
   .mobile-navbar-right-container {
@@ -119,7 +119,7 @@
   }
 
   .mobile-menu {
-    z-index: 999;
+    z-index: 4;
     width: 100%;
     height: 100vh;
     margin-left: -24px !important;
