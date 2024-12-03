@@ -10,7 +10,7 @@
     margin: 0; /* Removes default margins */
     padding: 0; /* Removes default padding */
     margin-top: -124px;
-    z-index: 1;
+    z-index: 0;
     position: relative;
 
 }
