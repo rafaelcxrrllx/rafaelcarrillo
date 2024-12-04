@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6f6a8976.css",
-    "main.js": "/static/js/main.857ef8fa.js",
+    "main.js": "/static/js/main.6e790eb4.js",
     "static/js/453.1d42ff05.chunk.js": "/static/js/453.1d42ff05.chunk.js",
     "static/media/art-img.svg": "/static/media/art-img.c48a8f1554055b836df317a0d3c67950.svg",
     "static/media/headshot.png": "/static/media/headshot.a4b648d777ddb282b593.png",
@@ -14,7 +14,7 @@
     "static/media/hero-shot-2.jpeg": "/static/media/hero-shot-2.71fe84242b30b23132a9.jpeg",
     "static/media/skylinewallpaper.svg": "/static/media/skylinewallpaper.7a4bf8726bc4cfcfce1c.svg",
     "static/media/svusd.png": "/static/media/svusd.3af9b8aa08dc32522778.png",
-    "static/media/mobile-recipez-img.jpg": "/static/media/mobile-recipez-img.565eb890bb33e5c67a86.jpg",
+    "static/media/mobile-recipez-img.jpg": "/static/media/mobile-recipez-img.938bd390a35fa1f1dbf2.jpg",
     "static/media/mobile-art-img.jpg": "/static/media/mobile-art-img.f7548ee7d65b77d21850.jpg",
     "static/media/mobile-hero-img.jpg": "/static/media/mobile-hero-img.4485cf43f75e6689d54e.jpg",
     "static/media/mobile-barrio-img.jpg": "/static/media/mobile-barrio-img.bc9ce3c04020ee37771b.jpg",
@@ -51,11 +51,11 @@
     "static/media/closeMenu.svg": "/static/media/closeMenu.1019b710b0ade6d19aba43aa2b85ed5c.svg",
     "static/media/menu.svg": "/static/media/menu.6f36eb8a12439f7497e7b2cf09f827a2.svg",
     "main.6f6a8976.css.map": "/static/css/main.6f6a8976.css.map",
-    "main.857ef8fa.js.map": "/static/js/main.857ef8fa.js.map",
+    "main.6e790eb4.js.map": "/static/js/main.6e790eb4.js.map",
     "453.1d42ff05.chunk.js.map": "/static/js/453.1d42ff05.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6f6a8976.css",
-    "static/js/main.857ef8fa.js"
+    "static/js/main.6e790eb4.js"
   ]
 }
