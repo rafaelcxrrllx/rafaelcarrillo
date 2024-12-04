@@ -43,8 +43,8 @@ function Home() {
 
       <NavBar/>
       <HeroShot/>
-      <Projects/>
       <Bio/>
+      <Projects/>
       <InfiniteScroll/>
       <div className='spotify-container'>
         <SpotifyNow/>
