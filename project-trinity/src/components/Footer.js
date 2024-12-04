@@ -74,6 +74,10 @@ function Footer() {
      
      
     <div className='footer-content'>
+    <div>
+      <img className='footer-img' src={logo} alt="image of logo" />
+      </div>
+      
       <div>
       <h1 id="contact" className='connect-title'>
           Let's Connect
@@ -90,13 +94,11 @@ function Footer() {
               </h4>
             </div>
           
-        <h3 id="quote">
+        <h3 className='quote' id="quote">
           <i>“Work is love made visible.” </i>- Khalil Gibran
         </h3>
       </div>
-      <div>
-      <img className='footer-img' src={logo} alt="image of logo" />
-      </div>
+      
     </div>
       
       <div className='footer-container'>
