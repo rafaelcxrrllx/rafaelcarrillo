@@ -94,6 +94,7 @@ footer {
     .footer-container {
         padding-bottom: 4px;
         margin-top: 96px;
+        border-style: none;
     }
 
     .footer-container p {
