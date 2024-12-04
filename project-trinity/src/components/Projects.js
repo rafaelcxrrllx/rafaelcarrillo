@@ -10,11 +10,11 @@ import { motion } from 'framer-motion';
 import s2t from '../assets/s2t-img.svg';
 import mobiles2t from '../assets/mobile-s2t-img.svg';
 import barrio from '../assets/barrio-img.svg';
-import mobilebarrio from '../assets/mobile-barrio-img.svg';
+import mobilebarrio from '../assets/mobile-barrio-img.jpg';
 import RecipEZ from '../assets/recipez-img.svg';
-import recipezmobile from '../assets/mobile-recipez-img.svg';
+import recipezmobile from '../assets/mobile-recipez-img.jpg';
 import art from '../assets/art-img.svg';
-import mobileart from '../assets/mobile-art-img.svg';
+import mobileart from '../assets/mobile-art-img.jpg';
 
 const Projects = () => {
   

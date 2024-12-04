@@ -7,7 +7,7 @@ import '../styling/Bio.css'
 // Components
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import bioThumbnail from '../assets/hero-thumbnail.svg';
+import bioThumbnail from '../assets/hero-thumbnail.jpg';
 import uciImg from '../assets/uci-img.svg';
 import download from '../assets/icons/download.svg';
 
