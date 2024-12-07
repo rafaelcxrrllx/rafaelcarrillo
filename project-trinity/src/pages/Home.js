@@ -18,16 +18,7 @@ import Bio from '../components/Bio';
 import Footer from '../components/Footer';
 import { motion } from 'framer-motion';
 import SpotifyNow from '../components/SpotifyNow';
-import ScrollingText from '../components/scrollingText';
 import InfiniteScroll from '../components/InfiniteScroll';
-
-import LoadingScreen from '../components/LoadingScreen';
-import CaseStudy from '../components/CaseStudy';
-import CaseStudyTwo from '../components/CaseStudyTwo';
-import CaseStudyThree from '../components/CaseStudyThree';
-import CaseStudyFour from '../components/CaseStudyFour';
-import CaseStudyFive from '../components/CaseStudyFive';
-import CaseStudySix from '../components/CaseStudySix';
 
 
 

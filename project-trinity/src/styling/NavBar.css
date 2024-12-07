@@ -51,11 +51,31 @@
 .navbar-right-container {
   display: flex;
   align-items: center;
-  background-color: #C5E3FE;
-
+  background-color: #212121;
+  border: solid .7px #C5E3FE;
   padding: 16px;
   padding-right: 24px;
   border-radius: 8px;
+  transition: all 0.5s ease;
+
+}
+
+.navbar-right-container a {
+  color: #C5E3FE;
+  opacity: 50%;
+  transition: all 0.5s ease;
+
+}
+
+.navbar-right-container a:hover {
+  color: #C5E3FE;
+  opacity: 100%;
+}
+
+.navbar-right-container:hover {
+  box-shadow: 5px 5px 0 #C5E3FE;
+  transform: translateX(0px) translateY(-5px);
+  transition: all 0.5s ease;
 }
 
 
@@ -99,28 +119,43 @@
   .mobile-navbar-right-container {
     display: flex;
     align-items: center;
-    background-color: #C5E3FE;
+    background-color: #212121;
     border-radius: 8px;
     padding: 8px;
     gap: 24px;
     width: 244px;
     justify-content: center;
-    margin-bottom: 56px;
+    margin-bottom: 48px;
+    border: solid .7px #C5E3FE;
+  }
+
+  .mobile-navbar-right-container:hover {
+      box-shadow: 5px 5px 0 #C5E3FE;
+      transform: translateX(0px) translateY(-5px);
+      transition: all 0.5s ease;
   }
 
   .mobile-navbar-right-container img{
     width: 25px;
+    opacity: 50%;
+    transition: all 0.5s ease;
+
+  }
+
+  .mobile-navbar-right-container img:hover{
+    opacity: 100%;
   }
 
   .mobile-navbar-menu a {
     padding-bottom: 0px;
     margin-left: 0px;
-    font-weight: 600;
+    font-weight: normal;
     font-size: 16px;
   }
 
   .logo img {
     margin-top: 8px;
+    display: none;
   }
 
   .mobile-hamburger {
@@ -149,6 +184,7 @@
 
   .hamburger-menu li{
     font-size: 20px !important;
+    font-weight: normal;
   }
 
 

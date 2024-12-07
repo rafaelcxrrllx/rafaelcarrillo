@@ -47,7 +47,7 @@ Link {
 }
 
 a:link {
-    color: #101720;
+    color: #212121;
     background-color: transparent;
     text-decoration: none;
   }
@@ -69,7 +69,8 @@ a:link {
 }
 
 a:visited {
-    color: #101720; /* Link color after it has been visited */
+    color: #212121; /* Link color after it has been visited */
+    
 }
 
 .landing-page-link {

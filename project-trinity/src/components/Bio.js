@@ -79,7 +79,6 @@ const Bio = () => {
 
             <div>
               <a id='landing-page-link' download="RafaelCarrillo.pdf" href={require("../assets/Resume/Resume.pdf")}> <p className='button'>Resume <img id="downloadicon" src={download} alt="download icon" /></p>  </a>
-              
             </div>
 
         </div>

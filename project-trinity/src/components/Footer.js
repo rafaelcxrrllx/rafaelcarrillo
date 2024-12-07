@@ -10,8 +10,6 @@ import copy from '../assets/icons/copy.svg'
 
 import { motion } from 'framer-motion';
 import React, { useEffect, useRef } from 'react';
-import VinesFooter from '../components/VinesFooter';
-
 
 
 function Footer() {

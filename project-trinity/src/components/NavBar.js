@@ -116,7 +116,7 @@ function NavBar() {
               src={isFirstImage ? firstImage : secondImage}
               alt="Toggleable"
               onClick={handleToggle}
-              style={{ cursor: "pointer", width: "36px" }}/>
+              style={{ cursor: "pointer", width: "30px" }}/>
           </div>
         </motion.div>
       </div>
