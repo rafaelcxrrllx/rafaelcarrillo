@@ -2,7 +2,6 @@
 .navbar-menu {
   float: right;
   display: flex;
-  padding-right: 24px;
   position: relative;
   z-index: 2;
 }
@@ -40,10 +39,11 @@
   justify-content: space-between;
   position: -webkit-sticky; /* For Safari */
   align-items: center; 
-  padding-left: 24px;
+  padding-left: 15%;
+  padding-right: 15%;
   z-index: 1;
   margin-top: 24px;
-    margin-bottom: 48px;
+  margin-bottom: 48px;
   position: relative;
 
 }
@@ -52,14 +52,13 @@
   display: flex;
   align-items: center;
   background-color: #C5E3FE;
-  padding: 24px;
+
+  padding: 16px;
   padding-right: 24px;
   border-radius: 8px;
 }
 
-.spacer {
-  margin-left: 100px;
-}
+
 
 .mobile-navbar-menu {
   display: none;
@@ -121,7 +120,7 @@
   }
 
   .logo img {
-    margin-top: 18px;
+    margin-top: 8px;
   }
 
   .mobile-hamburger {
@@ -171,6 +170,17 @@
   display: flex;
   font-size: 32px;
   justify-content: left;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: -webkit-sticky; /* For Safari */
+  align-items: center; 
+  padding-left: 24px;
+
+
 }
 
 

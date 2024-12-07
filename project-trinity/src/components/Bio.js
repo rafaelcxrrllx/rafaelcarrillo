@@ -16,7 +16,7 @@ const Bio = () => {
   
 
   return (
-    <div id="bio">
+    <div id="home">
      
       {/* <div className='bio-divider'>
         <h1>
@@ -31,7 +31,7 @@ const Bio = () => {
               <b>Rafael Carrillo </b>
               
             </p>
-            <p>
+            <p className='position'>
               UX Designer
             </p>
           </div>
@@ -50,7 +50,7 @@ const Bio = () => {
         My curiosity for the human and technology led me to earn a Degree in Human-Computer Interaction 
         which taught me about the remarkable intersection of the human experience and computers.
         </h2>
-        <p>
+        <p className='location'>
           Los Angeles, California
         </p>
         </div>
@@ -78,7 +78,7 @@ const Bio = () => {
             </div>
 
             <div>
-              <a id='landing-page-link' download="RafaelCarrillo.pdf" href={require("../assets/Resume/Resume.pdf")}> <p className='button'>View Resume <img id="downloadicon" src={download} alt="download icon" /></p>  </a>
+              <a id='landing-page-link' download="RafaelCarrillo.pdf" href={require("../assets/Resume/Resume.pdf")}> <p className='button'>Resume <img id="downloadicon" src={download} alt="download icon" /></p>  </a>
               
             </div>
 

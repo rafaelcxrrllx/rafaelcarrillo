@@ -46,7 +46,7 @@ const Projects = () => {
         
         {/* <Link 
           to="/trash"> */}
-            <p className='button'>Case Study Soon</p>
+            <p id="project-button" className='button'>Case Study Soon</p>
         {/* </Link> */}
       </div>
 
@@ -72,7 +72,7 @@ const Projects = () => {
         experience and cross-platform functionality. Leading all aspects from initial concept to final deployment, 
         increasing product sales by 200%.
         </p>
-        <p className='button'>Case Study Soon</p>
+        <p id="project-button" className='button'>Case Study Soon</p>
       </div>
 
       <div className='mobile-project-section'>
@@ -96,7 +96,7 @@ const Projects = () => {
         Facilitated UX research to help create assistive technology designs, conducting 
         6 co-design sessions with over 20 participants to explore potential design solutions for noise-sensitivity experiences.
         </p>
-        <p className='button'>Case Study Soon</p>
+        <p id="project-button" className='button'>Case Study Soon</p>
       </div>
 
       <div className='mobile-project-section'>
@@ -121,14 +121,14 @@ const Projects = () => {
         The goal was to design an application that gamifies a typical recipe app and discover new recipes with difficulty 
         levels to provide recipe suggestions and encourage new ones.
         </p>
-        <p className='button'>Case Study Soon</p>
+        <p id="project-button" className='button'>Case Study Soon</p>
       </div>
 
       <div className='mobile-project-section'>
         <img className='project-img' src={recipezmobile} alt="prototypes for the mobile app RecipEZ" />
         <p className='project-position'>Mobile Designer </p>
         <h1 className='project-title'> Design at UCI: <span className='soft-title'>RecipEZ, a Mobile App that Fosters Community of Cooks of All Skill Levels </span></h1>
-        <p className='button'>Case Study Soon</p>
+        <p  className='button'>Case Study Soon</p>
       </div>
 
     </div>

@@ -91,8 +91,6 @@ function NavBar() {
           animate={{ y: 0, opacity:  1 }} // Animate opacity to 1
           transition={{ duration: 1, delay: 1.5 }} 
           className='navbar-right-container'>
-          <a id='landing-page-link' className="hover-underline" href="#home"> Home </a>
-          <a id='landing-page-link' className="hover-underline" href="#bio"> Bio </a>
           <a id='landing-page-link' className="hover-underline" href="#projects"> Projects </a>
           <a id='landing-page-link' download="RafaelCarrillo.pdf" className="hover-underline" href={require("../assets/Resume/Resume.pdf")}> Resume </a>
           <a id='landing-page-link' className="hover-underline" href="#contact"> Contact </a>
@@ -135,8 +133,6 @@ function NavBar() {
           transition={{ duration: 1 }}
           className="hamburger-menu">
           <li onClick={handleMenuItemClick} className='extra-bold'><a className='logo-img' href="#home"> <img src={logo} alt="logo" /> </a> </li> 
-          <li onClick={handleMenuItemClick} className='extra-bold'><a id='landing-page-link' href="#home"> Home </a> </li> 
-          <li onClick={handleMenuItemClick} className='extra-bold'><a id='landing-page-link' href="#bio"> Bio </a></li>
           <li onClick={handleMenuItemClick} className='extra-bold'><a id='landing-page-link' href="#projects"> Projects </a></li>
           <li onClick={handleMenuItemClick} className='extra-bold'><a id='landing-page-link' download="RafaelCarrillo.pdf" href={require("../assets/Resume/Resume.pdf")}> Resume </a></li>
           <li onClick={handleMenuItemClick} className='extra-bold'><a id='landing-page-link' href="#contact"> Contact </a></li>

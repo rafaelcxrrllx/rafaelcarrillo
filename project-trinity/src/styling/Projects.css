@@ -1,8 +1,8 @@
 
 .project-divider {
     text-align: left;
-    margin-left: 96px;
-    margin-right: 96px;
+    margin-left: 15%;;
+    margin-right: 15%;;
     border-bottom: 1px solid #C5E3FE; /* Sets a 2px solid black bottom border */
     position: relative;
     z-index: 0;
@@ -15,7 +15,13 @@
 
 .project-divider h1 {
     font-weight: bold;
+    font-size: 24px;
 
+}
+
+#project-button {
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .project-section h1, p {
@@ -43,8 +49,8 @@
     display: flex;
     align-items: start;
     justify-content: flex-start;
-    margin-left: 96px;
-    margin-right: 96px;
+    margin-left: 15%;;
+    margin-right: 15%;;
 
 }
 
@@ -71,12 +77,14 @@
     font-weight: bold;
     border-style: solid;
     width: fit-content;
+    border-width: .7px;
 }
 
 .project-section h1, p, .button{
     color: #C5E3FE;   
-    margin-left: 96px;
-    margin-right: 96px;
+    margin-left: 15%;;
+    margin-right: 15%;;
+    border-width: .7px;
 }
 
 @media (max-width: 810px) {
@@ -121,6 +129,7 @@
         border-style: solid;
         width: fit-content;
         margin-left: 0px;
+        border-width: .7px;
     }
 
     .project-position {
@@ -131,6 +140,7 @@
         color: #C5E3FE;   
         margin-left: 0px;
         margin-right: 12px;
+        border-width: .7px;
     }
 
     .mobile-project-section h1 {
