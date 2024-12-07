@@ -1,0 +1,17 @@
+.circle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #212121;
+    border-radius: 50%;
+    pointer-events: none; /* Ensures the cursor can interact with other elements */
+    transition: transform 0.1s ease-out; /* Smooth movement */
+    z-index: 9999;
+    opacity: 100%;
+  }
+
+  .circle {
+    box-shadow: 0 0 10px  #C5E3FE;
+  }

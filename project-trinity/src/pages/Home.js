@@ -24,6 +24,7 @@ import InfiniteScroll from '../components/InfiniteScroll';
 
 
 import React from 'react';
+import Cursor from '../components/Cursor';
 
 
 
@@ -32,7 +33,7 @@ function Home() {
 
   return (
     <div>
-
+      <Cursor/>
       <div className={`sticky-navbar`}>
         <NavBar/>
       </div>
