@@ -8,9 +8,9 @@ import '../styling/Footer.css'
 import logo from '../assets/footer-logo.png'
 import copy from '../assets/icons/copy.svg'
 
-import { motion } from 'framer-motion';
 import React, { useEffect, useRef } from 'react';
-
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 function Footer() {
 
@@ -21,46 +21,17 @@ function Footer() {
       .catch((err) => console.error('Failed to copy text: ', err));
   };
 
-  const lottiePlayerRefFooter = useRef(null);
-  const vinePlayerRefFooter = useRef(null);
+  const controls = useAnimation(); // Controls for animation
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2 });
 
-
-  useEffect(() => {
-    const lottieElementFooter = lottiePlayerRefFooter.current;
-    const vineElementFooter = vinePlayerRefFooter.current;
-
-    const handlePlayAnimation = (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          lottieElementFooter.play();
-          vineElementFooter.play();
-        } else {
-          lottieElementFooter.stop();
-          vineElementFooter.stop();
-        }
-      });
-    };
-
-    const observer = new IntersectionObserver(handlePlayAnimation, {
-      threshold: 0.5, // Trigger when 50% of the element is visible
-    });
-
-    if (lottieElementFooter) {
-      observer.observe(lottieElementFooter);
+  React.useEffect(() => {
+    if (inView) {
+      controls.start("visible"); // Start animation when in view
+    } else {
+      controls.start("hidden"); // Keep it hidden when out of view
     }
-    if (vineElementFooter) {
-      observer.observe(vineElementFooter);
-    }
+  }, [controls, inView]);
 
-    return () => {
-      if (lottieElementFooter) {
-        observer.unobserve(lottieElementFooter);
-      }
-      if (vineElementFooter) {
-        observer.unobserve(vineElementFooter);
-      }
-    };
-  }, []);
 
   return (
 

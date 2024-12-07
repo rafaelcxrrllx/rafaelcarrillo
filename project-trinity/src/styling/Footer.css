@@ -113,6 +113,10 @@ footer {
         border-style: none;
     }
 
+    .connect-title {
+        margin-top: 24px;
+    }
+
     .footer-container p {
         font-size: 14px;
     }
