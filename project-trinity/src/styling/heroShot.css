@@ -6,7 +6,7 @@
     background-position: top; /* Centers the image */
     background-repeat: no-repeat; /* Prevents tiling */
     width: 100vw; /* Full width of the viewport */
-    height: 120vh; /* Full height of the viewport */
+    height: 100vh; /* Full height of the viewport */
     margin: 0; /* Removes default margins */
     padding: 0; /* Removes default padding */
     /* margin-top: -124px; */
@@ -23,8 +23,8 @@
     position: relative;
     display: relative;
     z-index: 1;
-    margin-top: -74vh;
-    margin-bottom: 60vh;
+    margin-top: -50vh;
+    margin-bottom: 46vh;
 }
 
 .slogan p{

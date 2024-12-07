@@ -17,6 +17,7 @@ import Bio from '../components/Bio';
 // Assets
 import Footer from '../components/Footer';
 import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
 import SpotifyNow from '../components/SpotifyNow';
 import InfiniteScroll from '../components/InfiniteScroll';
 
@@ -28,10 +29,13 @@ import React from 'react';
 
 function Home() {
 
+
   return (
     <div>
 
-      <NavBar/>
+      <div className={`sticky-navbar`}>
+        <NavBar/>
+      </div>
       <Bio/>
       <Projects/>
       <HeroShot/>
