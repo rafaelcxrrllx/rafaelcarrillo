@@ -18,11 +18,11 @@ const Bio = () => {
   return (
     <div id="bio">
      
-      <div className='bio-divider'>
+      {/* <div className='bio-divider'>
         <h1>
           Bio
         </h1>
-      </div> 
+      </div>  */}
       <div className='bio-content'>
         <div className='bio-thumbnail'>
           <img id="desktop-bio-img" className='bio-img' src={bioThumbnail} alt="image of the author" />
@@ -37,7 +37,7 @@ const Bio = () => {
           </div>
         </div>
        
-        <h1>
+        <h1 className='intro-text'>
           Hi! Im Rafael.
         </h1>
         <h2 className='bio-description'>

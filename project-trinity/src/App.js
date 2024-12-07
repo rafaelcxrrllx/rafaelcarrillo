@@ -5,7 +5,7 @@ import './styling/App.css';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import About from './pages/About';
-import Portfolio from './pages/Portfolio';
+import Trash from './pages/Trash';
 
 // Components
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -24,8 +24,8 @@ function App() {
         <Routes>   
           <Route path='/' element={<Home/>}/> 
           <Route path='/trinityla' element={<Home/>}/> 
+          <Route path='/trash' element={<Trash/>}/> 
           {/* Pages */}
-          <Route path='/portfolio' element={<Portfolio/>}/>
           <Route path='/home' element={<Home/>}/>
           <Route path='/Contact' element={<Contact/>}/>
           <Route path='/About' element={<About/>}/>

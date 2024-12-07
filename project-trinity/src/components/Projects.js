@@ -15,6 +15,7 @@ import RecipEZ from '../assets/recipez-img.svg';
 import recipezmobile from '../assets/mobile-recipez-img.jpg';
 import art from '../assets/art-img.svg';
 import mobileart from '../assets/mobile-art-img.jpg';
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
   
@@ -42,7 +43,11 @@ const Projects = () => {
           Led 4 product designers in designing a platform connecting 4,000 volunteers to admins for beach cleanup events, 
           facilitated the transition from manual data collection on paper to efficient database-driven data collection, admin’s time on task by 70%.
         </p>
-        <p className='button'>Case Study Soon</p>
+        
+        {/* <Link 
+          to="/trash"> */}
+            <p className='button'>Case Study Soon</p>
+        {/* </Link> */}
       </div>
 
       <div className='mobile-project-section'>

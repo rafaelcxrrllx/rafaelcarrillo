@@ -150,7 +150,7 @@ const NowPlaying = () => {
     artist = nowPlaying.artist;
   } else if (nowPlaying === 'Currently Not Playing') { // If the response returns this error message then we print the following text in the widget
     playerState = 'OFFLINE';
-    title = 'Silence is Golden';
+    title = 'Currently Offline';
     artist = 'Currently Offline';
   } else { // If the response wasn't able to fetch anything then we display this
     title = 'Failed to';

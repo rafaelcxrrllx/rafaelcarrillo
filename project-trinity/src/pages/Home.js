@@ -32,7 +32,6 @@ import CaseStudySix from '../components/CaseStudySix';
 
 
 import React from 'react';
-import Introduction from '../components/Introduction';
 
 
 
@@ -42,9 +41,9 @@ function Home() {
     <div>
 
       <NavBar/>
-      <HeroShot/>
       <Bio/>
       <Projects/>
+      <HeroShot/>
       <InfiniteScroll/>
       <div className='spotify-container'>
         <SpotifyNow/>
