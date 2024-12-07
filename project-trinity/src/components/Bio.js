@@ -16,7 +16,7 @@ const Bio = () => {
   
 
   return (
-    <div id="home">
+    <div>
      
       {/* <div className='bio-divider'>
         <h1>

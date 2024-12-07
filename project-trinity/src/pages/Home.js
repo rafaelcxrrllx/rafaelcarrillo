@@ -32,13 +32,15 @@ function Home() {
 
 
   return (
-    <div>
+    <div id="home">
       <Cursor/>
-      <div className={`sticky-navbar`}>
+      <div className='sticky-navbar'>
         <NavBar/>
       </div>
       <Bio/>
+      <div id="projects">
       <Projects/>
+      </div>
       <HeroShot/>
       <InfiniteScroll/>
       <div className='spotify-container'>

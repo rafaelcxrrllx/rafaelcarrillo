@@ -1,8 +1,12 @@
+.sticky-navbar {
+    position: sticky;
+    top: 24px;
+    z-index: 1000;
+}
 
-
-
-
-
+#projects {
+    padding-top: 20px;
+}
 
 .project-divider h1 {
     color: #C5E3FE;
@@ -258,6 +262,10 @@
         margin-left: 0px;
         margin-right: 0px;
 
+    }
+
+    #projects {
+        padding-top: 5px;
     }
 
     .header {

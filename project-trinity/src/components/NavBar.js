@@ -79,11 +79,11 @@ function NavBar() {
 
     <nav className="navbar">
 
-      <Link 
-        className='logo' to="/home">
+      <a 
+        className='logo' to="/home" href="#home">
           <motion.img 
             src={logo} alt="logo" /> 
-      </Link>
+      </a>
 
       <div className="navbar-menu">
         <motion.div
