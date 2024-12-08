@@ -38,25 +38,28 @@ const Bio = () => {
         </div>
        
         <h1 className='intro-text'>
-          Hi! Im Rafael.
+          Hi, Im Rafael.
         </h1>
         <h2 className='bio-description'>
           A UX Designer with 3+ years of experience in the <b>social tech</b> and <b>web domain space</b>. 
           I have led projects focused on <b>user-centric services</b>, and <b>responsive websites</b>, and 
           I am currently seeking opportunities to design <b>technological solutions</b>.
         </h2>
-        <h2 className='bio-description'>
+        {/* <h2 className='bio-description'>
         I am a passionate designer, a life-long coder, and a lover of all things creative. 
         My curiosity for the human and technology led me to earn a Degree in Human-Computer Interaction 
         which taught me about the remarkable intersection of the human experience and computers.
-        </h2>
+        </h2> */}
         <p className='location'>
           Los Angeles, California
         </p>
+        <div>
+            <a id='landing-page-link' download="RafaelCarrillo.pdf" href={require("../assets/Resume/Resume.pdf")}> <p className='button'>Resume <img id="downloadicon" src={download} alt="download icon" /></p>  </a>
+          </div>
         </div>
 
 
-        <div className='education-content'>
+        {/* <div className='education-content'>
         <img id="mobile-bio-img" className='bio-img' src={uciImg} alt="image of UCI emblem" />
             <div className='education-info'>
             <img id="desktop-edu-img" className='bio-img' src={uciImg} alt="image of UCI emblem" />
@@ -76,12 +79,7 @@ const Bio = () => {
                   </p>
                 </div>
             </div>
-
-            <div>
-              <a id='landing-page-link' download="RafaelCarrillo.pdf" href={require("../assets/Resume/Resume.pdf")}> <p className='button'>Resume <img id="downloadicon" src={download} alt="download icon" /></p>  </a>
-            </div>
-
-        </div>
+        </div> */}
        
      
     </div>

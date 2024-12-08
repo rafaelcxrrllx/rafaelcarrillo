@@ -25,7 +25,7 @@ const Projects = () => {
      
       <div className='project-divider'>
         <h1>
-          Projects
+          Latest Work
         </h1>
       </div> 
       

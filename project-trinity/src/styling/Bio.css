@@ -9,6 +9,15 @@
     /* margin-top: 60vh; */
 }
 
+#landing-page-link {
+    display: flex;
+    /* margin-left: 13.5%; */
+}
+
+.bio-description {
+    opacity: 75%;
+}
+
 
 .bio-divider h1 {
     color: #C5E3FE;
@@ -47,6 +56,7 @@
 .bio-img {
     margin-left: 15%;;
     width: 64px;
+    width: 50px;
 }
 
 .bio-thumbnail {
@@ -86,9 +96,10 @@
 
  .button{
     color: #C5E3FE;   
-    margin-left: 0%;
+    margin-left: 15%;
     margin-right: 0%;
     border-width: .7px;
+    width: auto;
 }
 
 .button p {
@@ -171,13 +182,16 @@
         display: none;
     }
 
+    .intro-text {
+        font-size: 20px;
+    }
+
     .bio-divider {
         text-align: left;
         margin-left: 24px;
         margin-right: 24px;
         margin-bottom: 24px;
         margin-top: 110vh;
-
 
     }
 
@@ -202,19 +216,26 @@
     .bio-description {
         margin-left: 24px;
         margin-right: 24px;
+        opacity: 75%;
     }
 
     .bio-content h2 {
         line-height: 1.5;
         font-size: 16px;
+
     }
 
     .bio-content {
         margin-top: 0px;
     }
 
+    .bio-content h1 {
+        margin-top: 48px;
+
+    }
+
     .bio-img {
-        width: 75px;
+        width: 48px;
     }
 
     .button {

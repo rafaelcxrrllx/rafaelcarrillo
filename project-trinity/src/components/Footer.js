@@ -66,6 +66,9 @@ function Footer() {
         <h3 className='quote' id="quote">
           <i>“Work is love made visible.” </i>- Khalil Gibran
         </h3>
+        <p className='trademark'>
+              © 2024 Rafael Carrillo | Powered by Dreams
+        </p>
       </div>
       
     </div>

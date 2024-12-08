@@ -1,5 +1,5 @@
 .sticky-navbar {
-    position: sticky;
+    position: relative;
     top: 24px;
     z-index: 1000;
 }
