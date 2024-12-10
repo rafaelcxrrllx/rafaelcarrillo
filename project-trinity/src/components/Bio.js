@@ -10,6 +10,7 @@ import { motion } from 'framer-motion';
 import bioThumbnail from '../assets/hero-thumbnail.jpg';
 import uciImg from '../assets/uci-img.jpg';
 import download from '../assets/icons/download.svg';
+import Typewriter from './TypeWriter';
 
 
 const Bio = () => {
@@ -40,6 +41,7 @@ const Bio = () => {
         <h1 className='intro-text'>
           Hi, Im Rafael.
         </h1>
+        <Typewriter/>
         <h2 className='bio-description'>
           A UX Designer with 3+ years of experience in the <b>social tech</b> and <b>web domain space</b>. 
           I have led projects focused on <b>user-centric services</b>, and <b>responsive websites</b>, and 

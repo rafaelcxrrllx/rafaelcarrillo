@@ -41,7 +41,7 @@ function Home() {
       <div id="projects">
       <Projects/>
       </div>
-      <HeroShot/>
+      {/* <HeroShot/> */}
       <InfiniteScroll/>
       <div className='spotify-container'>
         <SpotifyNow/>

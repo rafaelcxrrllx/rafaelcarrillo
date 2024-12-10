@@ -1,0 +1,30 @@
+.typewriter {
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    color: #C5E3FE;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  
+  .cursor {
+    animation: blink 0.7s step-end infinite;
+  }
+  
+  @keyframes blink {
+    from {
+      border-color: #C5E3FE;
+    }
+    to {
+      border-color: transparent;
+    }
+  }
+
+
+  @media (max-width: 810px) {
+    .typewriter {
+        margin-left: 24px;
+    }
+  }

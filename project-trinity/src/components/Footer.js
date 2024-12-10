@@ -11,6 +11,9 @@ import copy from '../assets/icons/copy.svg'
 import React, { useEffect, useRef } from 'react';
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import instagram from '../assets/icons/instagram.svg'
+import linkedIn from '../assets/icons/linkedIn.svg'
+import github from '../assets/icons/github.svg'
 
 function Footer() {
 
@@ -51,6 +54,11 @@ function Footer() {
       <h1 id="contact" className='connect-title'>
           Let's Connect
         </h1>
+        <div className='footer-links'>
+        <a  href="https://www.linkedin.com/in/rafaelcxrrllx/"><img src={linkedIn} alt="LinkedIn" /> </a>
+        <a  href="https://github.com/rafaelcxrrllx"><img src={github} alt="GitHub" /> </a>
+        <a  href="https://www.instagram.com/rafaelcxrrllx/"><img src={instagram} alt="instagram" /> </a> 
+        </div>
           
           <div 
               class="clipboard"
@@ -64,11 +72,11 @@ function Footer() {
             </div>
           
         <h3 className='quote' id="quote">
-          <i>“Work is love made visible.” </i>- Khalil Gibran
+          <i>“Work is love made visible.” </i> - Khalil Gibran
         </h3>
-        <p className='trademark'>
-              © 2024 Rafael Carrillo | Powered by Dreams
-        </p>
+        {/* <p className='trademark'>
+          Designed + Coded with ♥️ in Los Angeles
+        </p> */}
       </div>
       
     </div>
@@ -76,7 +84,7 @@ function Footer() {
       <div className='footer-container'>
           <div>
               <p className='logo'>
-              © 2024 Rafael Carrillo | Powered by Dreams
+              Designed + Coded with &#x2661; in Los Angeles
               </p>
           </div>
       </div>
