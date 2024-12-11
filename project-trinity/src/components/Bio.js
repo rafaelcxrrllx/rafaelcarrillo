@@ -39,7 +39,7 @@ const Bio = () => {
         </div>
        
         <h1 className='intro-text'>
-          Hi, Im Rafael.
+          Hi, Im Rafael
         </h1>
         <Typewriter/>
         <h2 className='bio-description'>

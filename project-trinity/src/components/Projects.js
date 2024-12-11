@@ -45,9 +45,11 @@ const Projects = () => {
         </p>
         
         {/* <Link 
-          to="/trash"> */}
-            <p id="project-button" className='button'>Case Study Soon</p>
-        {/* </Link> */}
+          to="/standuptotrash">
+            <p id="project-button" className='button'>View Case Study</p>
+        </Link> */}
+         <p id="project-button" className='button'>Case Study Soon</p>
+
       </div>
 
       <div className='mobile-project-section'>

@@ -79,11 +79,17 @@ function NavBar() {
 
     <nav className="navbar">
 
-      <a 
+<Link 
+            className='link'
+            to="/home"> 
+              <a 
         className='logo' to="/home" href="#home">
           <motion.img 
             src={logo} alt="logo" /> 
       </a>
+           </Link>
+
+      
 
       <div className="navbar-menu">
         <motion.div
@@ -91,9 +97,23 @@ function NavBar() {
           animate={{ y: 0, opacity:  1 }} // Animate opacity to 1
           transition={{ duration: 1, delay: 1.5 }} 
           className='navbar-right-container'>
-          <a id='landing-page-link' className="hover-underline" href="#projects"> Projects </a>
+          
+          <Link 
+            className='link'
+            to="/home"> 
+              <a id='landing-page-link' className="hover-underline" href="#work"> Work </a>
+           </Link>
+
+          {/* <a id='landing-page-link' className="hover-underline" href="#projects"> Other </a> */}
+          
+           <Link 
+            className='link'
+            to="/about"> 
+              <a id='landing-page-link' className="hover-underline" href="#about"> About </a>
+           </Link>
+           
           <a id='landing-page-link' download="RafaelCarrillo.pdf" className="hover-underline" href={require("../assets/Resume/Resume.pdf")}> Resume </a>
-          <a id='landing-page-link' className="hover-underline" href="#contact"> Contact </a>
+          {/* <a id='landing-page-link' className="hover-underline" href="#contact"> Contact </a> */}
           <div className='spacer'></div>
           <a class="hot-links" href="https://www.linkedin.com/in/rafaelcxrrllx/"><img src={linkedIn} alt="LinkedIn" /> </a>
           <a class="hot-links" href="https://github.com/rafaelcxrrllx"><img src={github} alt="GitHub" /> </a>
@@ -133,9 +153,25 @@ function NavBar() {
           transition={{ duration: 1 }}
           className="hamburger-menu">
           <li onClick={handleMenuItemClick} className='extra-bold'><a className='logo-img' href="#home"> <img src={logo} alt="logo" /> </a> </li> 
-          <li onClick={handleMenuItemClick} className='extra-bold'><a id='landing-page-link' href="#projects"> Projects </a></li>
+          <li onClick={handleMenuItemClick} className='extra-bold'>
+            <Link 
+              className='link'
+              to="/home"> 
+              <a id='landing-page-link' href="#work"> Work </a>
+            </Link>  
+          </li>
+          {/* <li onClick={handleMenuItemClick} className='extra-bold'><a id='landing-page-link' href="#projects"> Other </a></li> */}
+
+          <li onClick={handleMenuItemClick} className='extra-bold'>
+          <Link 
+            className='link'
+            to="/about"> 
+             <a id='landing-page-link' href="#about"> About </a>
+           </Link>
+          </li>
+
           <li onClick={handleMenuItemClick} className='extra-bold'><a id='landing-page-link' download="RafaelCarrillo.pdf" href={require("../assets/Resume/Resume.pdf")}> Resume </a></li>
-          <li onClick={handleMenuItemClick} className='extra-bold'><a id='landing-page-link' href="#contact"> Contact </a></li>
+          {/* <li onClick={handleMenuItemClick} className='extra-bold'><a id='landing-page-link' href="#contact"> Contact </a></li> */}
         </motion.ul>
       </motion.div>
     </nav>

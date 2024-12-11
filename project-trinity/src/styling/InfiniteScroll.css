@@ -7,8 +7,8 @@
     overflow: hidden;
     position: relative;
     background-color: #212121;
-    border-top: .7px solid #C5E3FE;
-    border-bottom: .7px solid #C5E3FE;
+    border-top: .7px solid #32373D;
+    border-bottom: .7px solid #32373D;
 
   }
   
@@ -17,8 +17,7 @@
     white-space: nowrap;
     animation: scrollText 22s linear infinite;
     font-size: 20px;
-    color: #C5E3FE;
-    
+    color: #C5E3FE;    
   }
   
   @keyframes scrollText {

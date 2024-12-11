@@ -80,12 +80,12 @@
 .project-categories p {
     margin-left: 0px !important;
     margin-right: 12px !important;
-    background-color: #212121;
+    background-color: #32373D;
     color: #C5E3FE;
-    border-radius: 4px;
+    border-radius: 24px;
     padding: 8px 24px;
     font-weight: normal;
-    border: solid .7px #C5E3FE;
+    /* border: solid .7px #C5E3FE; */
 }
 
 .project-section .button {
@@ -107,6 +107,13 @@
 
 .project-description {
     line-height: 1.5;
+    color: #C5E3FE;
+    opacity: 80%;
+}
+
+.project-cover-img {
+    width: 100%;
+    margin-top: -48px;
 }
 
 .project-section h1, p, .button{
@@ -114,6 +121,37 @@
     margin-left: 15%;;
     margin-right: 15%;;
     border-width: .7px;
+}
+
+.project-specs {
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+    justify-content: space-between;
+}
+
+.project-specs div {
+    margin-right: 24px;
+    margin-bottom: 24px;
+}
+
+.project-specs p {
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.project-specs .project-position {
+    margin-top: 0px;
+}
+
+#project-impact p{
+    padding: 16px 48px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+#project-hook {
+    font-size: 24px;
 }
 
 @media (max-width: 810px) {

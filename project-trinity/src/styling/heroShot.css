@@ -9,9 +9,9 @@
     height: 100vh; /* Full height of the viewport */
     margin: 0; /* Removes default margins */
     padding: 0; /* Removes default padding */
-    /* margin-top: -124px; */
     z-index: 0;
     position: relative;
+    margin-top: 96px;
 
 }
 
@@ -24,7 +24,7 @@
     display: relative;
     z-index: 1;
     margin-top: -50vh;
-    margin-bottom: 46vh;
+    margin-bottom: 24vh;
 }
 
 .slogan p{
@@ -58,7 +58,6 @@
         height: 100vh; /* Full height of the viewport */
         margin: 0; /* Removes default margins */
         padding: 0; /* Removes default padding */
-        margin-top: 96px;
     }
 
     .slogan {
