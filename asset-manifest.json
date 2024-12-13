@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.9e8b3306.css",
-    "main.js": "/static/js/main.c1f61ade.js",
+    "main.css": "/static/css/main.43b1d0cf.css",
+    "main.js": "/static/js/main.db5cb912.js",
     "static/js/453.1d42ff05.chunk.js": "/static/js/453.1d42ff05.chunk.js",
     "static/media/art-img.svg": "/static/media/art-img.c48a8f1554055b836df317a0d3c67950.svg",
     "static/media/barrio-img.svg": "/static/media/barrio-img.f811f5f0d5b27e4205da569838bcfbfb.svg",
     "static/media/recipez-img.svg": "/static/media/recipez-img.1c5ad177bcb1d6f7c7762156993bea26.svg",
+    "static/media/s2t-img-1.png": "/static/media/s2t-img-1.94edcfdc7c3be8428c24.png",
     "static/media/s2t-img.svg": "/static/media/s2t-img.0e947245c231b1f089097d345f82a782.svg",
     "static/media/mobile-s2t-img.svg": "/static/media/mobile-s2t-img.d5def17d6f20cfdbf48d9caec325cbf9.svg",
     "static/media/uci-img.jpg": "/static/media/uci-img.548eef82d39078692645.jpg",
@@ -30,12 +31,12 @@
     "static/media/pause.svg": "/static/media/pause.f3917a32fd056b60b3a19805254c2d20.svg",
     "static/media/closeMenu.svg": "/static/media/closeMenu.e9dd3a359bb27d788f7704b818ed11d4.svg",
     "static/media/menu.svg": "/static/media/menu.3060e8f47368dad7470552b373bb0db1.svg",
-    "main.9e8b3306.css.map": "/static/css/main.9e8b3306.css.map",
-    "main.c1f61ade.js.map": "/static/js/main.c1f61ade.js.map",
+    "main.43b1d0cf.css.map": "/static/css/main.43b1d0cf.css.map",
+    "main.db5cb912.js.map": "/static/js/main.db5cb912.js.map",
     "453.1d42ff05.chunk.js.map": "/static/js/453.1d42ff05.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9e8b3306.css",
-    "static/js/main.c1f61ade.js"
+    "static/css/main.43b1d0cf.css",
+    "static/js/main.db5cb912.js"
   ]
 }
