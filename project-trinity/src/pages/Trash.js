@@ -9,7 +9,7 @@ import '../styling/Projects.css'
 // Components
 import NavBar from '../components/NavBar';
 import s2t from '../assets/s2t-img.svg';
-import s2tCover from '../assets/s2t-img-cover.svg';
+import s2tImg1 from '../assets/s2t-img-1.png';
 
 import mobiles2t from '../assets/mobile-s2t-img.svg';
 
@@ -96,6 +96,34 @@ function Trash() {
           <p className='project-position'>1. &nbsp;Current process of manual collection of trash weight was time and energy consuming</p>
           <p className='project-position'>2. &nbsp;Translation from paper to Excel sheet was prone to errors</p>
           <p className='project-position'>3. &nbsp;There was no way to keep track of data trends</p>
+          </div>
+          <div>
+          <p>Process</p>
+            <div className='project-categories'>
+              <p>Discovery and Research &#8594;</p>
+              <p>Ideation & Wireframing &#8594;</p>
+              <p>Prototyping & User Testing &#8594;</p>
+              <p>Final Design & Handoff 	&#x2713;</p>
+            </div>
+          </div>
+          <div>
+          <p>Discovery and Research</p>
+            <p className='project-position'>First, we conducted a requirements elicitation, making sure we noted the wants, 
+              needs, and painpoints of the user and stakeholders, resulting in a very detailed Requirements Document.</p>
+            <br/>
+            <img className='project-img' src={s2tImg1} alt="admin dashboard for stand up to trash" />
+          </div>
+          <div>
+          <p>Current Trash Collection Process</p>
+          <p className='project-position'>
+            Volunteers have their trash weighed and told to remember their weight
+          </p>
+          <p className='project-position'>
+            Volunteers record their name and weight
+          </p>
+          <p className='project-position'>
+            Volunteers drop off trash
+          </p>
           </div>
         
         </div>
