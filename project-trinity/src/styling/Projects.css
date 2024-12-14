@@ -144,6 +144,25 @@
     margin-top: 0px;
 }
 
+.project-case-study .project-heading {
+    margin-bottom: 4px;
+}
+
+.project-case-study .project-position {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.project-case-study .project-categories {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+#case-study-title {
+    font-size: 24px;
+}
+
+
 #project-impact p{
     padding: 16px 48px;
     padding-top: 48px;
