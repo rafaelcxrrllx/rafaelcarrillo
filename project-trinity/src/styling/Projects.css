@@ -190,7 +190,6 @@
         display: none;
     }
 
-
     .project-img {
         width: 100%;
        margin-left: 0%;
@@ -211,6 +210,45 @@
         margin-left: 24px;
         margin-right: 24px;
     }
+
+    .mobile-project-section .project-description{
+       margin-left: 0px;
+       margin-right: 0px;
+    }
+
+    .mobile-project-section .project-heading{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 4px;
+     }
+
+     .mobile-project-section .project-specs{
+        margin-left: 0px;
+        margin-right: 0px;
+     }
+
+     .mobile-project-section #project-hook{
+        font-size: 20px;
+     }
+
+
+     .mobile-project-section .project-categories{
+        margin-left: 0px;
+        margin-right: 0px;
+        flex-direction: column;
+     }
+
+     .mobile-project-section .project-position{
+       margin-top: 0px;
+       margin-right: 0px;
+       margin-top: 4px;
+     }
+
+     .mobile-project-section #project-button{
+        margin-left: 0px;
+        margin-right: 0px;
+        flex-direction: column;
+     }
 
     .mobile-project-section .button {
         background-color: #212121;
