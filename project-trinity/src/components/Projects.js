@@ -72,18 +72,22 @@ const Projects = () => {
           <p>E-commerce</p>
         </div>
         <p className='project-description'>
-        Designing and developing responsive websites for small business owners, ensuring optimal user 
+        Designed and developed the official Barrio Athletics website, ensuring optimal user 
         experience and cross-platform functionality. Leading all aspects from initial concept to final deployment, 
         increasing product sales by 200%.
         </p>
-        <p id="project-button" className='button'>Case Study Soon</p>
+        <a href="https://www.barrioathletics.com">
+          <p id="project-button" className='button'>Visit Barrio Athletics</p>
+        </a>
       </div>
 
       <div className='mobile-project-section'>
         <img className='project-img' src={mobilebarrio} alt="website design for Barrio Athletics" />
         <p className='project-position'>Web Designer / Full-stack Developer </p>
         <h1 className='project-title'> Freelance Web Design: <span className='soft-title'>Empowering Entrepreneurs in South Central LA </span>  </h1>
-        <p className='button'>Case Study Soon</p>
+        <a href="https://www.barrioathletics.com">
+          <p id="project-button" className='button'>Visit Barrio Athletics</p>
+        </a>
       </div>
 
       <div className='project-section'>
