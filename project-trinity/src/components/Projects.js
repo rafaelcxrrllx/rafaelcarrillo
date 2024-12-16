@@ -44,11 +44,10 @@ const Projects = () => {
           facilitated the transition from manual data collection on paper to efficient database-driven data collection, admin’s time on task by 70%.
         </p>
         
-        {/* <Link 
+        <Link 
           to="/standuptotrash">
             <p id="project-button" className='button'>View Case Study</p>
-        </Link> */}
-         <p id="project-button" className='button'>Case Study Soon</p>
+        </Link>
 
       </div>
 

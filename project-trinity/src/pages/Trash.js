@@ -82,13 +82,15 @@ function Trash() {
           </div>
           
           </div>
+          
+         
           <div>
           <p className='project-heading'>Deliverables</p>
           <div className='project-categories'>
             <p>User Research</p>
             <p>Admin Dashboard</p>
             <p>Volunteer Dashboard</p>
-            <p>Design System</p>
+            <p>Figma Prototype</p>
           </div>
           </div>
           <div>
