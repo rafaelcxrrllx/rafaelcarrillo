@@ -55,7 +55,10 @@ const Projects = () => {
         <img className='project-img' src={mobiles2t} alt="admin dashboard for stand up to trash" />
         <p className='project-position'>Design Lead Intern</p>
         <h1 className='project-title'> Stand Up to Trash: <span className='soft-title'> A Volunteer Management System for Beach Cleanup </span></h1>
-        <p className='button'>Case Study Soon</p>
+        <Link 
+          to="/standuptotrash">
+            <p id="project-button" className='button'>View Case Study</p>
+        </Link>
       </div>
 
       <div className='project-section'>
