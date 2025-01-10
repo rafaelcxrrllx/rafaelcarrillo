@@ -14,6 +14,7 @@ import { useInView } from "react-intersection-observer";
 import instagram from '../assets/icons/instagram.svg'
 import linkedIn from '../assets/icons/linkedIn.svg'
 import github from '../assets/icons/github.svg'
+import coffee from '../assets/icons/coffee.svg'
 
 function Footer() {
 
@@ -58,6 +59,7 @@ function Footer() {
         <a  href="https://www.linkedin.com/in/rafaelcxrrllx/"><img src={linkedIn} alt="LinkedIn" /> </a>
         <a  href="https://github.com/rafaelcxrrllx"><img src={github} alt="GitHub" /> </a>
         <a  href="https://www.instagram.com/rafaelcxrrllx/"><img src={instagram} alt="instagram" /> </a> 
+        <a  href="https://buymeacoffee.com/rafaelcxrrllx"><img id="coffee" src={coffee} alt="buy me a coffee" /> </a> 
         </div>
           
           <div 
