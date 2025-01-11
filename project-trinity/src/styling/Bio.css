@@ -213,7 +213,6 @@
     }
 
     .bio-img {
-        margin-left: 24px;
     }
 
     .bio-name p{
@@ -250,7 +249,7 @@
         background-color: #212121;
         border-color: #C5E3FE;
         padding: 12px 24px;
-        border-radius: 8px;
+        border-radius: 48px;
         cursor: pointer;
         font-weight: bold;
         border-style: solid;

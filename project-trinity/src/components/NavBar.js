@@ -113,7 +113,7 @@ function NavBar() {
               <a id='landing-page-link' className="hover-underline" href="#about"> About </a>
            </Link>
            
-          <a id='landing-page-link' download="RafaelCarrillo.pdf" className="hover-underline" href={require("../assets/Resume/Resume.pdf")}> Contact </a>
+          <a id='landing-page-link' download="RafaelCarrillo.pdf" className="hover-underline" href={require("../assets/Resume/Resume.pdf")}> Resume </a>
           {/* <a id='landing-page-link' className="hover-underline" href="#contact"> Contact </a> */}
           <div className='spacer'></div>
           <a class="hot-links" href="https://www.linkedin.com/in/rafaelcxrrllx/"><img src={linkedIn} alt="LinkedIn" /> </a>
