@@ -14,6 +14,7 @@ import linkedIn from '../assets/icons/linkedIn.svg'
 import menu from '../assets/icons/menu.svg'
 import closeMenu from '../assets/icons/closeMenu.svg'
 import github from '../assets/icons/github.svg'
+import coffee from '../assets/icons/coffee.svg'
 
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -112,12 +113,13 @@ function NavBar() {
               <a id='landing-page-link' className="hover-underline" href="#about"> About </a>
            </Link>
            
-          <a id='landing-page-link' download="RafaelCarrillo.pdf" className="hover-underline" href={require("../assets/Resume/Resume.pdf")}> Resume </a>
+          <a id='landing-page-link' download="RafaelCarrillo.pdf" className="hover-underline" href={require("../assets/Resume/Resume.pdf")}> Contact </a>
           {/* <a id='landing-page-link' className="hover-underline" href="#contact"> Contact </a> */}
           <div className='spacer'></div>
           <a class="hot-links" href="https://www.linkedin.com/in/rafaelcxrrllx/"><img src={linkedIn} alt="LinkedIn" /> </a>
           <a class="hot-links" href="https://github.com/rafaelcxrrllx"><img src={github} alt="GitHub" /> </a>
           <a class="hot-links" href="https://www.instagram.com/rafaelcxrrllx/"><img src={instagram} alt="instagram" /> </a> 
+          <a  href="https://buymeacoffee.com/rafaelcxrrllx"><img id="coffee" src={coffee} alt="buy me a coffee" /> </a>
         </motion.div>
       </div>
 

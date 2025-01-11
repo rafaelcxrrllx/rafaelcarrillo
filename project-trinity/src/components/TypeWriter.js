@@ -3,8 +3,9 @@ import '../styling/Typewriter.css'
 
 const Typewriter = () => {
   const phrases = [
-    "I am a Designer",
-    "I am a Developer",
+    "I am a UX/UI Designer",
+    "I am a Web Developer",
+    "I am a Software Engineer",
     "I am a Researcher",
     "I am a Problem-solver",
   ];

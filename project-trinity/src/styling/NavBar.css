@@ -22,7 +22,7 @@
 }
 
 .logo img {
-  width: 75px;
+  width: 48px;
 }
 
 .logo-img img{
@@ -48,10 +48,10 @@
   justify-content: space-between;
   position: -webkit-sticky; /* For Safari */
   align-items: center; 
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 7%;
+  padding-right: 7%;
   z-index: 1;
-  margin-top: 24px;
+  margin-top: 12px;
   margin-bottom: 48px;
   position: relative;
 
@@ -65,7 +65,7 @@
   border: solid .7px #C5E3FE;
   padding: 16px;
   padding-right: 24px;
-  border-radius: 8px;
+  border-radius: 48px;
   transition: all 0.5s ease;
 
 }

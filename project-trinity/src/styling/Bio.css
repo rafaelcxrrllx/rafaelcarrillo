@@ -1,7 +1,7 @@
 .bio-divider {
     text-align: left;
-    margin-left: 15%;;
-    margin-right: 15%;;
+    margin-left: 7%;;
+    margin-right: 7%;;
     margin-bottom: 96px;
     border-bottom: .7px solid #C5E3FE; /* Sets a 2px solid black bottom border */
     position: relative;
@@ -9,10 +9,15 @@
     /* margin-top: 60vh; */
 }
 
+.resume-button p{
+    margin-left: 0%;
+    margin-right: 0px;
+}
 
 #landing-page-link {
     display: flex;
     /* margin-left: 13.5%; */
+    justify-content: center;
 }
 
 .bio-description {
@@ -38,7 +43,7 @@
 
 
 .bio-content {
-    text-align: left;
+    text-align: center;
 }
 
 .bio-content h1, .bio-description {
@@ -55,13 +60,14 @@
 }
 
 .bio-img {
-    margin-left: 15%;;
     width: 64px;
     width: 50px;
 }
 
 .bio-thumbnail {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .bio-name p{
@@ -79,7 +85,7 @@
     background-color: #212121;
     border-color: #C5E3FE;
     padding: 12px 24px;
-    border-radius: 8px;
+    border-radius: 48px;
     cursor: pointer;
     font-weight: bold;
     border-style: solid;
@@ -97,7 +103,7 @@
 
  .button{
     color: #C5E3FE;   
-    margin-left: 15%;
+    margin-left: 7%;
     margin-right: 0%;
     border-width: .7px;
     width: auto;
@@ -111,9 +117,9 @@
 .education-content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     margin-top: 48px;
-    margin-left: 15%;
+    margin-left: 7%;
     flex-direction: column;
 
 }
@@ -124,7 +130,7 @@
 
 .education-info {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .education-text {
@@ -163,7 +169,8 @@
 }
 
 .bio-content {
-    margin-top: 96px;
+    margin-top: 196px;
+    margin-bottom: 196px;
 }
 
 
@@ -227,7 +234,7 @@
     }
 
     .bio-content {
-        margin-top: 0px;
+        margin-top: 128px;
     }
 
     .bio-content h1 {
