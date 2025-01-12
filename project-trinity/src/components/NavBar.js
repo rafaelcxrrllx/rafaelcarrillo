@@ -99,19 +99,13 @@ function NavBar() {
           transition={{ duration: 1, delay: 1.5 }} 
           className='navbar-right-container'>
           
-          <Link 
-            className='link'
-            to="/home"> 
-              <a id='landing-page-link' className="hover-underline" href="#work"> Work </a>
-           </Link>
+         
+          <a id='landing-page-link' className="hover-underline" href="#projects"> Projects </a>
 
           {/* <a id='landing-page-link' className="hover-underline" href="#projects"> Other </a> */}
           
-           <Link 
-            className='link'
-            to="/about"> 
-              <a id='landing-page-link' className="hover-underline" href="#about"> About </a>
-           </Link>
+           
+            <a id='landing-page-link' className="hover-underline" href="#about"> About </a>
            
           <a id='landing-page-link' download="RafaelCarrillo.pdf" className="hover-underline" href={require("../assets/Resume/Resume.pdf")}> Resume </a>
           {/* <a id='landing-page-link' className="hover-underline" href="#contact"> Contact </a> */}
@@ -156,20 +150,16 @@ function NavBar() {
           className="hamburger-menu">
           <li onClick={handleMenuItemClick} className='extra-bold'><a className='logo-img' href="#home"> <img src={logo} alt="logo" /> </a> </li> 
           <li onClick={handleMenuItemClick} className='extra-bold'>
-            <Link 
-              className='link'
-              to="/home"> 
-              <a id='landing-page-link' href="#work"> Work </a>
-            </Link>  
+           
+              <a id='landing-page-link' href="#projects"> Projects </a>
+            
           </li>
           {/* <li onClick={handleMenuItemClick} className='extra-bold'><a id='landing-page-link' href="#projects"> Other </a></li> */}
 
           <li onClick={handleMenuItemClick} className='extra-bold'>
-          <Link 
-            className='link'
-            to="/about"> 
+          
              <a id='landing-page-link' href="#about"> About </a>
-           </Link>
+           
           </li>
 
           <li onClick={handleMenuItemClick} className='extra-bold'><a id='landing-page-link' download="RafaelCarrillo.pdf" href={require("../assets/Resume/Resume.pdf")}> Resume </a></li>

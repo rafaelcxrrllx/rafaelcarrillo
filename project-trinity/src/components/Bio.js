@@ -25,27 +25,27 @@ const Bio = () => {
         </h1>
       </div>  */}
       <div className='bio-content'>
-        <div className='bio-thumbnail'>
+      <div className='bio-thumbnail'>
           <img id="desktop-bio-img" className='bio-img' src={bioThumbnail} alt="image of the author" />
-          {/* <div className='bio-name'>
+          <div className='bio-name'>
             <p>
               <b>Rafael Carrillo</b>
               
             </p>
-            <p className='position'>
+            <p className='bio-position'>
               UX Designer
             </p>
-          </div> */}
+          </div>
         </div>
        
-        {/* <h1 className='intro-text'>
-          Rafael Carrillo
-        </h1> */}
+        <h1 className='intro-text'>
+          UX/UI Designer
+        </h1>
         <br/>
-        <Typewriter/>
+        {/* <Typewriter/> */}
         
         <h2 className='bio-description'>
-          Hi, my name is Rafael. I am a Product Designer with 3+ years of experience in the <b>social tech</b> and <b>web domain space</b>. 
+          I have 3+ years of experience in the <b>social tech</b> and <b>web domain space</b>. 
           I have led projects focused on <b>user-centric services</b>, and <b>responsive websites</b>, and 
           I am currently seeking opportunities to design <b>technological solutions</b>.
         </h2>
@@ -54,11 +54,11 @@ const Bio = () => {
         My curiosity for the human and technology led me to earn a Degree in Human-Computer Interaction 
         which taught me about the remarkable intersection of the human experience and computers.
         </h2> */}
-        <p className='location'>
+        {/* <p className='location'>
           Los Angeles, California
-        </p>
+        </p> */}
         <div className='resume-button'>
-            <a id='landing-page-link' download="RafaelCarrillo.pdf" href={require("../assets/Resume/Resume.pdf")}> <p className='button'>Resume <img id="downloadicon" src={download} alt="download icon" /></p>  </a>
+            <a id='resume-button' download="RafaelCarrillo.pdf" href={require("../assets/Resume/Resume.pdf")}> <p className='button'>Resume <img id="downloadicon" src={download} alt="download icon" /></p>  </a>
           </div>
        
         </div>

@@ -23,7 +23,7 @@ const Projects = () => {
   return (
     <div>
      
-      <div className='project-divider'>
+     <div className='project-divider'>
         <h1>
           Latest Work
         </h1>

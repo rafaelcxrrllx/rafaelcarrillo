@@ -25,6 +25,8 @@ import InfiniteScroll from '../components/InfiniteScroll';
 
 import React from 'react';
 import Cursor from '../components/Cursor';
+import HorizontalScroll from '../components/HorizontalScroll';
+import About from './About';
 
 
 
@@ -39,9 +41,15 @@ function Home() {
       </div>
       <Bio/>
       <div id="projects">
-      <Projects/>
+      <HorizontalScroll/>
+      {/* <Projects/> */}
+      <div id='about'>
+        <br/>
+      <About/>
       </div>
-      {/* <HeroShot/> */}
+      </div>
+      <HeroShot/>
+      <br/>
       <InfiniteScroll/>
       <div className='spotify-container'>
         <SpotifyNow/>

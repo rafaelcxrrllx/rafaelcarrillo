@@ -1,0 +1,120 @@
+.scroll-container {
+    width: 100%; /* Full width of the parent container */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent line breaks */
+    scrollbar-width: thin; /* Optional: thinner scrollbars */
+    margin-left: 0px;
+    margin-top: 96px;
+  }
+  
+  .scroll-content {
+    display: inline-flex; /* Arrange children horizontally */
+    padding: 12px;
+    padding-left: 64px;
+  }
+
+  .item img {
+    width: 100%;
+  }
+
+  #art {
+    width: 100%;
+    border-radius: 8px;
+
+  }
+
+  #art-item h1, p{
+    margin-left: 0%;
+    margin-right: 15%;
+
+  }
+
+  #art-item .position {
+    margin-left: 0%;
+  }
+ 
+
+  .item .name {
+    margin-left: 0%;
+  }
+  
+  .item {
+    width: 600px; /* Set a width for each item */
+    margin-right: 16px; /* Optional spacing between items */
+    background: #ebebeb;
+    padding: 48px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 8px;
+    transition: all 0.5s ease;
+    height: 400px;
+  }
+
+  .name{ 
+    color: #1e2020 !important;
+    margin-bottom: -12px;
+    font-size: 16px;
+  }
+
+  .position{ 
+  color: #212121 !important;
+  margin-bottom: -12px;
+  font-size: 16px;
+  margin-left: 0%;
+  font-weight: 800;
+  }
+
+  img {
+    transition: all 0.5s ease;
+  }
+
+  .item:hover {
+    transform: scale(1.02); /* Scale up when hovered */
+    transition: all 0.5s ease;
+}
+
+  .scroll-container {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 810px) {
+
+    .scroll-container {
+      width: 100%; /* Full width of the parent container */
+      overflow-x: auto; /* Enable horizontal scrolling */
+      white-space: nowrap; /* Prevent line breaks */
+      scrollbar-width: thin; /* Optional: thinner scrollbars */
+      margin-left: 0px;
+    }
+
+      
+  .item {
+    min-width: 600px; /* Set a width for each item */
+    margin-right: 16px; /* Optional spacing between items */
+    background: #ebebeb;
+    padding: 48px;
+    text-align: center;
+    display: flex;
+    border-radius: 8px;
+    transition: all 0.5s ease;
+    margin-left: 24px;
+    text-align: center;
+    justify-content: center;
+    height: 400px;
+  }
+
+
+
+
+ 
+
+  .scroll-content {
+    display: inline-flex; /* Arrange children horizontally */
+    padding: 12px;
+    padding-left: 0px;
+  }
+  }

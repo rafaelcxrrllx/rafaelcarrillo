@@ -3,7 +3,7 @@ import '../styling/styles.css'
 
 // Local Styling
 import '../styling/Home.css'
-import '../styling/Projects.css'
+import '../styling/Trash.css'
 
 
 // Components
