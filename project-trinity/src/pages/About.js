@@ -64,7 +64,8 @@ function About() {
         <p className='location'>
           Los Angeles, California
         </p>
-
+        <br/>
+        <br/>
         
         </div>
       
