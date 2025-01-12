@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.88f53c33.css",
-    "main.js": "/static/js/main.a64dc9bf.js",
+    "main.css": "/static/css/main.4528807c.css",
+    "main.js": "/static/js/main.7196366b.js",
     "static/js/453.1d42ff05.chunk.js": "/static/js/453.1d42ff05.chunk.js",
     "static/media/art-img.svg": "/static/media/art-img.c48a8f1554055b836df317a0d3c67950.svg",
     "static/media/barrio-img.svg": "/static/media/barrio-img.f811f5f0d5b27e4205da569838bcfbfb.svg",
     "static/media/recipez-img.svg": "/static/media/recipez-img.1c5ad177bcb1d6f7c7762156993bea26.svg",
     "static/media/brandGuide.svg": "/static/media/brandGuide.8b15805fcc880c31578d392e4b104ca1.svg",
     "static/media/s2t-img-1.png": "/static/media/s2t-img-1.94edcfdc7c3be8428c24.png",
+    "static/media/mobile-barrio-img.svg": "/static/media/mobile-barrio-img.62bc88ac81d945cd9af04c9289094199.svg",
     "static/media/s2t-img.svg": "/static/media/s2t-img.0e947245c231b1f089097d345f82a782.svg",
     "static/media/mobile-s2t-img.svg": "/static/media/mobile-s2t-img.d5def17d6f20cfdbf48d9caec325cbf9.svg",
     "static/media/uci-img.jpg": "/static/media/uci-img.548eef82d39078692645.jpg",
     "static/media/skylinewallpaper.svg": "/static/media/skylinewallpaper.7a4bf8726bc4cfcfce1c.svg",
-    "static/media/mobile-recipez-img.jpg": "/static/media/mobile-recipez-img.938bd390a35fa1f1dbf2.jpg",
     "static/media/mobile-art-img.jpg": "/static/media/mobile-art-img.f7548ee7d65b77d21850.jpg",
     "static/media/mobile-hero-img.jpg": "/static/media/mobile-hero-img.4485cf43f75e6689d54e.jpg",
     "static/media/s2t-img-3.svg": "/static/media/s2t-img-3.58eacb0d26427c51f77fc69d7b101078.svg",
-    "static/media/mobile-barrio-img.jpg": "/static/media/mobile-barrio-img.bc9ce3c04020ee37771b.jpg",
     "static/media/soundbar.gif": "/static/media/soundbar.d8918241342ee476edd8.gif",
     "static/media/hero-img.jpg": "/static/media/hero-img.b12be2163c1258d89824.jpg",
+    "static/media/mobile-recipez-img.jpg": "/static/media/mobile-recipez-img.6c89b457cf47e7390ba4.jpg",
     "static/media/userPersona.svg": "/static/media/userPersona.26ce1eb7b8326060960319a1fcb72d9f.svg",
     "static/media/informationalArchitecture.svg": "/static/media/informationalArchitecture.a6e6ae1b772170e85277f0d8872c29fc.svg",
     "static/media/s2t-img-8.svg": "/static/media/s2t-img-8.976e2fb175cb593b47295fa081aab655.svg",
@@ -26,6 +26,7 @@
     "static/media/s2t-img-5.svg": "/static/media/s2t-img-5.d669b7d2bd98cf0db3c8a9f8894fb838.svg",
     "static/media/trinity-eyes.gif": "/static/media/trinity-eyes.f9f2329dd22261cb24c6.gif",
     "static/media/s2t-img-6.jpg": "/static/media/s2t-img-6.f7ec9d058503550d1713.jpg",
+    "static/media/mobile-barrio-img.jpg": "/static/media/mobile-barrio-img.a1ff2c111f643a35638e.jpg",
     "static/media/Resume.pdf": "/static/media/Resume.6797b00db8a63a363a93.pdf",
     "static/media/footer-logo.png": "/static/media/footer-logo.cc2685d4eecdda0ce2f0.png",
     "static/media/coffee.svg": "/static/media/coffee.56a48e343bfb8e2ca293f048713cc2d4.svg",
@@ -39,12 +40,12 @@
     "static/media/pause.svg": "/static/media/pause.f3917a32fd056b60b3a19805254c2d20.svg",
     "static/media/closeMenu.svg": "/static/media/closeMenu.e9dd3a359bb27d788f7704b818ed11d4.svg",
     "static/media/menu.svg": "/static/media/menu.3060e8f47368dad7470552b373bb0db1.svg",
-    "main.88f53c33.css.map": "/static/css/main.88f53c33.css.map",
-    "main.a64dc9bf.js.map": "/static/js/main.a64dc9bf.js.map",
+    "main.4528807c.css.map": "/static/css/main.4528807c.css.map",
+    "main.7196366b.js.map": "/static/js/main.7196366b.js.map",
     "453.1d42ff05.chunk.js.map": "/static/js/453.1d42ff05.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.88f53c33.css",
-    "static/js/main.a64dc9bf.js"
+    "static/css/main.4528807c.css",
+    "static/js/main.7196366b.js"
   ]
 }
