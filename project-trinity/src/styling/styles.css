@@ -1,9 +1,21 @@
+/* Default styles */
 html, body {
     height: 100%;
     margin: 0;
-    background-color: #212121;
     overflow-x: hidden;
-}
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Apply theme styles directly to body */
+  body.dark-theme {
+    background-color: #ffffff;
+    color: rgb(18, 18, 18);
+  }
+  
+  body.light-theme {
+    background-color: #212121;
+    color: rgb(255, 255, 255);
+  }
 
 html {
     scroll-behavior: smooth;

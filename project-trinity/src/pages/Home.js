@@ -27,34 +27,58 @@ import React from 'react';
 import Cursor from '../components/Cursor';
 import HorizontalScroll from '../components/HorizontalScroll';
 import About from './About';
+import SpinningSun from '../components/SpinningSun';
+import SpinningStar from '../components/SpinningStar';
 
 
 
 function Home() {
 
+  const [theme, setTheme] = useState('light');
+
+  const toggleTheme = () => {
+    setTheme(prev => (prev === 'light' ? 'dark' : 'light'));
+  };
+
+  useEffect(() => {
+    document.body.className = theme === 'light' ? 'light-theme' : 'dark-theme';
+  }, [theme]);
+
+  
 
   return (
-    <div id="home">
-      <Cursor/>
+    <div id="home" className={theme === 'light' ? 'dark-theme' : 'light-theme'}>
+
+      {/* <Cursor/> */}
+
+      
+
       <div className='sticky-navbar'>
-        <NavBar/>
+        <NavBar theme={theme} toggleTheme={toggleTheme}/>
       </div>
-      <Bio/>
-      <div id="projects">
+
+      {theme === 'light' ? <SpinningStar /> : <SpinningSun />}
+
+      {/* <Bio/> */}
+
+      {/* <div id="projects">
       <HorizontalScroll/>
-      {/* <Projects/> */}
-      <div id='about'>
+        <div id='about'>
         <br/>
-      <About/>
-      </div>
-      </div>
-      <HeroShot/>
-      <br/>
-      <InfiniteScroll/>
-      <div className='spotify-container'>
+        <About/>
+        </div>
+      </div> */}
+
+      {/* <HeroShot/>
+      <br/> */}
+
+      {/* <InfiniteScroll/> */}
+
+      {/* <div className='spotify-container'>
         <SpotifyNow/>
-      </div>
-      <Footer/>
+      </div> */}
+
+      {/* <Footer/> */}
 
       
       

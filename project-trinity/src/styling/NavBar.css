@@ -27,7 +27,7 @@
 }
 
 .logo img {
-  width: 48px;
+  width: 64px;
 }
 
 .logo-img img{
@@ -71,12 +71,39 @@
   padding-right: 24px;
   border-radius: 48px;
   transition: all 0.5s ease;
-
 }
+
+/* Dark theme */
+body.dark-theme .navbar-right-container {
+  background-color: #fff;
+  color: white;
+}
+
+
+/* Light theme */
+body.light-theme .navbar-right-container {
+  background-color: #212121;
+  color: black;
+}
+
 
 .navbar-right-container a {
   color: #C5E3FE;
   opacity: 50%;
+  transition: all 0.5s ease;
+
+}
+
+body.dark-theme .navbar-right-container a {
+  color: #CF5C36;
+  opacity: 50%;
+  transition: all 0.5s ease;
+
+}
+
+body.dark-theme .navbar-right-container a:hover {
+  color: #CF5C36;
+  opacity: 100%;
   transition: all 0.5s ease;
 
 }
@@ -91,6 +118,13 @@
   transform: translateX(0px) translateY(-5px);
   transition: all 0.5s ease;
 }
+
+body.dark-theme .navbar-right-container:hover {
+  box-shadow: 5px 5px 0 #CF5C36;
+  transform: translateX(0px) translateY(-5px);
+  transition: all 0.5s ease;
+}
+
 
 
 

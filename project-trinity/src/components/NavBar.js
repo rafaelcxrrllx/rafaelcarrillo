@@ -9,20 +9,34 @@ import React, { useState, useEffect } from 'react';
 
 // Assets
 import logo from '../assets/logo.svg'
+import lightLogo from '../assets/light-logo.svg'
+
 import instagram from '../assets/icons/instagram.svg'
 import linkedIn from '../assets/icons/linkedIn.svg'
-import menu from '../assets/icons/menu.svg'
-import closeMenu from '../assets/icons/closeMenu.svg'
 import github from '../assets/icons/github.svg'
 import coffee from '../assets/icons/coffee.svg'
+
+import instagramLight from '../assets/icons/ig-light.svg'
+import linkedInLight from '../assets/icons/linkedIn-light.svg'
+import githubLight from '../assets/icons/git-light.svg'
+import coffeeLight from '../assets/icons/coffee-light.svg'
+
+import menu from '../assets/icons/menu.svg'
+import closeMenu from '../assets/icons/closeMenu.svg'
+
+import moon from '../assets/icons/moon.svg'
+import sun from '../assets/icons/sun.svg'
+
 
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
-function NavBar() {
+function NavBar({ theme, toggleTheme })  {
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [isFirstImage, setIsFirstImage] = useState(true);
+
+
 
   // Paths to the images
   const firstImage = menu;
@@ -86,7 +100,7 @@ function NavBar() {
               <a 
         className='logo' to="/home" href="#home">
           <motion.img 
-            src={logo} alt="logo" /> 
+            src={theme === 'light' ?  logo : lightLogo} alt="logo" /> 
       </a>
            </Link>
 
@@ -110,10 +124,13 @@ function NavBar() {
           <a id='landing-page-link' download="RafaelCarrillo.pdf" className="hover-underline" href={require("../assets/Resume/Resume.pdf")}> Resume </a>
           {/* <a id='landing-page-link' className="hover-underline" href="#contact"> Contact </a> */}
           <div className='spacer'></div>
-          <a class="hot-links" href="https://www.linkedin.com/in/rafaelcxrrllx/"><img src={linkedIn} alt="LinkedIn" /> </a>
-          <a class="hot-links" href="https://github.com/rafaelcxrrllx"><img src={github} alt="GitHub" /> </a>
-          <a class="hot-links" href="https://www.instagram.com/rafaelcxrrllx/"><img src={instagram} alt="instagram" /> </a> 
-          <a  href="https://buymeacoffee.com/rafaelcxrrllx"><img id="coffee" src={coffee} alt="buy me a coffee" /> </a>
+          <a class="hot-links" href="https://www.linkedin.com/in/rafaelcxrrllx/"><img src={theme === 'light' ? linkedIn : linkedInLight} alt="LinkedIn" /> </a>
+          <a class="hot-links" href="https://github.com/rafaelcxrrllx"><img src={theme === 'light' ? github : githubLight} alt="GitHub" /> </a>
+          <a class="hot-links" href="https://www.instagram.com/rafaelcxrrllx/"><img src={theme === 'light' ? instagram : instagramLight} alt="instagram" /> </a> 
+          <a  href="https://buymeacoffee.com/rafaelcxrrllx"><img id="coffee" src={theme === 'light' ? coffee : coffeeLight} alt="buy me a coffee" /> </a>
+          <a  onClick={toggleTheme} ><img id="sun" src={theme === 'light' ? sun : moon} alt="theme-switch" /> 
+          </a>
+         
         </motion.div>
       </div>
 
@@ -126,6 +143,8 @@ function NavBar() {
           <a class="hot-links" href="https://www.linkedin.com/in/rafaelcxrrllx/"><img src={linkedIn} alt="LinkedIn" /> </a>
           <a class="hot-links" href="https://github.com/rafaelcxrrllx"><img src={github} alt="GitHub" /> </a>
           <a class="hot-links" href="https://www.instagram.com/rafaelcxrrllx/"><img src={instagram} alt="instagram" /> </a> 
+          
+          
           <div onClick={handleToggleMenu}>
             <img
               className='mobile-hamburger'
