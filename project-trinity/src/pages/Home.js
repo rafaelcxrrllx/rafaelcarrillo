@@ -57,9 +57,11 @@ function Home() {
         <NavBar theme={theme} toggleTheme={toggleTheme}/>
       </div>
 
+      <Bio/>
+      
       {theme === 'light' ? <SpinningStar /> : <SpinningSun />}
 
-      {/* <Bio/> */}
+      
 
       {/* <div id="projects">
       <HorizontalScroll/>

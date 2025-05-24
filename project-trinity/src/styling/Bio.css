@@ -28,7 +28,7 @@
 }
 
 .bio-description {
-    opacity: 75%;
+    opacity: 100%;
 }
 
 
@@ -55,6 +55,13 @@
 
 .bio-content h1, .bio-description {
     color: #C5E3FE;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 0%;
+}
+
+body.light-theme .bio-content h1, .bio-description {
+    color: #CF5C36;
     margin-left: 7%;
     margin-right: 7%;
     margin-bottom: 0%;
@@ -106,6 +113,11 @@
     border-style: solid;
     white-space: nowrap;
     border-width: .7px;
+}
+
+body.light-theme.button {
+    background-color: #CF5C36;
+    border-color: #C5E3FE;
 }
 
 .button p {
