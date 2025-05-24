@@ -11,6 +11,8 @@ import bioThumbnail from '../assets/hero-thumbnail.jpg';
 import uciImg from '../assets/uci-img.jpg';
 import download from '../assets/icons/download.svg';
 import Typewriter from './TypeWriter';
+import spinner from '../assets/icons/spinner.svg';
+import spinnerDark from '../assets/icons/spinner-dark.svg';
 
 
 const Bio = ({ theme, toggleTheme }) => {
@@ -37,10 +39,18 @@ const Bio = ({ theme, toggleTheme }) => {
             </p>
           </div>
         </div> */}
-       
-        <h1 className='intro-text'>
+       <div className='spinner-container'>
+        <span>
+          <img className='spinner-image' src={theme === 'light' ? spinnerDark : spinner} alt="spinner" />
+        </span>
+       <h1 className='intro-text'>
           WELCOME
         </h1>
+        <span>
+          <img className='spinner-image' src={theme === 'light' ?  spinnerDark : spinner} alt="spinner" />
+        </span>
+       </div>
+       
         <br/>
         {/* <Typewriter/> */}
         

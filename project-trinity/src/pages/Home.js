@@ -57,8 +57,8 @@ function Home() {
         <NavBar theme={theme} toggleTheme={toggleTheme}/>
       </div>
 
-      <Bio/>
-      
+      <Bio theme={theme} toggleTheme={toggleTheme}/>
+
       {theme === 'light' ? <SpinningStar /> : <SpinningSun />}
 
       

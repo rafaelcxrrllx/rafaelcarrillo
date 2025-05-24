@@ -82,10 +82,9 @@ body.dark-theme h3,
 body.dark-theme h4,
 body.dark-theme p,
 body.dark-theme li,
-body.dark-theme a,
 body.dark-theme button,
 body.dark-theme Link {
-  color: #CF5C36 !important;
+  color: #212121 !important;
 }
 
 

@@ -30,6 +30,31 @@
     transform: rotate(720deg);
   }
 
+  @media (max-width: 1050px) {
+    .spin-container {
+      position: relative; /* use relative to avoid absolute offset issues on small screens */
+      width: 300px;
+      height: 300px;
+      right: 0;
+      top: 32px;
+      margin: 60px auto 0 auto; /* center horizontally with margin */
+    }
+     
+    .center-image {
+      width: 100%;
+      top: 50%;
+      left: 90%;
+      transform: translate(-90%, -50%);
+    }
+  
+    .circular-text {
+      width: 150%;
+      height: 150%;
+      top: -60px;
+      left: -60px;
+    }
+  }
+
   @media (max-width: 810px) {
 
     .spin-container {
