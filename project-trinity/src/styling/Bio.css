@@ -245,6 +245,12 @@ body.light-theme.button {
         display: block;
     }
 
+    .spinner-container {
+        display: flex;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
     .bio-thumbnail {
         display: flex;
         align-items: left;
@@ -401,10 +407,15 @@ body.light-theme.button {
         display: flex;
         margin-left: 24px;
         margin-right: 24px;
+        align-items: center;
     }
 
     .spinner-container span img{
-        width: 100px;
+        width: 75px;
+    }
+
+    .intro-text {
+        margin-top: 0px;
     }
 
 }
