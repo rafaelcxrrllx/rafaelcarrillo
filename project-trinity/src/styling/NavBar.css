@@ -11,6 +11,10 @@
   margin-left: 24px;
 }
 
+#sun {
+  cursor: pointer;
+}
+
 
 .logo {
   position: relative;
@@ -167,20 +171,35 @@ body.dark-theme .navbar-right-container:hover {
   .mobile-navbar-right-container {
     display: flex;
     align-items: center;
-    background-color: #212121;
     border-radius: 32px;
-    padding: 8px;
+    padding: 8px 16px;
     gap: 24px;
-    width: 244px;
+    width: auto;
     justify-content: center;
     margin-bottom: 48px;
-    border: solid .7px #C5E3FE;
+    transition: background-color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Light Theme */
+  body.light-theme .mobile-navbar-right-container {
+    background-color: #212121;
+    border: solid 2px #C5E3FE;
+  }
+  
+  /* Dark Theme */
+  body.dark-theme .mobile-navbar-right-container {
+    background-color: #ffffff;
+    border: solid 2px #CF5C36;
+  }
+  
+  .mobile-navbar-right-container:hover {
+    box-shadow: 5px 5px 0 #C5E3FE;
+    transform: translateX(0px) translateY(-5px);
   }
 
-  .mobile-navbar-right-container:hover {
-      box-shadow: 5px 5px 0 #C5E3FE;
-      transform: translateX(0px) translateY(-5px);
-      transition: all 0.5s ease;
+  body.dark-theme .mobile-navbar-right-container:hover {
+    box-shadow: 5px 5px 0 #CF5C36;
+    transform: translateX(0px) translateY(-5px);
   }
 
   .mobile-navbar-right-container img{
@@ -227,16 +246,44 @@ body.dark-theme .navbar-right-container:hover {
 
   .mobile-menu a {
     color: #C5E3FE;
-
   }
+
+/* Base mobile menu link style */
+.mobile-menu a {
+  color: #C5E3FE; /* default fallback */
+}
+
+/* Style for dark theme */
+body.dark-theme .mobile-menu {
+  background-color: #ffffff;
+  color: #CF5C36;
+}
+body.dark-theme .mobile-menu a {
+  color: #CF5C36;
+}
+
+/* Style for light theme */
+body.light-theme .mobile-menu {
+  background-color: #212121;
+  color: #ffffff;
+}
+body.light-theme .mobile-menu a {
+  color: #C5E3FE;
+}
+
+.mobile-menu {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.mobile-menu a {
+  transition: color 0.3s ease;
+}
+
 
   .hamburger-menu li{
     font-size: 20px !important;
     font-weight: normal;
   }
-
-
-
 
 .hamburger-menu {
   list-style: none;

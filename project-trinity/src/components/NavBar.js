@@ -22,7 +22,10 @@ import githubLight from '../assets/icons/git-light.svg'
 import coffeeLight from '../assets/icons/coffee-light.svg'
 
 import menu from '../assets/icons/menu.svg'
+import menuLight from '../assets/icons/menuLight.svg'
+
 import closeMenu from '../assets/icons/closeMenu.svg'
+import closeMenuLight from '../assets/icons/closeMenuLight.svg'
 
 import moon from '../assets/icons/moon.svg'
 import sun from '../assets/icons/sun.svg'
@@ -41,6 +44,8 @@ function NavBar({ theme, toggleTheme })  {
   // Paths to the images
   const firstImage = menu;
   const secondImage = closeMenu;
+  const firstImageLight = menuLight;
+  const secondImageLight = closeMenuLight;
 
   const handleMenuItemClick = () => {
     setMenuOpen(false); // Close the menu when a list item is clicked
@@ -140,15 +145,17 @@ function NavBar({ theme, toggleTheme })  {
           animate={{ y: 0, opacity:  1 }} // Animate opacity to 1
           transition={{ duration: 1, delay: 1.5 }} 
           className='mobile-navbar-right-container'>
-          <a class="hot-links" href="https://www.linkedin.com/in/rafaelcxrrllx/"><img src={linkedIn} alt="LinkedIn" /> </a>
-          <a class="hot-links" href="https://github.com/rafaelcxrrllx"><img src={github} alt="GitHub" /> </a>
-          <a class="hot-links" href="https://www.instagram.com/rafaelcxrrllx/"><img src={instagram} alt="instagram" /> </a> 
-          
+          <a class="hot-links" href="https://www.linkedin.com/in/rafaelcxrrllx/"><img src={theme === 'light' ? linkedIn : linkedInLight} alt="LinkedIn" /> </a>
+          <a class="hot-links" href="https://github.com/rafaelcxrrllx"><img src={theme === 'light' ? github : githubLight} alt="GitHub" /> </a>
+          <a class="hot-links" href="https://www.instagram.com/rafaelcxrrllx/"><img src={theme === 'light' ? instagram : instagramLight} alt="instagram" /> </a> 
+          <a  href="https://buymeacoffee.com/rafaelcxrrllx"><img id="coffee" src={theme === 'light' ? coffee : coffeeLight} alt="buy me a coffee" /> </a>
+          <a  onClick={toggleTheme} ><img id="sun" src={theme === 'light' ? sun : moon} alt="theme-switch" /> 
+          </a>
           
           <div onClick={handleToggleMenu}>
             <img
               className='mobile-hamburger'
-              src={isFirstImage ? firstImage : secondImage}
+              src={isFirstImage ? theme === 'light' ? firstImage : firstImageLight : theme === 'light' ? secondImage : secondImageLight}
               alt="Toggleable"
               onClick={handleToggle}
               style={{ cursor: "pointer", width: "30px" }}/>
@@ -161,13 +168,13 @@ function NavBar({ theme, toggleTheme })  {
         initial={{ height: 0, opacity: 0 }}
         animate={menuOpen ? { height: '100%', opacity: 1, top: '50px' } : { height: 0, opacity: 0 }}
         transition={{ duration: .3 }}
-        style={menuOpen ? { position: 'fixed', backgroundColor: '#212121', top: '0px'}: {display: 'none'}}>
+        style={menuOpen ? { position: 'fixed', top: '0px'}: {display: 'none'}}>
         <motion.ul 
           initial={{ y: '1vw', opacity: 0 }} // Initial opacity set to 0
           animate={menuOpen ? { y: 0, opacity:  1 }: {y: '3vw', opacity: 0} } // Animate opacity to 1
           transition={{ duration: 1 }}
           className="hamburger-menu">
-          <li onClick={handleMenuItemClick} className='extra-bold'><a className='logo-img' href="#home"> <img src={logo} alt="logo" /> </a> </li> 
+          <li onClick={handleMenuItemClick} className='extra-bold'><a className='logo-img' href="#home"> <img src={theme === 'light' ?  logo : lightLogo} alt="logo" /> </a> </li> 
           <li onClick={handleMenuItemClick} className='extra-bold'>
            
               <a id='landing-page-link' href="#projects"> Projects </a>

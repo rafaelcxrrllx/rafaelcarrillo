@@ -9,13 +9,22 @@ html, body {
   /* Apply theme styles directly to body */
   body.dark-theme {
     background-color: #ffffff;
-    color: rgb(18, 18, 18);
+    color: #212121;
   }
   
   body.light-theme {
     background-color: #212121;
     color: rgb(255, 255, 255);
   }
+
+    /* Apply theme styles directly to body */
+    a.dark-theme {
+        color: #212121;
+      }
+      
+    a.light-theme {
+    color: #CF5C36;
+    }
 
 html {
     scroll-behavior: smooth;
@@ -86,7 +95,7 @@ a:visited {
 }
 
 .landing-page-link {
-    color: #101720;
+    color: #212121;
   }
 
 .landing-page-link {

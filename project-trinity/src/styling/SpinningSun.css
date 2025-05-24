@@ -29,3 +29,30 @@
   .spin-container:hover .circular-text {
     transform: rotate(720deg);
   }
+
+  @media (max-width: 810px) {
+
+    .spin-container {
+        position: relative; /* use relative to avoid absolute offset issues on small screens */
+        width: 250px;
+        height: 250px;
+        right: 0;
+        top: 96px;
+        margin: 60px auto 0 auto; /* center horizontally with margin */
+      }
+    
+      .center-image {
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    
+      .circular-text {
+        width: 150%;
+        height: 150%;
+        top: -60px;
+        left: -60px;
+      }
+
+  }
