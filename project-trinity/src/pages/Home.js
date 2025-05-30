@@ -59,9 +59,7 @@ function Home() {
 
       <Bio theme={theme} toggleTheme={toggleTheme}/>
 
-      <div className='spinning-sun'>
-
-     
+      <div className='spinning-sun'>     
       {theme === 'light' ? <SpinningStar /> : <SpinningSun />}
       </div>
       

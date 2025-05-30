@@ -55,6 +55,7 @@
     .scrolling-text {
         font-size: 16px; 
         animation: scrollText 15s linear infinite;
+        margin-top: 20px;
        
       }
   }

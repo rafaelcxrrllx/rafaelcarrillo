@@ -7,7 +7,7 @@ import '../styling/Bio.css'
 // Components
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import bioThumbnail from '../assets/hero-thumbnail.jpg';
+import bioThumbnail from '../assets/hero-thumbnail.png';
 import uciImg from '../assets/uci-img.jpg';
 import download from '../assets/icons/download.svg';
 import Typewriter from './TypeWriter';
@@ -27,18 +27,6 @@ const Bio = ({ theme, toggleTheme }) => {
         </h1>
       </div>  */}
       <div className='bio-content'>
-      {/* <div className='bio-thumbnail'>
-          <img id="desktop-bio-img" className='bio-img' src={bioThumbnail} alt="image of the author" />
-          <div className='bio-name'>
-            <p>
-              <b>Rafael Carrillo</b>
-              
-            </p>
-            <p className='bio-position'>
-              UX Designer
-            </p>
-          </div>
-        </div> */}
        <div className='spinner-container'>
         <span>
           <img className='spinner-image' src={theme === 'light' ? spinnerDark : spinner} alt="spinner" />
@@ -50,10 +38,22 @@ const Bio = ({ theme, toggleTheme }) => {
           <img className='spinner-image' src={theme === 'light' ?  spinnerDark : spinner} alt="spinner" />
         </span>
        </div>
-       
-        <br/>
+       <br/>
         {/* <Typewriter/> */}
-        
+        <div className='bio-thumbnail'>
+          <img id="desktop-bio-img" className='bio-img' src={bioThumbnail} alt="image of the author" />
+          <div className='bio-name'>
+            <p>
+              <b>Rafael Carrillo</b>
+              
+            </p>
+            <p className='bio-position'>
+              UX Designer
+            </p>
+          </div>
+        </div>
+                <br/>
+
         <h2 className='bio-description'>
         Hello, my name is Rafael Carrillo!
         
@@ -62,10 +62,11 @@ const Bio = ({ theme, toggleTheme }) => {
         <h2 className='bio-description'>
         ‍I am a passionate UX Designer and Engineer who creates useful, intuitive, and engaging products.
         </h2>
-        <h3 className='bio-description'>
-        As a lover of all things creative, my curiosity for the human and technology led me to specialize in Human-Computer Interaction which taught me about the remarkable intersection of the human experience and computers.
-        Learn more about me here!
-        </h3>
+        {/* <p className='bio-description'>
+          Learn more about me here!
+        </p> */}
+        <br/>
+       
         {/* <h2 className='bio-description'>
         I am a passionate designer, a life-long coder, and a lover of all things creative. 
         My curiosity for the human and technology led me to earn a Degree in Human-Computer Interaction 

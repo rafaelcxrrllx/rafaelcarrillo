@@ -295,6 +295,7 @@ body.light-theme.button {
     .bio-content h1, h2, p {
         margin-left: 24px;
         margin-right: 24px;
+        font-size: 32px;
     }
 
     .education-text h2 {
@@ -376,6 +377,8 @@ body.light-theme.button {
         margin-left: 24px;
         margin-right: 24px;
         margin-bottom: 0%;
+        margin-top: 0px;
+        font-size: 32px;
     }
 
     body.light-theme .bio-content h3, .bio-description {
@@ -415,6 +418,7 @@ body.light-theme.button {
         margin-left: 24px;
         margin-right: 24px;
         align-items: center;
+        justify-content: center;
     }
 
     .spinner-container span img{
@@ -423,6 +427,13 @@ body.light-theme.button {
 
     .intro-text {
         margin-top: 0px;
+    }
+
+    h1.welcome-text {
+    margin-left: 3% !important;
+    margin-right: 3% !important;
+    font-size: 32px !important;
+    margin-top: 0px;
     }
 
 }
