@@ -43,7 +43,7 @@ const Bio = ({ theme, toggleTheme }) => {
         <span>
           <img className='spinner-image' src={theme === 'light' ? spinnerDark : spinner} alt="spinner" />
         </span>
-       <h1 className='intro-text'>
+       <h1 className='welcome-text'>
           WELCOME
         </h1>
         <span>

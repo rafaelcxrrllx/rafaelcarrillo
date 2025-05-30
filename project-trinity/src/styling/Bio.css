@@ -82,16 +82,16 @@
 
 .bio-content h1, .bio-description {
     color: #C5E3FE;
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: 7%;
+    margin-right: 7%;
     margin-bottom: 0%;
     font-size: 48px;
 }
 
 body.light-theme .bio-content h1, .bio-description {
     color: #CF5C36;
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: 7%;
+    margin-right: 7%;
     margin-bottom: 0%;
     font-size: 48px;
 }
@@ -272,8 +272,15 @@ body.light-theme.button {
         display: none;
     }
 
-    .intro-text {
+    h1.intro-text {
         font-size: 48px;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    h1.welcome-text {
+        margin-left: 3% !important;
+        margin-right: 3% !important;
     }
 
     .bio-divider {

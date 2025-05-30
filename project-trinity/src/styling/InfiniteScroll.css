@@ -7,9 +7,21 @@
     overflow: hidden;
     position: relative;
     background-color: #212121;
-    border-top: .7px solid #32373D;
-    border-bottom: .7px solid #32373D;
+    border-top: 1px solid #32373D;
+    border-bottom: 1px solid #32373D;
 
+  }
+
+  body.dark-theme .scrolling-container {
+      background-color: #fff;
+      border-top: 1px solid #CF5C36;
+      border-bottom: 1px solid #CF5C36;
+       font-weight: bold;
+  }
+
+  body.dark-theme .scrolling-text {
+      color: #CF5C36 !important;   
+      font-weight: bold; 
   }
   
   .scrolling-text {

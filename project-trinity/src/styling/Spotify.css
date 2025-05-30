@@ -15,10 +15,20 @@
     margin-bottom: 96px;
 }
 
+body.dark-theme .nowPlayingCard {
+    border: 2px solid #CF5C36;
+    box-shadow: 5px 5px 0 #CF5C36;
+    color: #CF5C36;
+}
+
 .nowPlayingCard:hover {
     box-shadow: 10px 10px 0 #C5E3FE;
     transform: translateX(0px) translateY(-10px);
     transition: all 0.5s ease;
+}
+
+body.dark-theme .nowPlayingCard:hover {
+    box-shadow: 10px 10px 0 #CF5C36;
 }
   
 .nowPlayingCard a {
@@ -27,9 +37,17 @@
     font-family: Karla;
 }
 
+body.dark-theme .nowPlayingCard a {
+    color: #CF5C36;
+}
+
 .nowPlayingCard a:hover {
     color: #C5E3FE;
     text-decoration: underline;
+}
+
+body.dark-theme .nowPlayingCard a:hover {
+    color: #CF5C36;
 }
 
 .nowPlayingImage img {
@@ -41,6 +59,11 @@
     height: 60px;
     flex-shrink: 0;
     margin: 10px;
+}
+
+body.dark-theme .nowPlayingImage img {
+    border: 1px solid #CF5C36;
+    box-shadow: 3px 3px 0  #CF5C36;
 }
 
 .eyes-offline {
@@ -77,6 +100,12 @@
     text-align: left;
     font-size: 16px;
     width: 100%;
+}
+
+
+
+body.dark-theme .nowPlayingTitle, .playlistName {
+    color: #CF5C36;
 }
 
 .nowPlayingTitle, .playlistName::after {
@@ -121,11 +150,20 @@
     color: #C5E3FE;
 }
 
+body.dark-theme .nowPlayingTime {
+    text-align: left;
+    color: #CF5C36;
+}
+
 .nowPlayingState {
     text-align: center;
     width: 20%;
     padding: 10px;
     color: #C5E3FE;
+}
+
+body.dark-theme .nowPlayingState {
+    color: #CF5C36;
 }
 
 .soundbar{

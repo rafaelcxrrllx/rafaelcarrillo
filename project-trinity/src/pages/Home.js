@@ -59,28 +59,31 @@ function Home() {
 
       <Bio theme={theme} toggleTheme={toggleTheme}/>
 
-      {theme === 'light' ? <SpinningStar /> : <SpinningSun />}
+      <div className='spinning-sun'>
 
+     
+      {theme === 'light' ? <SpinningStar /> : <SpinningSun />}
+      </div>
       
 
-      {/* <div id="projects">
+      <div id="projects">
       <HorizontalScroll/>
         <div id='about'>
         <br/>
         <About/>
         </div>
-      </div> */}
+      </div>
 
-      {/* <HeroShot/>
-      <br/> */}
+      <HeroShot/>
+      <br/>
 
-      {/* <InfiniteScroll/> */}
+      <InfiniteScroll/>
 
-      {/* <div className='spotify-container'>
-        <SpotifyNow/>
-      </div> */}
+      <div className='spotify-container'>
+        <SpotifyNow />
+      </div>
 
-      {/* <Footer/> */}
+      <Footer theme={theme} toggleTheme={toggleTheme}/>
 
       
       

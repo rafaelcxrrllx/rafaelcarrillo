@@ -8,6 +8,12 @@
     padding-top: 20px;
 }
 
+.spinning-sun {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 96px;
+}
+
 .project-divider h1 {
     color: #C5E3FE;
     font-weight: normal;

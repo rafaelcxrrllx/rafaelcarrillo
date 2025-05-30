@@ -7,6 +7,7 @@ import { HiOutlineStatusOffline } from 'react-icons/hi';
 import '../styling/Spotify.css';
 import soundBar from '../assets/icons/soundbar.gif'
 import pause from '../assets/icons/pause.svg'
+import pauseLight from '../assets/icons/pauseLight.svg'
 import eyes from '../assets/trinity-eyes.gif'
 import { motion } from 'framer-motion';
 // Setting up the Spotify API and Endpoints
@@ -212,7 +213,7 @@ const NowPlaying = () => {
         </div>
         {/* Icon displayed based on playerState */}
         <div className='nowPlayingState'>
-          {playerState === 'PLAY' ? <img alt='soundbar' className='soundbar' src={soundBar} title='Now Listening' /> : playerState === 'PAUSE' ? <img class='pause' alt="Paused" src={pause} title='Now Listening' /> : playerState === 'OFFLINE' ? <HiOutlineStatusOffline size={40} /> : <BiErrorCircle size={40} />}
+          {playerState === 'PLAY' ? <img alt='soundbar' className='soundbar' src={soundBar} title='Now Listening' /> : playerState === 'PAUSE' ? <img class='pause' alt="Paused" src={soundBar} title='Now Listening' /> : playerState === 'OFFLINE' ? <HiOutlineStatusOffline size={40} /> : <BiErrorCircle size={40} />}
         </div>
       </div>
     </a>

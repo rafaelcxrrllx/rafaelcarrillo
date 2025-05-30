@@ -1,9 +1,10 @@
 .spin-container {
-    position: absolute;
+    position: relative;
     width: 400px;
     height: 400px;
-    right: 100px;
-    top: 470px;
+    display: flex;
+    top: 0px;
+    justify-content: center;
   }
   
   .center-image {

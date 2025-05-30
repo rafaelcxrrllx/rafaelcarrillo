@@ -75,6 +75,29 @@ body.light-theme Link {
   color: #C5E3FE !important;
 }
 
+body.light-theme h1.name {
+  color: #212121 !important;
+}
+
+body.light-theme p.position {
+  color: #212121 !important;
+}
+
+body.dark-theme .slogan p {
+  color: #CF5C36 !important;
+}
+
+body.dark-theme .connect-title {
+  color: #CF5C36 !important;
+}
+body.dark-theme #quote {
+  color: #CF5C36 !important;
+}
+
+body.dark-theme .footer-container p {
+  color: #CF5C36 !important;
+}
+
 /* Dark Theme Text Colors */
 body.dark-theme h1,
 body.dark-theme h2,

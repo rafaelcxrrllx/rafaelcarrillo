@@ -5,8 +5,9 @@ import '../styling/styles.css'
 import '../styling/Footer.css'
 
 // Assets
-import logo from '../assets/footer-logo.png'
-import copy from '../assets/icons/copy.svg'
+import logo from '../assets/logo.svg';
+import lightLogo from '../assets/light-logo.svg';
+import copy from '../assets/icons/copy.svg';
 
 import React, { useEffect, useRef } from 'react';
 import { motion, useAnimation } from "framer-motion";
@@ -16,7 +17,12 @@ import linkedIn from '../assets/icons/linkedIn.svg'
 import github from '../assets/icons/github.svg'
 import coffee from '../assets/icons/coffee.svg'
 
-function Footer() {
+import instagramLight from '../assets/icons/ig-light.svg'
+import linkedInLight from '../assets/icons/linkedIn-light.svg'
+import githubLight from '../assets/icons/git-light.svg'
+import coffeeLight from '../assets/icons/coffee-light.svg'
+
+function Footer({ theme, toggleTheme }) {
 
   const handleCopy = (event) => {
     const content = event.target.innerText; // Get the text inside the div
@@ -48,7 +54,7 @@ function Footer() {
      
     <div className='footer-content'>
     <div>
-      <img className='footer-img' src={logo} alt="image of logo" />
+      <img className='footer-img' src={theme === 'light' ?  logo : lightLogo} alt="image of logo" />
       </div>
       
       <div>
@@ -56,13 +62,13 @@ function Footer() {
           Let's Connect
         </h1>
         <div className='footer-links'>
-        <a  href="https://www.linkedin.com/in/rafaelcxrrllx/"><img src={linkedIn} alt="LinkedIn" /> </a>
-        <a  href="https://github.com/rafaelcxrrllx"><img src={github} alt="GitHub" /> </a>
-        <a  href="https://www.instagram.com/rafaelcxrrllx/"><img src={instagram} alt="instagram" /> </a> 
-        <a  href="https://buymeacoffee.com/rafaelcxrrllx"><img id="coffee" src={coffee} alt="buy me a coffee" /> </a> 
+        <a  href="https://www.linkedin.com/in/rafaelcxrrllx/"><img src={theme === 'light' ? linkedIn : linkedInLight} alt="LinkedIn" /> </a>
+        <a  href="https://github.com/rafaelcxrrllx"><img src={theme === 'light' ? github : githubLight} alt="GitHub" /> </a>
+        <a  href="https://www.instagram.com/rafaelcxrrllx/"><img src={theme === 'light' ? instagram : instagramLight} alt="instagram" /> </a> 
+        <a  href="https://buymeacoffee.com/rafaelcxrrllx"><img id="coffee" src={theme === 'light' ? coffee : coffeeLight} alt="buy me a coffee" /> </a> 
         </div>
           
-          <div 
+          {/* <div 
               class="clipboard"
             >
                 <h4 className='green-font' 
@@ -71,10 +77,11 @@ function Footer() {
                   id="quote">
                 rafaelcarrillo09@gmail.com <img className='copy' src={copy} alt="copy" />
               </h4>
-            </div>
+            </div> */}
           
         <h3 className='quote' id="quote">
-          <i>“Work is love made visible.” </i> - Khalil Gibran
+          <i>“Love rules the court, the camp, the grove,
+And men below and saints above.”</i> - Sir Walter Scott
         </h3>
         {/* <p className='trademark'>
           Designed + Coded with ♥️ in Los Angeles
