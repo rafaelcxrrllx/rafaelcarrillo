@@ -1,84 +1,60 @@
 .spin-container {
-    position: relative;
-    width: 400px;
-    height: 400px;
-    display: flex;
-    top: 0px;
-    justify-content: center;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto 0;
+  margin-bottom: 12px;
+}
+
+.center-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.circular-text {
+  position: absolute;
+  width: 130%;
+  height: 130%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  transform-origin: center;
+  transition: transform 30s ease;
+}
+
+.spin-container:hover .circular-text {
+  transform: translate(-50%, -50%) rotate(720deg);
+}
+
+/* Medium Screens */
+@media (max-width: 1050px) {
+  .spin-container {
+    width: 200px;
+    height: 200px;
   }
-  
-  .center-image {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-  }
-  
+
   .circular-text {
-    position: absolute;
-    width: 120%;
-    height: 120%;
-    top: -40px;
-    left: -40px;
-    transform: rotate(0deg); /* initial rotation */
-    transition: transform 30s ease; /* smooth transition */
+    width: 140%;
+    height: 140%;
   }
-  
-  /* On hover, rotate 360 degrees */
-  .spin-container:hover .circular-text {
-    transform: rotate(720deg);
+}
+
+/* Small Screens */
+@media (max-width: 810px) {
+  .spin-container {
+    width: 180px;
+    height: 180px;
   }
 
-  @media (max-width: 1050px) {
-    .spin-container {
-      position: relative; /* use relative to avoid absolute offset issues on small screens */
-      width: 300px;
-      height: 300px;
-      right: 0;
-      top: 32px;
-      margin: 60px auto 0 auto; /* center horizontally with margin */
-    }
-     
-    .center-image {
-      width: 100%;
-      top: 50%;
-      left: 90%;
-      transform: translate(-90%, -50%);
-    }
-  
-    .circular-text {
-      width: 150%;
-      height: 150%;
-      top: -60px;
-      left: -60px;
-    }
+  .circular-text {
+    width: 150%;
+    height: 150%;
   }
-
-  @media (max-width: 810px) {
-
-    .spin-container {
-        position: relative; /* use relative to avoid absolute offset issues on small screens */
-        width: 250px;
-        height: 250px;
-        right: 0;
-        top: 32px;
-        margin: 60px auto 0 auto; /* center horizontally with margin */
-      }
-    
-      .center-image {
-        width: 100%;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-    
-      .circular-text {
-        width: 150%;
-        height: 150%;
-        top: -60px;
-        left: -60px;
-      }
-
-  }
+}

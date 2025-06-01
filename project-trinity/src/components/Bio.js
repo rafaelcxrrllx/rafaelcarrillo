@@ -27,7 +27,7 @@ const Bio = ({ theme, toggleTheme }) => {
         </h1>
       </div>  */}
       <div className='bio-content'>
-       <div className='spinner-container'>
+       {/* <div className='spinner-container'>
         <span>
           <img className='spinner-image' src={theme === 'light' ? spinnerDark : spinner} alt="spinner" />
         </span>
@@ -38,7 +38,7 @@ const Bio = ({ theme, toggleTheme }) => {
           <img className='spinner-image' src={theme === 'light' ?  spinnerDark : spinner} alt="spinner" />
         </span>
        </div>
-       <br/>
+       <br/> */}
         {/* <Typewriter/> */}
         <div className='bio-thumbnail'>
           <img id="desktop-bio-img" className='bio-img' src={bioThumbnail} alt="image of the author" />
@@ -67,11 +67,11 @@ const Bio = ({ theme, toggleTheme }) => {
         </p> */}
         <br/>
        
-        {/* <h2 className='bio-description'>
+        <h2 className='bio-description'>
         I am a passionate designer, a life-long coder, and a lover of all things creative. 
         My curiosity for the human and technology led me to earn a Degree in Human-Computer Interaction 
         which taught me about the remarkable intersection of the human experience and computers.
-        </h2> */}
+        </h2>
         {/* <p className='location'>
           Los Angeles, California
         </p> */}

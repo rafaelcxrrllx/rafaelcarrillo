@@ -27,8 +27,7 @@ import React from 'react';
 import Cursor from '../components/Cursor';
 import HorizontalScroll from '../components/HorizontalScroll';
 import About from './About';
-import SpinningSun from '../components/SpinningSun';
-import SpinningStar from '../components/SpinningStar';
+
 
 
 
@@ -49,23 +48,42 @@ function Home() {
   return (
     <div id="home" className={theme === 'light' ? 'dark-theme' : 'light-theme'}>
 
-      {/* <Cursor/> */}
+      <Cursor/>
 
       
 
       <div className='sticky-navbar'>
         <NavBar theme={theme} toggleTheme={toggleTheme}/>
       </div>
+      <div className='intro-container'>
 
-      <Bio theme={theme} toggleTheme={toggleTheme}/>
-
-      <div className='spinning-sun'>     
-      {theme === 'light' ? <SpinningStar /> : <SpinningSun />}
-      </div>
       
+      <Bio theme={theme} toggleTheme={toggleTheme}/>
+    
+      </div>
+            <InfiniteScroll/>
 
+      
+      <div className='spacing'>
+       <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+     </div>
       <div id="projects">
       <HorizontalScroll/>
+     <div className='spacing'>
+       <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+     </div>
         <div id='about'>
         <br/>
         <About/>
@@ -73,9 +91,20 @@ function Home() {
       </div>
 
       <HeroShot/>
-      <br/>
-
-      <InfiniteScroll/>
+         <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
 
       <div className='spotify-container'>
         <SpotifyNow />

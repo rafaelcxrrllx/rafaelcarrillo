@@ -88,14 +88,14 @@ body.dark-theme .slogan p {
 }
 
 body.dark-theme .connect-title {
-  color: #CF5C36 !important;
+  color: #212121 !important;
 }
 body.dark-theme #quote {
-  color: #CF5C36 !important;
+  color: #212121 !important;
 }
 
 body.dark-theme .footer-container p {
-  color: #CF5C36 !important;
+  color: #212121 !important;
 }
 
 /* Dark Theme Text Colors */
@@ -109,6 +109,24 @@ body.dark-theme button,
 body.dark-theme Link {
   color: #212121 !important;
 }
+
+body.dark-theme .circle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #CF5C36;
+    border-radius: 50%;
+    pointer-events: none; /* Ensures the cursor can interact with other elements */
+    transition: transform 0.1s ease-out; /* Smooth movement */
+    z-index: 9999;
+    opacity: 100%;
+  }
+
+  body.dark-theme .circle {
+    box-shadow: 0 0 10px  #CF5C36;
+  }
 
 
 .content {
@@ -150,4 +168,7 @@ a:visited {
     text-decoration: none;
     display: inline-block;
 }
+
+
+
 

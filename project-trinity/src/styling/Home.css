@@ -1,5 +1,5 @@
 .sticky-navbar {
-    position: relative;
+    position: sticky;
     top: 48px;
     z-index: 1000;
 }
@@ -10,8 +10,14 @@
 
 .spinning-sun {
     display: flex;
-    justify-content: flex-end;
-    margin-right: 96px;
+    justify-content: center;
+    margin-right: 0px;
+}
+
+.intro-container {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row-reverse;
 }
 
 .project-divider h1 {
@@ -170,7 +176,7 @@
     margin-top: -75px;
 }
 #home {
-    margin-top: -33px;
+    margin-top: -48px;
 }
 
 .hero-container {
@@ -256,6 +262,18 @@
    #desktop-flour {
     display: none;
     }
+
+    .spacing {
+        display: none;
+    }
+
+
+    .intro-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
 
     .main-title {
         color: #51C447;
@@ -381,6 +399,14 @@
     #indent {
         margin-left: 32px;
     }
+
+    .intro-container {
+        display: flex;
+        align-items: flex-end;
+        align-items: center;
+        flex-direction: column;
+    }
+
 
   }
   

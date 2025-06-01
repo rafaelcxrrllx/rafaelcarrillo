@@ -119,20 +119,20 @@ function NavBar({ theme, toggleTheme })  {
           className='navbar-right-container'>
           
          
-          <a id='landing-page-link' className="hover-underline" href="#projects"> Projects </a>
+          <a id='landing-page-link' className="hover-underline"  class="project-tag" href="#projects"> Projects </a>
 
           {/* <a id='landing-page-link' className="hover-underline" href="#projects"> Other </a> */}
           
            
-            <a id='landing-page-link' className="hover-underline" href="#about"> About </a>
+            <a id='landing-page-link' className="hover-underline"  class="about-tag" href="#about"> About </a>
            
-          <a id='landing-page-link' download="RafaelCarrillo.pdf" className="hover-underline" href={require("../assets/Resume/Resume.pdf")}> Resume </a>
+          <a id='landing-page-link' download="RafaelCarrillo.pdf" class="resume-tag" className="hover-underline" href={require("../assets/Resume/Resume.pdf")}> Resume </a>
           {/* <a id='landing-page-link' className="hover-underline" href="#contact"> Contact </a> */}
           <div className='spacer'></div>
-          <a class="hot-links" href="https://www.linkedin.com/in/rafaelcxrrllx/"><img src={theme === 'light' ? linkedIn : linkedInLight} alt="LinkedIn" /> </a>
-          <a class="hot-links" href="https://github.com/rafaelcxrrllx"><img src={theme === 'light' ? github : githubLight} alt="GitHub" /> </a>
-          <a class="hot-links" href="https://www.instagram.com/rafaelcxrrllx/"><img src={theme === 'light' ? instagram : instagramLight} alt="instagram" /> </a> 
-          <a  href="https://buymeacoffee.com/rafaelcxrrllx"><img id="coffee" src={theme === 'light' ? coffee : coffeeLight} alt="buy me a coffee" /> </a>
+          <a class="hot-links" id="linkedIn" href="https://www.linkedin.com/in/rafaelcxrrllx/"><img src={theme === 'light' ? linkedIn : linkedInLight} alt="LinkedIn" /> </a>
+          <a class="hot-links" id="gitHub" href="https://github.com/rafaelcxrrllx"><img src={theme === 'light' ? github : githubLight} alt="GitHub" /> </a>
+          <a class="hot-links" id="instagram" href="https://www.instagram.com/rafaelcxrrllx/"><img src={theme === 'light' ? instagram : instagramLight} alt="instagram" /> </a> 
+          <a  id="coffee" href="https://buymeacoffee.com/rafaelcxrrllx"><img id="coffee" src={theme === 'light' ? coffee : coffeeLight} alt="buy me a coffee" /> </a>
           <a  onClick={toggleTheme} ><img id="sun" src={theme === 'light' ? sun : moon} alt="theme-switch" /> 
           </a>
          

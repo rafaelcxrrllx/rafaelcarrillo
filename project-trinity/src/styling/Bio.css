@@ -55,7 +55,7 @@
 
 .bio-description {
     opacity: 100%;
-    width: 50%;
+    width: 70%;
 }
 
 
@@ -78,6 +78,9 @@
 
 .bio-content {
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
 }
 
 .bio-content h1, .bio-description {
@@ -233,7 +236,7 @@ body.light-theme.button {
 }
 
 .bio-content {
-    margin-top: 96px;
+    margin-top: 124px;
 }
 
 
@@ -313,7 +316,7 @@ body.light-theme.button {
     .bio-description {
         margin-left: 24px;
         margin-right: 24px;
-        opacity: 75%;
+        opacity: 100%;
     }
 
     .bio-content h2 {

@@ -21,6 +21,8 @@ import instagramLight from '../assets/icons/ig-light.svg'
 import linkedInLight from '../assets/icons/linkedIn-light.svg'
 import githubLight from '../assets/icons/git-light.svg'
 import coffeeLight from '../assets/icons/coffee-light.svg'
+import SpinningSun from '../components/SpinningSun';
+import SpinningStar from '../components/SpinningStar';
 
 function Footer({ theme, toggleTheme }) {
 
@@ -53,8 +55,8 @@ function Footer({ theme, toggleTheme }) {
      
      
     <div className='footer-content'>
-    <div>
-      <img className='footer-img' src={theme === 'light' ?  logo : lightLogo} alt="image of logo" />
+     <div className='spinning-sun'>     
+      {theme === 'light' ? <SpinningStar /> : <SpinningSun />}
       </div>
       
       <div>
