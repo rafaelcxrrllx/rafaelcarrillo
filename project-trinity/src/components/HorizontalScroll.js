@@ -77,9 +77,9 @@ const HorizontalScroll = () => {
                     </p>
             </div>
             </a>
-        </div> */}
+        </div>
 
-          {/* <div className="item">
+          <div className="item">
           <a href="https://rafaelcxrrllx.github.io/xotics/">
             <div className='project-section'>
               <img className='project-img' src={xotic} alt="website design for Xotic Dip" />
