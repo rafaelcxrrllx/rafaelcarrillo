@@ -2,7 +2,9 @@ import React from "react";
 import '../styling/HorizontalScroll.css'
 import s2t from '../assets/mobile-s2t-img.svg';
 import { Link } from 'react-router-dom';
-import barrio from '../assets/mobile-barrio-img.svg';
+import barrio from '../assets/barrioHero.png';
+import carino from '../assets/carinoHero.png';
+import xotic from '../assets/xoticHero.png';
 import art from '../assets/mobile-art-img.jpg';
 import recipez from '../assets/mobile-recipez-img.jpg';
 
@@ -54,14 +56,43 @@ const HorizontalScroll = () => {
             <div className='project-section'>
               <img className='project-img' src={barrio} alt="website design for Barrio Athletics" />
               <h1 className="name">
-                Freelance Web Design: Empowering Entrepreneurs in South Central LA
+                Barrio Athletics
                     </h1>
                     <p className="position">
-                      Product Designer
+                      UX/UI Designer
                     </p>
             </div>
             </a>
         </div>
+
+        {/* <div className="item">
+          <a href="https://www.carinohardwear.com">
+            <div className='project-section'>
+              <img className='project-img' src={carino} alt="website design for Cariño Hardwear" />
+              <h1 className="name">
+                Cariño Hardwear
+                    </h1>
+                    <p className="position">
+                      UX/UI Designer
+                    </p>
+            </div>
+            </a>
+        </div> */}
+
+          {/* <div className="item">
+          <a href="https://rafaelcxrrllx.github.io/xotics/">
+            <div className='project-section'>
+              <img className='project-img' src={xotic} alt="website design for Xotic Dip" />
+              <h1 className="name">
+                Xotic Dip
+                    </h1>
+                    <p className="position">
+                      UX/UI Designer
+                    </p>
+            </div>
+            </a>
+        </div> */}
+        
 
         <div id="art-item" className="item">
         <a href="https://rafaelcxrrllx.github.io/trinity/research-assistant.html">
