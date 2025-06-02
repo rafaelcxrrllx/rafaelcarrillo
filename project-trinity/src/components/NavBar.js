@@ -174,21 +174,24 @@ function NavBar({ theme, toggleTheme })  {
           animate={menuOpen ? { y: 0, opacity:  1 }: {y: '3vw', opacity: 0} } // Animate opacity to 1
           transition={{ duration: 1 }}
           className="hamburger-menu">
-          <li onClick={handleMenuItemClick} className='extra-bold'><a className='logo-img' href="#home"> <img src={theme === 'light' ?  logo : lightLogo} alt="logo" /> </a> </li> 
+            <Link to="/home">
+                <li onClick={handleMenuItemClick} className='extra-bold'><a className='logo-img' href="#home"> <img src={theme === 'light' ?  logo : lightLogo} alt="logo" /> </a> </li> 
+            </Link>
+
           <li onClick={handleMenuItemClick} className='extra-bold'>
            
-              <a id='landing-page-link' href="#projects"> Projects </a>
+              <a id='landing-page-link' href="#projects"> <b>Projects</b> </a>
             
           </li>
           {/* <li onClick={handleMenuItemClick} className='extra-bold'><a id='landing-page-link' href="#projects"> Other </a></li> */}
 
           <li onClick={handleMenuItemClick} className='extra-bold'>
           
-             <a id='landing-page-link' href="#about"> About </a>
+             <a id='landing-page-link' href="#about"> <b>About</b> </a>
            
           </li>
 
-          <li onClick={handleMenuItemClick} className='extra-bold'><a id='landing-page-link' download="RafaelCarrillo.pdf" href={require("../assets/Resume/Resume.pdf")}> Resume </a></li>
+          <li onClick={handleMenuItemClick} className='extra-bold'><a id='landing-page-link' download="RafaelCarrillo.pdf" href={require("../assets/Resume/Resume.pdf")}> <b>Resume</b> </a></li>
           {/* <li onClick={handleMenuItemClick} className='extra-bold'><a id='landing-page-link' href="#contact"> Contact </a></li> */}
         </motion.ul>
       </motion.div>

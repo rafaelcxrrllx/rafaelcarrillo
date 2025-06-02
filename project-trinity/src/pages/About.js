@@ -40,7 +40,7 @@ function About() {
        
        
         <h1 className='intro-text'>
-          Hi, my name is Rafael
+          Hi, my name is Rafael!
         </h1>
         <br/>
         {/* <AboutTypewriter/> */}

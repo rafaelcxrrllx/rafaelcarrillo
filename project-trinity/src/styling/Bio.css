@@ -89,7 +89,7 @@
     margin-left: 7%;
     margin-right: 7%;
     margin-bottom: 0%;
-    font-size: 48px;
+    font-size: 24px !important;
 }
 
 body.light-theme .bio-content h1, .bio-description {
@@ -119,6 +119,12 @@ body.light-theme .bio-content h3, .bio-description {
 .bio-position {
     opacity: 50%;
     margin-left: 12px;
+    margin-top: -10px !important;
+}
+
+body.light-theme .bio-content .bio-position {
+    opacity: 50%;
+    margin-top: 10px !important;
 }
 
 .bio-img {
@@ -134,16 +140,16 @@ body.light-theme .bio-content h3, .bio-description {
 }
 
 .bio-name h3{
-    margin-left: 0px;
-    line-height: .1;
+    margin-left: 12px !important;
     margin-top: 12px;
     white-space: nowrap;
     width: 100%;
+    font-size: 18px !important;
 }
 
 .position, .location {
     opacity: 50%;
-    margin-left: 7%;
+    margin-left: 24px;
 }
 
  .button {
@@ -316,6 +322,7 @@ body.light-theme.button {
         margin-left: 12px !important;
         line-height: .1;
         width: 100%;
+        font-size: 18px !important;
     }
 
     .bio-description {

@@ -187,9 +187,8 @@ body.dark-theme .nowPlayingState {
 
 @media (max-width: 810px) {
     .nowPlayingCard {
-       
         margin-top: 0px;
-        margin-bottom: -96px;
+        margin-bottom: -75vh;
     }
 
     
