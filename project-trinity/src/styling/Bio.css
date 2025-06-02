@@ -56,6 +56,7 @@
 .bio-description {
     opacity: 100%;
     width: 70%;
+    line-height: 1.5;
 }
 
 
@@ -117,25 +118,27 @@ body.light-theme .bio-content h3, .bio-description {
 
 .bio-position {
     opacity: 50%;
+    margin-left: 12px;
 }
 
 .bio-img {
-    width: 64px;
-    width: 50px;
+    width: auto;
+    height: 64px;
 }
 
 .bio-thumbnail {
     display: flex;
-    align-items: left;
+    align-items: center;
     justify-content: left;
     margin-left: 7%;
 }
 
-.bio-name p{
-    margin-left: 12px;
+.bio-name h3{
+    margin-left: 0px;
     line-height: .1;
     margin-top: 12px;
     white-space: nowrap;
+    width: 100%;
 }
 
 .position, .location {
@@ -236,7 +239,7 @@ body.light-theme.button {
 }
 
 .bio-content {
-    margin-top: 124px;
+    margin-top: 64px;
 }
 
 
@@ -259,11 +262,12 @@ body.light-theme.button {
         align-items: left;
         justify-content: left;
         margin-left: 5%;
+        align-items: flex-end;
     }
     
     .bio-description {
         opacity: 100%;
-        width: 80%;
+        width: 90%;
         margin-right: 24px;
     }
 
@@ -308,9 +312,10 @@ body.light-theme.button {
     .bio-img {
     }
 
-    .bio-name p{
-        margin-left: 12px;
+    .bio-name h3{
+        margin-left: 12px !important;
         line-height: .1;
+        width: 100%;
     }
 
     .bio-description {
@@ -331,7 +336,8 @@ body.light-theme.button {
 
 
     .bio-img {
-        width: 48px;
+        width: auto;
+        height: 64px;
     }
 
     .button {

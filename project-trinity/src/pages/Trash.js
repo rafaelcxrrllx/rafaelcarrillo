@@ -37,12 +37,21 @@ import Cursor from '../components/Cursor';
 
 function Trash() {
 
+  const [theme, setTheme] = useState('light');
+  
+    const toggleTheme = () => {
+      setTheme(prev => (prev === 'light' ? 'dark' : 'light'));
+    };
+  
+    useEffect(() => {
+      document.body.className = theme === 'light' ? 'light-theme' : 'dark-theme';
+    }, [theme]);
 
   return (
     <div id="home">
       <Cursor/>
       <div className='sticky-navbar'>
-        <NavBar/>
+        <NavBar theme={theme} toggleTheme={toggleTheme}/>
       </div>
       <br/>
       <div className='project-case-study'>
@@ -437,14 +446,10 @@ function Trash() {
 
       </div>
 
-      <div className='spotify-container'>
+      {/* <div className='spotify-container'>
         <SpotifyNow/>
-      </div>
-      <Footer/>
-
-      
-      
-      
+      </div> */}
+      <Footer theme={theme} toggleTheme={toggleTheme}/>
     </div>
   );
 }

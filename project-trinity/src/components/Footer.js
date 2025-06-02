@@ -23,6 +23,8 @@ import githubLight from '../assets/icons/git-light.svg'
 import coffeeLight from '../assets/icons/coffee-light.svg'
 import SpinningSun from '../components/SpinningSun';
 import SpinningStar from '../components/SpinningStar';
+import spinner from '../assets/icons/spinner.svg';
+import spinnerDark from '../assets/icons/spinner-dark.svg';
 
 function Footer({ theme, toggleTheme }) {
 
@@ -82,8 +84,7 @@ function Footer({ theme, toggleTheme }) {
             </div> */}
           
         <h3 className='quote' id="quote">
-          <i>“Love rules the court, the camp, the grove,
-And men below and saints above.”</i> - Sir Walter Scott
+          <i>“Work is love made visible.” </i> - Khalil Gibran
         </h3>
         {/* <p className='trademark'>
           Designed + Coded with ♥️ in Los Angeles

@@ -17,7 +17,7 @@ import art from '../assets/art-img.svg';
 import mobileart from '../assets/mobile-art-img.jpg';
 import { Link } from 'react-router-dom';
 
-const Projects = () => {
+const Projects = ({ theme, toggleTheme }) => {
   
 
   return (

@@ -55,9 +55,11 @@ function Home() {
       <div className='sticky-navbar'>
         <NavBar theme={theme} toggleTheme={toggleTheme}/>
       </div>
+        <br/>
+        <br/>
       <div className='intro-container'>
 
-      
+     
       <Bio theme={theme} toggleTheme={toggleTheme}/>
     
       </div>
@@ -65,25 +67,19 @@ function Home() {
 
       
       <div className='spacing'>
-       <br/>
         <br/>
         <br/>
         <br/>
         <br/>
-        <br/>
-        <br/>
-     </div>
+      </div>
       <div id="projects">
       <HorizontalScroll/>
-     <div className='spacing'>
-       <br/>
+    <div className='spacing'>
         <br/>
         <br/>
         <br/>
         <br/>
-        <br/>
-        <br/>
-     </div>
+      </div>
         <div id='about'>
         <br/>
         <About/>
@@ -91,20 +87,12 @@ function Home() {
       </div>
 
       <HeroShot/>
-         <br/>
+      <div className='spacing'>
         <br/>
         <br/>
         <br/>
         <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+      </div>
 
       <div className='spotify-container'>
         <SpotifyNow />

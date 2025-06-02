@@ -43,34 +43,31 @@ const Bio = ({ theme, toggleTheme }) => {
         <div className='bio-thumbnail'>
           <img id="desktop-bio-img" className='bio-img' src={bioThumbnail} alt="image of the author" />
           <div className='bio-name'>
-            <p>
+            <h3>
               <b>Rafael Carrillo</b>
               
-            </p>
+            </h3>
             <p className='bio-position'>
               UX Designer
             </p>
           </div>
         </div>
-                <br/>
 
-        <h2 className='bio-description'>
+        {/* <h2 className='bio-description'>
         Hello, my name is Rafael Carrillo!
         
-        </h2>
-        <br/>
-        <h2 className='bio-description'>
-        ‍I am a passionate UX Designer and Engineer who creates useful, intuitive, and engaging products.
-        </h2>
+        </h2> */}
+        {/* <h2 className='bio-description'>
+        ‍Hello! My name is Rafael. 
+        </h2> */}
         {/* <p className='bio-description'>
           Learn more about me here!
         </p> */}
         <br/>
        
         <h2 className='bio-description'>
-        I am a passionate designer, a life-long coder, and a lover of all things creative. 
-        My curiosity for the human and technology led me to earn a Degree in Human-Computer Interaction 
-        which taught me about the remarkable intersection of the human experience and computers.
+        I have 3+ years of experience in the social tech and web domain space. I have led projects focused on user-centric services, and responsive websites, and I am currently seeking opportunities to design technological solutions.
+
         </h2>
         {/* <p className='location'>
           Los Angeles, California
