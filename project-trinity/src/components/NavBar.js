@@ -29,6 +29,7 @@ import closeMenuLight from '../assets/icons/closeMenuLight.svg'
 
 import moon from '../assets/icons/moon.svg'
 import sun from '../assets/icons/sun.svg'
+import { HashLink } from 'react-router-hash-link';
 
 
 import { Link } from 'react-router-dom';
@@ -118,13 +119,16 @@ function NavBar({ theme, toggleTheme })  {
           transition={{ duration: 1, delay: 1.5 }} 
           className='navbar-right-container'>
           
-         
-          <a id='landing-page-link' className="hover-underline"  class="project-tag" href="#projects"> Projects </a>
+         <HashLink to="/home#projects" smooth>
+          <p id='hashlink'> Projects </p>
+          </HashLink>
+          
 
           {/* <a id='landing-page-link' className="hover-underline" href="#projects"> Other </a> */}
           
-           
-            <a id='landing-page-link' className="hover-underline"  class="about-tag" href="#about"> About </a>
+           <HashLink to="/home#about" smooth>
+            <p id='hashlink'> About </p>
+            </HashLink>
            
           <a id='landing-page-link' download="RafaelCarrillo.pdf" class="resume-tag" className="hover-underline" href={require("../assets/Resume/Resume.pdf")}> Resume </a>
           {/* <a id='landing-page-link' className="hover-underline" href="#contact"> Contact </a> */}
@@ -177,19 +181,22 @@ function NavBar({ theme, toggleTheme })  {
             <Link to="/home">
                 <li onClick={handleMenuItemClick} className='extra-bold'><a className='logo-img' href="#home"> <img src={theme === 'light' ?  logo : lightLogo} alt="logo" /> </a> </li> 
             </Link>
-
+          <HashLink to="/home#projects" smooth>
           <li onClick={handleMenuItemClick} className='extra-bold'>
            
               <a id='landing-page-link' href="#projects"> <b>Projects</b> </a>
             
           </li>
+          </HashLink>
           {/* <li onClick={handleMenuItemClick} className='extra-bold'><a id='landing-page-link' href="#projects"> Other </a></li> */}
 
+          <HashLink to="/home#about" smooth>
           <li onClick={handleMenuItemClick} className='extra-bold'>
           
              <a id='landing-page-link' href="#about"> <b>About</b> </a>
            
           </li>
+          </HashLink>
 
           <li onClick={handleMenuItemClick} className='extra-bold'><a id='landing-page-link' download="RafaelCarrillo.pdf" href={require("../assets/Resume/Resume.pdf")}> <b>Resume</b> </a></li>
           {/* <li onClick={handleMenuItemClick} className='extra-bold'><a id='landing-page-link' href="#contact"> Contact </a></li> */}

@@ -7,6 +7,10 @@
   z-index: 2;
 }
 
+body.dark-theme #hashlink {
+  color: #CF5C36 !important;
+}
+
 .navbar-menu #landing-page-link {
   margin-left: 24px;
 }
@@ -99,7 +103,7 @@ body.light-theme .navbar-right-container {
 }
 
 body.dark-theme .navbar-right-container a {
-  color: #CF5C36;
+  color: #CF5C36 !important;
   opacity: 100%;
   transition: all 0.5s ease;
 
@@ -231,6 +235,9 @@ body.dark-theme .navbar-right-container:hover {
 
   }
 
+  .about-tag {
+    margin-left: 0px !important;
+  }
   .mobile-menu {
     z-index: 0;
     width: 100%;
@@ -261,7 +268,7 @@ body.dark-theme .mobile-menu {
   color: #CF5C36;
 }
 body.dark-theme .mobile-menu a {
-  color: #CF5C36;
+  color: #CF5C36 !important;
 }
 
 /* Style for light theme */
