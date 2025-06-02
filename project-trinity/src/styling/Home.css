@@ -12,6 +12,7 @@
     display: flex;
     justify-content: center;
     margin-right: 0px;
+    margin-top: -12px;
 }
 
 .intro-container {

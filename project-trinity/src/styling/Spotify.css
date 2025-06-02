@@ -11,7 +11,7 @@
     transition: all 0.5s ease;
     font-family: Karla;
     color: #C5E3FE;
-    margin-top: 164px;
+    margin-top: 184px;
     margin-bottom: 0px;
 }
 
@@ -187,8 +187,8 @@ body.dark-theme .nowPlayingState {
 
 @media (max-width: 810px) {
     .nowPlayingCard {
-        margin-top: 0px;
-        margin-bottom: -75vh;
+        margin-top: 48px;
+        margin-bottom: -95vh;
     }
 
     
