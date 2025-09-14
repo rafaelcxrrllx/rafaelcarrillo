@@ -4,30 +4,31 @@ import s2t from '../assets/mobile-s2t-img.svg';
 import { Link } from 'react-router-dom';
 import barrio from '../assets/barrioHero.png';
 import carino from '../assets/carinoHero.png';
+import value from '../assets/va.png';
 import xotic from '../assets/xoticHero.png';
 import art from '../assets/mobile-art-img.jpg';
 import recipez from '../assets/mobile-recipez-img.jpg';
 
-const HorizontalScroll = () => {
+const HorizontalScrollProjects = () => {
   return (
     <div id="projects">
         <div className='project-divider'>
         <h1>
-          Projects
+          Websites
         </h1>
       </div> 
     <div className="scroll-container">
       <div className="scroll-content">
         <Link 
-                  to="/standuptotrash">
+                  to="https://carinohardwear.com/" target="_blank">
         <div className="item">
                   <div className='project-section'>
-                    <img  id="trash-img" className='trash-img' src={s2t} alt="admin dashboard for stand up to trash" />
+                    <img  id="trash-img" className='trash-img' src={carino} alt="Cariño Hardwear Logo" />
                     <h1 className="name">
-                      Stand Up To Trash: A Volunteer Management System for Beach Cleanup
+                      Cariño Hardwear
                     </h1>
                     <p className="position">
-                      Design Lead
+                      UX/UI Designer
                     </p>
                     
                     {/* <p className='project-position'>Design Lead Intern</p>
@@ -52,11 +53,11 @@ const HorizontalScroll = () => {
         </div>
         </Link>
         <div className="item">
-          <a href="https://www.barrioathletics.com"  target="_blank">
+          <a href="https://shopvalueapparel.com/" target="_blank">
             <div className='project-section'>
-              <img id="trash-img" className='trash-img' src={barrio} alt="website design for Barrio Athletics" />
+              <img  id="trash-img" className='trash-img' src={value} alt="website design for Value Apparel" />
               <h1 className="name">
-                Barrio Athletics
+                Value Apparel
                     </h1>
                     <p className="position">
                       UX/UI Designer
@@ -95,31 +96,19 @@ const HorizontalScroll = () => {
         
 
         <div id="art-item" className="item">
-        <a href="https://rafaelcxrrllx.github.io/trinity/research-assistant.html">
+        <a href="https://rafaelcxrrllx.github.io/xotics/" target="_blank">
           <div className='project-section'>
-                  <img id="art" className='project-img' src={art} alt="image from co-design case study" />
+                  <img  id="trash-img" className='trash-img' src={xotic} alt="website design for Xotic Dip" />
                   <h1 className="name">
-                  STAR Lab: Assistive Technology Designs for Noise Sensitivity
+                  Xotic Dip
                   </h1>
                     <p className="position">
-                      UX Research Assistant
+                      UX/UI Designer
                     </p>
                 </div>
                 </a>
         </div>
-        <div className="item">
-        <a href="https://rafaelcxrrllx.github.io/trinity/design-uci.html">
-          <div className='project-section'>
-                  <img id="art" className='project-img' src={recipez} alt="image from co-design case study" />
-                  <h1 className="name">
-                  RecipEZ: Foster Community of Cooks of All Skill Levels
-                  </h1>
-                    <p className="position">
-                      Mobile Designer
-                    </p>
-                </div>
-                </a>
-        </div>
+      
         {/* <div className="item">Item 5</div> */}
       </div>
     </div>
@@ -127,4 +116,4 @@ const HorizontalScroll = () => {
   );
 };
 
-export default HorizontalScroll;
+export default HorizontalScrollProjects;

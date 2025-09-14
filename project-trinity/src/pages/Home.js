@@ -27,6 +27,7 @@ import React from 'react';
 import Cursor from '../components/Cursor';
 import HorizontalScroll from '../components/HorizontalScroll';
 import About from './About';
+import HorizontalScrollProjects from '../components/HorizontalScrollProjects';
 
 
 
@@ -74,6 +75,7 @@ function Home() {
       </div>
       <div id="projects">
       <HorizontalScroll/>
+      <HorizontalScrollProjects/>
     <div className='spacing'>
         <br/>
         <br/>
@@ -83,6 +85,9 @@ function Home() {
         <div id='about'>
         <br/>
         <About/>
+        <br/>
+        <br/>
+        <br/>
         </div>
       </div>
 

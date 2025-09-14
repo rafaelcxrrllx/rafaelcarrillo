@@ -40,6 +40,9 @@ const Bio = ({ theme, toggleTheme }) => {
        </div>
        <br/> */}
         {/* <Typewriter/> */}
+        <br/>
+        <br/>
+        <br/>
         <div className='bio-thumbnail'>
           <img id="desktop-bio-img" className='bio-img' src={bioThumbnail} alt="image of the author" />
           <div className='bio-name'>

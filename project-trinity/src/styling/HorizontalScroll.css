@@ -17,6 +17,10 @@
     width: 100%;
   }
 
+  .trash-img {
+    border-radius: 8px;
+  }
+
   #art {
     width: 100%;
     border-radius: 8px;
