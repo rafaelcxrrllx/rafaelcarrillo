@@ -13,8 +13,11 @@ const HorizontalScroll = () => {
     <div id="projects">
         <div className='project-divider'>
         <h1>
-          Projects
+          UX Projects
         </h1>
+        {/* <h2 className='bio-description'>
+          Over the past years, I've led long-term instructional and UX projects where I guided a team from research and ideation through delivery, ensuring the final content was both engaging and learner-centered.
+        </h2> */}
       </div> 
     <div className="scroll-container">
       <div className="scroll-content">

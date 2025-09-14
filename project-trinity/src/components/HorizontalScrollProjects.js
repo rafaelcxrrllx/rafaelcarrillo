@@ -14,8 +14,11 @@ const HorizontalScrollProjects = () => {
     <div id="projects">
         <div className='project-divider'>
         <h1>
-          Websites
+          Websites for Entrepreneurs
         </h1>
+        {/* <h2 className='bio-description'>
+          I’ve also freelanced as a web designer, building custom websites for entrepreneurs where I translated their ideas into modern, user-friendly designs that supported their business goals.
+        </h2> */}
       </div> 
     <div className="scroll-container">
       <div className="scroll-content">

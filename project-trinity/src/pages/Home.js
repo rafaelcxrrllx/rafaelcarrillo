@@ -75,6 +75,12 @@ function Home() {
       </div>
       <div id="projects">
       <HorizontalScroll/>
+      <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
       <HorizontalScrollProjects/>
     <div className='spacing'>
         <br/>
@@ -82,6 +88,9 @@ function Home() {
         <br/>
         <br/>
       </div>
+      <br/>
+        <br/>
+        <br/>
         <div id='about'>
         <br/>
         <About/>
