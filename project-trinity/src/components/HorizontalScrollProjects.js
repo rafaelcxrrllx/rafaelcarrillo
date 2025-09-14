@@ -6,6 +6,8 @@ import barrio from '../assets/barrioHero.png';
 import carino from '../assets/carinoHero.png';
 import value from '../assets/va.png';
 import xotic from '../assets/xoticHero.png';
+import trinity from '../assets/trinity-desktop.png';
+
 import art from '../assets/mobile-art-img.jpg';
 import recipez from '../assets/mobile-recipez-img.jpg';
 
@@ -107,6 +109,20 @@ const HorizontalScrollProjects = () => {
                   </h1>
                     <p className="position">
                       UX/UI Designer
+                    </p>
+                </div>
+                </a>
+        </div>
+
+        <div id="art-item" className="item">
+        <a href="https://trinitylosangeles.net" target="_blank">
+          <div className='project-section'>
+                  <img  id="trash-img" className='trash-img' src={trinity} alt="website design for Trinity LA" />
+                  <h1 className="name">
+                  Trinity Los Angeles
+                  </h1>
+                    <p className="position">
+                      Brand Owner
                     </p>
                 </div>
                 </a>
