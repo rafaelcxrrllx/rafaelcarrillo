@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.bfbceef3.css",
-    "main.js": "/static/js/main.e233932e.js",
+    "main.js": "/static/js/main.c43fe210.js",
     "static/js/453.1d42ff05.chunk.js": "/static/js/453.1d42ff05.chunk.js",
     "static/media/art-img.svg": "/static/media/art-img.c48a8f1554055b836df317a0d3c67950.svg",
     "static/media/barrio-img.svg": "/static/media/barrio-img.f811f5f0d5b27e4205da569838bcfbfb.svg",
@@ -31,8 +31,8 @@
     "static/media/hero-thumbnail.png": "/static/media/hero-thumbnail.fa48e5d2ede3df765d89.png",
     "static/media/trinity-eyes.gif": "/static/media/trinity-eyes.f9f2329dd22261cb24c6.gif",
     "static/media/s2t-img-6.jpg": "/static/media/s2t-img-6.f7ec9d058503550d1713.jpg",
+    "static/media/Resume.pdf": "/static/media/Resume.6da9c577dbf72bcaef81.pdf",
     "static/media/mobile-barrio-img.jpg": "/static/media/mobile-barrio-img.a1ff2c111f643a35638e.jpg",
-    "static/media/Resume.pdf": "/static/media/Resume.6797b00db8a63a363a93.pdf",
     "static/media/circle-text-dark.svg": "/static/media/circle-text-dark.f9be6a7b32459ddd3bcd1909d921f3d2.svg",
     "static/media/circle-text.svg": "/static/media/circle-text.c35968872287da883b4cd89625e543c2.svg",
     "static/media/sun.png": "/static/media/sun.1e7336ea1fe4c3b07d20.png",
@@ -61,11 +61,11 @@
     "static/media/menu.svg": "/static/media/menu.3060e8f47368dad7470552b373bb0db1.svg",
     "static/media/menuLight.svg": "/static/media/menuLight.8d29f72f5e9dc74a4b43e81a7ddd7e8a.svg",
     "main.bfbceef3.css.map": "/static/css/main.bfbceef3.css.map",
-    "main.e233932e.js.map": "/static/js/main.e233932e.js.map",
+    "main.c43fe210.js.map": "/static/js/main.c43fe210.js.map",
     "453.1d42ff05.chunk.js.map": "/static/js/453.1d42ff05.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bfbceef3.css",
-    "static/js/main.e233932e.js"
+    "static/js/main.c43fe210.js"
   ]
 }
