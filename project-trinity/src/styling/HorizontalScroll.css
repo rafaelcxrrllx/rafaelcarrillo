@@ -45,7 +45,7 @@
   .item {
     width: 600px; /* Set a width for each item */
     margin-right: 16px; /* Optional spacing between items */
-    background: #ebebeb;
+    background: #C5E3FE;
     padding: 48px;
     text-align: center;
     justify-content: center;
@@ -54,6 +54,18 @@
     border-radius: 8px;
     transition: all 0.5s ease;
     height: 400px;
+  }
+
+  body.dark-theme .item {
+      background: #CF5C36; 
+  }
+
+    body.dark-theme .name {
+      color: #ffffff !important; 
+  }
+
+      body.dark-theme .position {
+      color: #ffffff !important; 
   }
 
   .name{ 

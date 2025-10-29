@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import barrio from '../assets/barrioHero.png';
 import carino from '../assets/carinoHero.png';
 import xotic from '../assets/xoticHero.png';
+import pain from '../assets/painHero.jpg';
 import art from '../assets/mobile-art-img.jpg';
 import recipez from '../assets/mobile-recipez-img.jpg';
 
@@ -21,6 +22,22 @@ const HorizontalScroll = () => {
       </div> 
     <div className="scroll-container">
       <div className="scroll-content">
+
+          {/* <Link 
+                  to="/painpsychologistla"> */}
+          <div className="item">
+            <div className='project-section'>
+              <img id="trash-img" className='trash-img' src={pain} alt="website design for painpsychologistla" />
+              <h1 className="name">
+                painpsychologistla: A Help Portal for Chronic Pain
+                    </h1>
+                    <p className="position">
+                      UX/UI Designer & Developer
+                    </p>
+            </div>
+        </div>
+        {/* </Link> */}
+
         <Link 
                   to="/standuptotrash">
         <div className="item">
