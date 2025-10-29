@@ -24,6 +24,21 @@ const HorizontalScrollProjects = () => {
       </div> 
     <div className="scroll-container">
       <div className="scroll-content">
+
+          <div className="item">
+          <a href="https://www.barrioathletics.com"  target="_blank">
+            <div className='project-section'>
+              <img id="trash-img" className='trash-img' src={barrio} alt="website design for Barrio Athletics" />
+              <h1 className="name">
+                Barrio Athletics
+                    </h1>
+                    <p className="position">
+                      UX/UI Designer
+                    </p>
+            </div>
+            </a>
+        </div>
+
         <Link 
                   to="https://carinohardwear.com/" target="_blank">
         <div className="item">

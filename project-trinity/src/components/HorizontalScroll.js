@@ -71,19 +71,6 @@ const HorizontalScroll = () => {
                   </div>
         </div>
         </Link>
-        <div className="item">
-          <a href="https://www.barrioathletics.com"  target="_blank">
-            <div className='project-section'>
-              <img id="trash-img" className='trash-img' src={barrio} alt="website design for Barrio Athletics" />
-              <h1 className="name">
-                Barrio Athletics
-                    </h1>
-                    <p className="position">
-                      UX/UI Designer
-                    </p>
-            </div>
-            </a>
-        </div>
 
         {/* <div className="item">
           <a href="https://www.carinohardwear.com">
