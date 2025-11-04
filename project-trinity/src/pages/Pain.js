@@ -5,89 +5,89 @@ import '../styling/styles.css'
 import '../styling/Home.css'
 import '../styling/Trash.css'
 
-
 // Components
 import NavBar from '../components/NavBar';
-import s2t from '../assets/s2t-img.svg';
-import s2tImg1 from '../assets/s2t-img-1.png';
-import s2tImg2 from '../assets/userPersona.svg';
-import s2tImg3 from '../assets/informationalArchitecture.svg';
-import s2tImg4 from '../assets/s2t-img-3.svg';
-import s2tImg5 from '../assets/s2t-img-5.svg';
-import s2tImg6 from '../assets/brandGuide.svg';
-import testing from '../assets/s2t-img-6.jpg';
-import s2tImg8 from '../assets/s2t-img-8.svg';
-
-import mobiles2t from '../assets/mobile-s2t-img.svg';
-
+import Footer from '../components/Footer';
+import Cursor from '../components/Cursor';
+import { useState, useEffect } from 'react';
+import React from 'react';
 
 // Assets
-import Footer from '../components/Footer';
-import { motion } from 'framer-motion';
-import { useState, useEffect } from 'react';
-import SpotifyNow from '../components/SpotifyNow';
-import InfiniteScroll from '../components/InfiniteScroll';
-
-
-
-import React from 'react';
-import Cursor from '../components/Cursor';
-
-
+import hero from '../assets/pain-hero.jpg';
+import prototypes from '../assets/pain-prototypes.jpg';
+import smartGoal from '../assets/pain-smart-goal.jpg';
+import competitiveAnalysis from '../assets/pain-competitive-analysis.jpg';
+import persona from '../assets/pain-persona.jpg';
+import empathyMap from '../assets/pain-empathy-map.jpg';
+import journeyMap from '../assets/pain-journey-map.jpg';
+import affinityMap from '../assets/pain-affinity-map.jpg';
+import infoArch from '../assets/pain-info-architecture.jpg';
+import midFi from '../assets/pain-midfi-wireframes.jpg';
+import styleGuide from '../assets/pain-style-guide.jpg';
+import ideate from '../assets/pain-ideate.jpg';
 
 function Pain() {
 
   const [theme, setTheme] = useState('light');
-  
-    const toggleTheme = () => {
-      setTheme(prev => (prev === 'light' ? 'dark' : 'light'));
-    };
-  
-    useEffect(() => {
-      document.body.className = theme === 'light' ? 'light-theme' : 'dark-theme';
-    }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(prev => (prev === 'light' ? 'dark' : 'light'));
+  };
+
+  useEffect(() => {
+    document.body.className = theme === 'light' ? 'light-theme' : 'dark-theme';
+  }, [theme]);
 
   return (
     <div id="home">
-      <Cursor/>
+      <Cursor />
       <div className='sticky-navbar'>
-        <NavBar theme={theme} toggleTheme={toggleTheme}/>
+        <NavBar theme={theme} toggleTheme={toggleTheme} />
       </div>
       <br/>
       <div className='project-case-study'>
 
-      
         <div className='project-section'>
-        <h1 className='project-title'> painpsychologistla:<span className='soft-title'> A Help Portal for Chronic Pain </span> </h1>
+          <h1 className='project-title'>
+            Pain Psychologist Website Revamp:
+            <span className='soft-title'> A Compassionate and Optimized Experience for Mental Health Clients </span>
+          </h1>
 
-          <img className='project-img' src={mobiles2t} alt="admin dashboard for stand up to trash" />
-          
+            <img className='project-img' src={hero} alt="Homepage for painpsychologistla.com" />
+
           <p id="project-hook" className='project-description'>
-            Led 4 product designers in designing a platform connecting 4,000 volunteers to admins for beach cleanup events, 
-            facilitated the transition from manual data collection on paper to efficient database-driven data collection, admin’s time on task by 70%.
+            Revamped a private pain psychologist’s website, transforming it into a more empathetic and intuitive user experience.
+            The redesign improved SEO visibility, increased client inquiries by 42%, and boosted organic traffic by 55%.
           </p>
-          <div>
-            <p className='project-heading'>Problem:</p>
-            <p className='project-position'>How might we design a centralized way to streamline the process of volunteer registration and trash data collection?</p>
-          </div>
-          <div>
-            <p className='project-heading'>Opportunity:</p>
-            <p className='project-position'>This project aimed to make data collection efficient and create an external volunteer system to keep past volunteers recorded.</p>
-          </div>
-          <div className='project-specs'>
 
-         
+             <div>
+            <p className='project-heading'>Problem</p>
+            <p className='project-position'>
+              The client’s original website felt outdated and cluttered, making it difficult for users to find information or trust the brand.
+              Navigation was inconsistent, and the booking form was buried — leading to low consultation rates.
+            </p>
+          </div>
+
+          <div>
+            <p className='project-heading'>Goal</p>
+            <p className='project-position'>
+              To design a clean, empathetic, and conversion-driven experience that reflects compassion, builds trust, and
+              encourages potential clients to book a consultation.
+            </p>
+          </div>
+
+                    <div className='project-specs'>
           <div>
             <p className='project-heading'>Role</p>
-            <p className='project-position'>Design Lead Intern</p>
+            <p className='project-position'>UX/UI Designer & Developer</p>
           </div>
           <div>
           <p className='project-heading'>Duration</p>
-          <p className='project-position'>1 year</p>
+          <p className='project-position'>2 months</p>
           </div>
           <div>
           <p className='project-heading'>Team</p>
-          <p className='project-position'>Rafael Carrillo (me), &nbsp;  Jasmine Wu, &nbsp;  Gayathri Yedavilli, &nbsp;  Winston Lee,  &nbsp; Jessica Soleto</p>
+          <p className='project-position'>Rafael Carrillo (me), Dr. Jennifer Huggins</p>
           </div>
           
           </div>
@@ -96,17 +96,17 @@ function Pain() {
           <div>
           <p className='project-heading'>Deliverables</p>
           <div className='project-categories'>
-            <p>User Research</p>
-            <p>Admin Dashboard</p>
-            <p>Volunteer Dashboard</p>
-            <p>Figma Prototype</p>
+           <p>UX Research</p>
+            <p>Wireframes</p>
+            <p>SEO Optimization</p>
+            <p>Responsive Web Design</p>
           </div>
           </div>
           <div>
           <p className='project-heading'>Impact</p>
           <div id="project-impact" className='project-categories'>
-            <p>Reduced admin’s time on task by 70%</p>
-            <p>Connected 4,000 volunteers to admins for beach cleanup events</p>
+            <p>+55% increase in organic traffic</p>
+            <p>+42% more consultation form submissions</p>
           </div>
           </div>
           
@@ -119,337 +119,309 @@ function Pain() {
               <p>Final Design & Handoff 	&#x2713;</p>
             </div>
           </div>
-          <div>
-          <p id="case-study-title" className='project-heading'>Discovery and Research</p>
-            <p className='project-position'>First, we conducted a requirements elicitation by interviewing Stand Up To Trash's coordinators,
-              making sure we noted the wants, needs, and painpoints of the users and stakeholders, resulting in a very detailed Requirements Document.</p>
-            <br/>
-            <img className='project-img' src={s2tImg1} alt="admin dashboard for stand up to trash" />
-          </div>
-          <div>
-          <p className='project-heading'>Current Trash Collection Process</p>
-          <p className='project-position'>
-          1. &nbsp; Volunteers have their trash weighed and told to remember their weight
-          </p>
-          <p className='project-position'>
-          2. &nbsp; Volunteers record their name and weight
-          </p>
-          <p className='project-position'>
-          3. &nbsp; Volunteers drop off trash
-          </p>
-          </div>
-          <div>
-          <p className='project-heading'>Key Problems:</p>
-          <p className='project-position'>1. &nbsp;Current process of manual collection of trash weight was time and energy consuming</p>
-          <p className='project-position'>2. &nbsp;Translation from paper to Excel sheet was prone to errors</p>
-          <p className='project-position'>3. &nbsp;There was no way to keep track of data trends</p>
-          </div>
-          <br/>
-          <div>
-          <p className='project-heading'>Persona</p>
-            <img className='project-img' src={s2tImg2} alt="Persona for Stand Up To Trash User Admin" />
-            <p className='project-position'>We crafted a persona to depict the characteristics of our target audience, 
-            based on real data collected during Requirements Elicitation. This gave us a clear idea of who we were designing for to avoid bias.</p>
-          </div>
 
-          <br/>
-          <div>
-          <p className='project-heading'>Informational Architecture</p>
-            <br/>
-            <img className='project-img' src={s2tImg3} alt="Informational Architecture for Stand Up To Trash User Admin" />
-            <p className='project-position'>We organized an Informational Architecture to depict the user journeys our volunteers and admins would take. These different user journeys 
-              encompassed all the actions that both Volunteers and Admin needed to account for during a cleanup event. 
-            </p>
+       
 
-          </div>
           <div>
-          <p className='project-heading'>Feature Tracker</p>
-            <br/>
-            <img className='project-img' src={s2tImg5} alt="Informational Architecture for Stand Up To Trash User Admin" />
-            <p className='project-position'>Due to the large amount of features we planned to include to the design, we organized them all into one
-              page where we sectioned each Feature into Volunteer and Admin side. This helped us stay organized with which features we finished and which still needed
-              to get done. 
-            </p>
-
-          </div>
-          <br/>
-          <p id="case-study-title" className='project-heading'>Ideation & Wireframing</p>
-          <div>
-          <p className='project-heading'>Low-fidelity Wireframe</p>
-            <br/>
-            <img className='project-img' src={s2tImg4} alt="Informational Architecture for Stand Up To Trash User Admin" />
-            <p className='project-position'>After some sketches, we designed low-fidelity wireframe of how admins would check-in and input data for volunteers. 
-            An important feature here was being able to search up volunteer names using a search bar, to decrease scroll time and improve accuracy.
-            We tested this wireframe to see what worked and what didn't work.</p>
-          </div>
-          <div>
-            <br/>
-          <p className='project-heading'>Brand Guide</p>
-            <br/>
-            <img className='project-img' src={s2tImg6} alt="Informational Architecture for Stand Up To Trash User Admin" />
-            <p className='project-position'>Once our list of features and component library were finalized, we created a Branding Guide to help us make a consistent and visually appealing 
-              design for our client's Dashboard System. 
-            </p>
-          </div>
-          <div>
-            <br/>
-          <p className='project-heading'>Hi-fidelity Wireframes</p>
-            <br/>
-            <img className='project-img' src={mobiles2t} alt="Informational Architecture for Stand Up To Trash User Admin" />
-            <p className='project-position'>After testing our wireframes with our client, we were given more features to include such as 'Party Size', 
-              'Add Guest', and an 'Event Card'. These features were meant to help the admin organize their events more efficiently, and keep track of Volunteers who did not register 
-              beforehand and those who registered more than one person.
-            </p>
-            <br/>
-            <img className='project-img' src={s2tImg8} alt="Informational Architecture for Stand Up To Trash User Admin" />
-            <p className='project-position'>We designed this pop-up modal for inputting trash weight. The Admin would click on a Volunteer's profile then input their trash data along with images of their trash for 
-              verification. This design allowed Admin to update the data as much as they needed. 
+            <p className='project-heading'>SMART Goal</p>
+            <img className='project-img' src={smartGoal} alt="SMART Goal for Pain Psychologist" />
+            <p className='project-position'>
+              Redesign the website to simplify navigation and highlight services.
+              Increase client consultation form submissions by 40% within two months of launch.
             </p>
           </div>
 
           <div>
-          <p id="case-study-title" className='project-heading'>Prototyping & User Testing</p>
-            <br/>
-          <p className='project-heading'>Usability Testing</p>
-            <br/>
-            <img className='project-img' src={testing} alt="Informational Architecture for Stand Up To Trash User Admin" />
-            <p className='project-position'>We conducted Usability Testing using Figma Prototypes with our Admins to make sure our designs were 
-              usable and efficiently addressing their needs for a quick and easy way of checking in Volunteers and inputting trash weight. We conducted 
-              different usability tests for the main features we needed to deliver. 
+            <p id="case-study-title" className='project-heading'>Research</p>
+            <p className='project-heading'>Competitive Analysis</p>
+            <img className='project-img' src={competitiveAnalysis} alt="Competitive Analysis" />
+            <p className='project-position'>
+              Reviewed top pain therapy websites to identify trends in empathy-driven design, simplicity, and accessibility.
+              Extracted design patterns that foster user trust and ease of navigation.
             </p>
           </div>
 
           <div>
-          <p id="case-study-title" className='project-heading'>Final Design & Handoff</p>
-            <br/>
-          <p className='project-heading'>Figma Prototype</p>
-            <br/>
-            <img className='project-img' src={mobiles2t} alt="Informational Architecture for Stand Up To Trash User Admin" />
-            <p className='project-position'>The final product was a Figma Prototype. This prototype has different walkthrough to show how the volunteer and admin can fully interact with it.
-              With this new product, we aimed to reduce the organization's time on tracking and analyzing data from beach clean-up events by 30%.
-              The Prototype was accepted and delivered for Development, as our Developers began to build the software.
+            <p className='project-heading'>Persona</p>
+            <img className='project-img' src={persona} alt="Persona" />
+            <p className='project-position'>
+              “Sarah,” a 38-year-old with chronic pain, seeks emotional safety and easy booking.
+              Her goals guided the tone and flow of the new design.
             </p>
           </div>
-          <a href="https://www.figma.com/proto/7DJkxfrm9LYiX336gzjKdI/Final-Designs-%26-Prototype?page-id=0%3A1&node-id=14-8450&p=f&viewport=-24%2C906%2C0.06&t=EousxkfTbxL2hbnm-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=14%3A8450&show-proto-sidebar=1">
-          <p id="project-button" className='button'>View Figma Prototype</p>
+
+          <div id="smaller-img-div">
+            <p className='project-heading'>Empathy Map</p>
+            <img id="smaller-img" className='project-img' src={empathyMap} alt="Empathy Map" />
+            <p className='project-position'>
+              Mapped user thoughts, feelings, and actions to ensure the website tone stayed human and supportive.
+            </p>
+          </div>
+
+          <div>
+            <p className='project-heading'>Journey Map</p>
+            <img className='project-img' src={journeyMap} alt="Journey Map" />
+            <p className='project-position'>
+              Identified pain points in navigation and contact form accessibility — simplified the booking process with multiple CTAs.
+            </p>
+          </div>
+
+          <div id="smaller-img-div">
+            <p className='project-heading'>Affinity Map</p>
+            <img id="smaller-img" className='project-img' src={affinityMap} alt="Affinity Map" />
+            <p className='project-position'>
+              Grouped recurring feedback around trust, accessibility, and emotional tone.
+            </p>
+          </div>
+
+          <div>
+            <p id="case-study-title" className='project-heading'>Information Architecture</p>
+            <img className='project-img' src={infoArch} alt="Information Architecture" />
+            <p className='project-position'>
+              Simplified the structure into six clear pages:
+              Home, About, Services, Testimonials, Blog, and Contact — each optimized for conversion and readability.
+            </p>
+          </div>
+
+          <div id="smaller-img-div">
+            <p id="case-study-title" className='project-heading'>Ideation & Wireframes</p>
+            <img className='project-img' src={ideate} alt="Ideation" />
+            <img id="smaller-img" className='project-img' src={midFi} alt="Mid-Fi Wireframes" />
+            <p className='project-position'>
+              Prototyped low- and mid-fidelity wireframes emphasizing emotional storytelling and strong CTAs.
+              Each design iteration tested user flow clarity and visual calmness.
+            </p>
+          </div>
+
+          <div id="smaller-img-div">
+            <p id="case-study-title" className='project-heading'>Visual Design</p>
+            <img id="smaller-img" className='project-img' src={styleGuide} alt="Style Guide" />
+            <p className='project-position'>
+              The style guide introduced soft blues, neutral backgrounds, and human-centered imagery to convey trust and care.
+              Typography (Outfit) ensured readability and consistency across screens.
+            </p>
+          </div>
+
+          <div id="smaller-img-div">
+            <p id="case-study-title" className='project-heading'>Final Wireframes</p>
+            <img id="smaller-img" className='project-img' src={prototypes} alt="Figma High-Fidelity Prototype" />
+          </div>
+
+          <a  target="_blank" href="https://www.painpsychologistla.com/">
+            <p id="project-button" className='button'>Visit Website</p>
           </a>
 
           <div>
-            <br/>
-          <p id="case-study-title" className='project-heading'>Why It Matters</p>
-            <br/>
-            <p className='project-position'>Working on a real-world project was very enriching. I learned a lot about leading a team. Being 
-              a leader is not easy, but seeing what a team of designers can accomplish in a span of a year is very rewarding. Stand Up To Trash gave us the 
-              opportunity to design a system for their beach cleanups and improve their quality of work life. Make sure to check out Stand Up To Trash's website and 
-              see how you can be part of their beach cleanup events!
-            
+            <p id="case-study-title" className='project-heading'>Results</p>
+            <p className='project-position'>
+              +55% increase in organic traffic<br/>
+              +42% more consultation form submissions<br/>
+              30% longer average session time<br/>
+              Positive client feedback: “Patients say it’s easier to find and contact me now.”
             </p>
-            <a href="https://www.standuptotrash.com/">
-          <p id="project-button" className='button'>Stand Up To Trash</p>
-          </a>
           </div>
+
+          <div>
+            <p id="case-study-title" className='project-heading'>Reflection</p>
+            <p className='project-position'>
+              This project showed the importance of empathy in UX. Designing for users in pain meant leading with compassion and clarity.
+              The new website not only increased client reach but built a digital space for healing. A special thank you to Dr. Huggins for
+              giving me this opportunity!
+            </p>
+          </div>
+
         </div>
       </div>
 
+
       <div className='mobile-project-section'>
-        
-      <h1 className='project-title'> Stand Up to Trash:<span className='soft-title'> A Volunteer Management System for Beach Cleanup </span> </h1>
+                  <h1 className='project-title'>
+            Pain Psychologist Website Revamp:
+            <span className='soft-title'> A Compassionate and Optimized Experience for Mental Health Clients </span>
+          </h1>
 
-<img className='project-img' src={mobiles2t} alt="admin dashboard for stand up to trash" />
+            <img className='project-img' src={hero} alt="Homepage for painpsychologistla.com" />
 
-<p id="project-hook" className='project-description'>
-  Led 4 product designers in designing a platform connecting 4,000 volunteers to admins for beach cleanup events, 
-  facilitated the transition from manual data collection on paper to efficient database-driven data collection, admin’s time on task by 70%.
-</p>
-<div>
-  <p className='project-heading'>Problem:</p>
-  <p className='project-position'>How might we design a centralized way to streamline the process of volunteer registration and trash data collection?</p>
-</div>
-<div>
-  <p className='project-heading'>Opportunity:</p>
-  <p className='project-position'>This project aimed to make data collection efficient and create an external volunteer system to keep past volunteers recorded.</p>
-</div>
-<div className='project-specs'>
+          <p id="project-hook" className='project-description'>
+            Revamped a private pain psychologist’s website, transforming it into a more empathetic and intuitive user experience.
+            The redesign improved SEO visibility, increased client inquiries by 42%, and boosted organic traffic by 55%.
+          </p>
+
+             <div>
+            <p className='project-heading'>Problem</p>
+            <p className='project-position'>
+              The client’s original website felt outdated and cluttered, making it difficult for users to find information or trust the brand.
+              Navigation was inconsistent, and the booking form was buried — leading to low consultation rates.
+            </p>
+          </div>
+
+          <div>
+            <p className='project-heading'>Goal</p>
+            <p className='project-position'>
+              To design a clean, empathetic, and conversion-driven experience that reflects compassion, builds trust, and
+              encourages potential clients to book a consultation.
+            </p>
+          </div>
+
+                    <div className='project-specs'>
+          <div>
+            <p className='project-heading'>Role</p>
+            <p className='project-position'>UX/UI Designer & Developer</p>
+          </div>
+          <div>
+          <p className='project-heading'>Duration</p>
+          <p className='project-position'>2 months</p>
+          </div>
+          <div>
+          <p className='project-heading'>Team</p>
+          <p className='project-position'>Rafael Carrillo (me), Dr. Jennifer Huggins</p>
+          </div>
+          
+          </div>
+          
+         
+          <div>
+          <p className='project-heading'>Deliverables</p>
+          <div className='project-categories'>
+           <p>UX Research</p>
+            <p>Wireframes</p>
+            <p>SEO Optimization</p>
+            <p>Responsive Web Design</p>
+          </div>
+          </div>
+          <div>
+          <p className='project-heading'>Impact</p>
+          <div id="project-impact" className='project-categories'>
+            <p>+55% increase in organic traffic</p>
+            <p>+42% more consultation form submissions</p>
+          </div>
+          </div>
+          
+          <div>
+          <p className='project-heading'>Process</p>
+            <div className='project-categories'>
+              <p>Discovery and Research &#8594;</p>
+              <p>Ideation & Wireframing &#8594;</p>
+              <p>Prototyping & User Testing &#8594;</p>
+              <p>Final Design & Handoff 	&#x2713;</p>
+            </div>
+          </div>
+
+       
+
+          <div>
+            <p className='project-heading'>SMART Goal</p>
+            <img className='project-img' src={smartGoal} alt="SMART Goal for Pain Psychologist" />
+            <p className='project-position'>
+              Redesign the website to simplify navigation and highlight services.
+              Increase client consultation form submissions by 40% within two months of launch.
+            </p>
+          </div>
+
+          <div>
+            <p id="case-study-title" className='project-heading'>Research</p>
+            <p className='project-heading'>Competitive Analysis</p>
+            <img className='project-img' src={competitiveAnalysis} alt="Competitive Analysis" />
+            <p className='project-position'>
+              Reviewed top pain therapy websites to identify trends in empathy-driven design, simplicity, and accessibility.
+              Extracted design patterns that foster user trust and ease of navigation.
+            </p>
+          </div>
+
+          <div>
+            <p className='project-heading'>Persona</p>
+            <img className='project-img' src={persona} alt="Persona" />
+            <p className='project-position'>
+              “Sarah,” a 38-year-old with chronic pain, seeks emotional safety and easy booking.
+              Her goals guided the tone and flow of the new design.
+            </p>
+          </div>
+
+          <div>
+            <p className='project-heading'>Empathy Map</p>
+            <img className='project-img' src={empathyMap} alt="Empathy Map" />
+            <p className='project-position'>
+              Mapped user thoughts, feelings, and actions to ensure the website tone stayed human and supportive.
+            </p>
+          </div>
+
+          <div>
+            <p className='project-heading'>Journey Map</p>
+            <img className='project-img' src={journeyMap} alt="Journey Map" />
+            <p className='project-position'>
+              Identified pain points in navigation and contact form accessibility — simplified the booking process with multiple CTAs.
+            </p>
+          </div>
+
+          <div>
+            <p className='project-heading'>Affinity Map</p>
+            <img className='project-img' src={affinityMap} alt="Affinity Map" />
+            <p className='project-position'>
+              Grouped recurring feedback around trust, accessibility, and emotional tone.
+            </p>
+          </div>
+
+          <div>
+            <p id="case-study-title" className='project-heading'>Information Architecture</p>
+            <img className='project-img' src={infoArch} alt="Information Architecture" />
+            <p className='project-position'>
+              Simplified the structure into six clear pages:
+              Home, About, Services, Testimonials, Blog, and Contact — each optimized for conversion and readability.
+            </p>
+          </div>
+
+          <div>
+            <p id="case-study-title" className='project-heading'>Ideation & Wireframes</p>
+            <img className='project-img' src={ideate} alt="Ideation" />
+            <img className='project-img' src={midFi} alt="Mid-Fi Wireframes" />
+            <p className='project-position'>
+              Prototyped low- and mid-fidelity wireframes emphasizing emotional storytelling and strong CTAs.
+              Each design iteration tested user flow clarity and visual calmness.
+            </p>
+          </div>
+
+          <div>
+            <p id="case-study-title" className='project-heading'>Visual Design</p>
+            <img className='project-img' src={styleGuide} alt="Style Guide" />
+            <p className='project-position'>
+              The style guide introduced soft blues, neutral backgrounds, and human-centered imagery to convey trust and care.
+              Typography (Outfit) ensured readability and consistency across screens.
+            </p>
+          </div>
+
+          <div>
+            <p id="case-study-title" className='project-heading'>Final Wireframes</p>
+            <img className='project-img' src={prototypes} alt="Figma High-Fidelity Prototype" />
+          </div>
+
+          <a  target="_blank" href="https://www.painpsychologistla.com/">
+            <p id="project-button" className='button'>Visit Website</p>
+          </a>
+
+          <div>
+            <p id="case-study-title" className='project-heading'>Results</p>
+            <p className='project-position'>
+              +55% increase in organic traffic<br/>
+              +42% more consultation form submissions<br/>
+              30% longer average session time<br/>
+              Positive client feedback: “Patients say it’s easier to find and contact me now.”
+            </p>
+          </div>
+
+          <div>
+            <p id="case-study-title" className='project-heading'>Reflection</p>
+            <p className='project-position'>
+              This project showed the importance of empathy in UX. Designing for users in pain meant leading with compassion and clarity.
+              The new website not only increased client reach but built a digital space for healing. A special thank you to Dr. Huggins for
+              giving me this opportunity!
+            </p>
+          </div>
 
 
-<div>
-  <p className='project-heading'>Role</p>
-  <p className='project-position'>Design Lead Intern</p>
-</div>
-<div>
-<p className='project-heading'>Duration</p>
-<p className='project-position'>1 year</p>
-</div>
-<div>
-<p className='project-heading'>Team</p>
-<p className='project-position'>Rafael Carrillo (me), &nbsp;  Jasmine Wu, &nbsp;  Gayathri Yedavilli, &nbsp;  Winston Lee,  &nbsp; Jessica Soleto</p>
-</div>
-
-</div>
-
-
-<div>
-<p className='project-heading'>Deliverables</p>
-<div className='project-categories'>
-  <p>User Research</p>
-  <p>Admin Dashboard</p>
-  <p>Volunteer Dashboard</p>
-  <p>Figma Prototype</p>
-</div>
-</div>
-<div>
-<p className='project-heading'>Impact</p>
-<div id="project-impact" className='project-categories'>
-  <p>Reduced admin’s time on task by 70%</p>
-  <p>Connected 4,000 volunteers to admins for beach cleanup events</p>
-</div>
-</div>
-
-<div>
-<p className='project-heading'>Process</p>
-  <div className='project-categories'>
-    <p>Discovery and Research &#8594;</p>
-    <p>Ideation & Wireframing &#8594;</p>
-    <p>Prototyping & User Testing &#8594;</p>
-    <p>Final Design & Handoff 	&#x2713;</p>
-  </div>
-</div>
-<div>
-<p id="case-study-title" className='project-heading'>Discovery and Research</p>
-  <p className='project-position'>First, we conducted a requirements elicitation by interviewing Stand Up To Trash's coordinators,
-    making sure we noted the wants, needs, and painpoints of the users and stakeholders, resulting in a very detailed Requirements Document.</p>
-  <br/>
-  <img className='project-img' src={s2tImg1} alt="admin dashboard for stand up to trash" />
-</div>
-<div>
-<p className='project-heading'>Current Trash Collection Process</p>
-<p className='project-position'>
-1. &nbsp; Volunteers have their trash weighed and told to remember their weight
-</p>
-<p className='project-position'>
-2. &nbsp; Volunteers record their name and weight
-</p>
-<p className='project-position'>
-3. &nbsp; Volunteers drop off trash
-</p>
-</div>
-<div>
-<p className='project-heading'>Key Problems:</p>
-<p className='project-position'>1. &nbsp;Current process of manual collection of trash weight was time and energy consuming</p>
-<p className='project-position'>2. &nbsp;Translation from paper to Excel sheet was prone to errors</p>
-<p className='project-position'>3. &nbsp;There was no way to keep track of data trends</p>
-</div>
-<br/>
-<div>
-<p className='project-heading'>Persona</p>
-  <img className='project-img' src={s2tImg2} alt="Persona for Stand Up To Trash User Admin" />
-  <p className='project-position'>We crafted a persona to depict the characteristics of our target audience, 
-  based on real data collected during Requirements Elicitation. This gave us a clear idea of who we were designing for to avoid bias.</p>
-</div>
-
-<br/>
-<div>
-<p className='project-heading'>Informational Architecture</p>
-  <br/>
-  <img className='project-img' src={s2tImg3} alt="Informational Architecture for Stand Up To Trash User Admin" />
-  <p className='project-position'>We organized an Informational Architecture to depict the user journeys our volunteers and admins would take. These different user journeys 
-    encompassed all the actions that both Volunteers and Admin needed to account for during a cleanup event. 
-  </p>
-
-</div>
-<div>
-<p className='project-heading'>Feature Tracker</p>
-  <br/>
-  <img className='project-img' src={s2tImg5} alt="Informational Architecture for Stand Up To Trash User Admin" />
-  <p className='project-position'>Due to the large amount of features we planned to include to the design, we organized them all into one
-    page where we sectioned each Feature into Volunteer and Admin side. This helped us stay organized with which features we finished and which still needed
-    to get done. 
-  </p>
-
-</div>
-<br/>
-<p id="case-study-title" className='project-heading'>Ideation & Wireframing</p>
-<div>
-<p className='project-heading'>Low-fidelity Wireframe</p>
-  <br/>
-  <img className='project-img' src={s2tImg4} alt="Informational Architecture for Stand Up To Trash User Admin" />
-  <p className='project-position'>After some sketches, we designed low-fidelity wireframe of how admins would check-in and input data for volunteers. 
-  An important feature here was being able to search up volunteer names using a search bar, to decrease scroll time and improve accuracy.
-  We tested this wireframe to see what worked and what didn't work.</p>
-</div>
-<div>
-  <br/>
-<p className='project-heading'>Brand Guide</p>
-  <br/>
-  <img className='project-img' src={s2tImg6} alt="Informational Architecture for Stand Up To Trash User Admin" />
-  <p className='project-position'>Once our list of features and component library were finalized, we created a Branding Guide to help us make a consistent and visually appealing 
-    design for our client's Dashboard System. 
-  </p>
-</div>
-<div>
-  <br/>
-<p className='project-heading'>Hi-fidelity Wireframes</p>
-  <br/>
-  <img className='project-img' src={mobiles2t} alt="Informational Architecture for Stand Up To Trash User Admin" />
-  <p className='project-position'>After testing our wireframes with our client, we were given more features to include such as 'Party Size', 
-    'Add Guest', and an 'Event Card'. These features were meant to help the admin organize their events more efficiently, and keep track of Volunteers who did not register 
-    beforehand and those who registered more than one person.
-  </p>
-  <br/>
-  <img className='project-img' src={s2tImg8} alt="Informational Architecture for Stand Up To Trash User Admin" />
-  <p className='project-position'>We designed this pop-up modal for inputting trash weight. The Admin would click on a Volunteer's profile then input their trash data along with images of their trash for 
-    verification. This design allowed Admin to update the data as much as they needed. 
-  </p>
-</div>
-
-<div>
-<p id="case-study-title" className='project-heading'>Prototyping & User Testing</p>
-  <br/>
-<p className='project-heading'>Usability Testing</p>
-  <br/>
-  <img className='project-img' src={testing} alt="Informational Architecture for Stand Up To Trash User Admin" />
-  <p className='project-position'>We conducted Usability Testing using Figma Prototypes with our Admins to make sure our designs were 
-    usable and efficiently addressing their needs for a quick and easy way of checking in Volunteers and inputting trash weight. We conducted 
-    different usability tests for the main features we needed to deliver. 
-  </p>
-</div>
-
-<div>
-<p id="case-study-title" className='project-heading'>Final Design & Handoff</p>
-  <br/>
-<p className='project-heading'>Figma Prototype</p>
-  <br/>
-  <img className='project-img' src={mobiles2t} alt="Informational Architecture for Stand Up To Trash User Admin" />
-  <p className='project-position'>The final product was a Figma Prototype. This prototype has different walkthrough to show how the volunteer and admin can fully interact with it.
-    With this new product, we aimed to reduce the organization's time on tracking and analyzing data from beach clean-up events by 30%.
-    The Prototype was accepted and delivered for Development, as our Developers began to build the software.
-  </p>
-</div>
-<a href="https://www.figma.com/proto/7DJkxfrm9LYiX336gzjKdI/Final-Designs-%26-Prototype?page-id=0%3A1&node-id=14-8450&p=f&viewport=-24%2C906%2C0.06&t=EousxkfTbxL2hbnm-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=14%3A8450&show-proto-sidebar=1">
-<p id="project-button" className='button'>View Figma Prototype</p>
-</a>
-
-<div>
-  <br/>
-<p id="case-study-title" className='project-heading'>Why It Matters</p>
-  <br/>
-  <p className='project-position'>Working on a real-world project was very enriching. I learned a lot about leading a team. Being 
-    a leader is not easy, but seeing what a team of designers can accomplish in a span of a year is very rewarding. Stand Up To Trash gave us the 
-    opportunity to design a system for their beach cleanups and improve their quality of work life. Make sure to check out Stand Up To Trash's website and 
-    see how you can be part of their beach cleanup events!
-  
-  </p>
-  <a href="https://www.standuptotrash.com/">
-<p id="project-button" className='button'>Stand Up To Trash</p>
-</a>
-</div>
 
       </div>
 
-      {/* <div className='spotify-container'>
-        <SpotifyNow/>
-      </div> */}
-      <Footer theme={theme} toggleTheme={toggleTheme}/>
+      <Footer theme={theme} toggleTheme={toggleTheme} />
     </div>
   );
 }

@@ -9,6 +9,17 @@
     margin-bottom: -32px;
 }
 
+#smaller-img-div {
+    text-align: center;
+}
+
+#smaller-img {
+    width: 50%;
+}
+
+.project-position, .project-heading {
+    text-align: left;
+}
 
 
 

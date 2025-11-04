@@ -23,8 +23,8 @@ const HorizontalScroll = () => {
     <div className="scroll-container">
       <div className="scroll-content">
 
-          {/* <Link 
-                  to="/painpsychologistla"> */}
+          <Link 
+                  to="/painpsychologistla">
           <div className="item">
             <div className='project-section'>
               <img id="trash-img" className='trash-img' src={pain} alt="website design for painpsychologistla" />
@@ -36,7 +36,7 @@ const HorizontalScroll = () => {
                     </p>
             </div>
         </div>
-        {/* </Link> */}
+        </Link>
 
         <Link 
                   to="/standuptotrash">

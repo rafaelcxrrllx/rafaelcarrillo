@@ -74,9 +74,8 @@ function Trash() {
             <p className='project-heading'>Opportunity:</p>
             <p className='project-position'>This project aimed to make data collection efficient and create an external volunteer system to keep past volunteers recorded.</p>
           </div>
-          <div className='project-specs'>
 
-         
+          <div className='project-specs'>
           <div>
             <p className='project-heading'>Role</p>
             <p className='project-position'>Design Lead Intern</p>
