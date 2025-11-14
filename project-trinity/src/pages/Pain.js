@@ -145,7 +145,7 @@ function Pain() {
             <p className='project-heading'>Persona</p>
             <img className='project-img' src={persona} alt="Persona" />
             <p className='project-position'>
-              “Sarah,” a 38-year-old with chronic pain, seeks emotional safety and easy booking.
+              “Sarah,” a 40-year-old with chronic pain, seeks emotional safety and easy booking.
               Her goals guided the tone and flow of the new design.
             </p>
           </div>
