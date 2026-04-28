@@ -2,7 +2,7 @@ export default function Hero({ personal }) {
   return (
     <section className="hero" id="hero">
       <div className="hero-inner">
-        <div className="hero-badge">Research Operations Assistant @ Exponent </div>
+        <div className="hero-badge">Research Operations @ Exponent </div>
         <h1>
           {personal.tagline.split(' ').slice(0, 2).join(' ')}<br />
           <em>{personal.tagline.split(' ').slice(2).join(' ')}</em>
@@ -17,10 +17,10 @@ export default function Hero({ personal }) {
           </a>
         </div>
       </div>
-      <div className="hero-scroll">
+      {/* <div className="hero-scroll">
         <span>Scroll</span>
         <div className="scroll-line" />
-      </div>
+      </div> */}
     </section>
   );
 }
