@@ -17,10 +17,7 @@ export default function Hero({ personal }) {
           </a>
         </div>
       </div>
-      {/* <div className="hero-scroll">
-        <span>Scroll</span>
-        <div className="scroll-line" />
-      </div> */}
+   
     </section>
   );
 }
