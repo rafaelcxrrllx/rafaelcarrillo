@@ -12,7 +12,7 @@ export const personal = {
   email: "rafaelcarrillo09@gmail.com",
   linkedin: "https://linkedin.com/in/rafaelcxrrllx",
   github: "https://github.com/rafaelcxrrllx",
-  resume: "/public/Resume.pdf", // place your resume PDF in /public
+  resume: "/Resume.pdf", // place your resume PDF in /public
 };
 
 export const skills = [
