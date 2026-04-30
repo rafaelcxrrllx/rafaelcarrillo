@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react';
 
+
 export default function Projects({ projects }) {
   const [activeFilter, setActiveFilter] = useState('All');
 

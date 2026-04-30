@@ -1,5 +1,5 @@
 // ============================================================
-// 👋 RAFAEL — EDIT YOUR PORTFOLIO CONTENT HERE
+// EDIT PORTFOLIO CONTENT HERE
 // All your personal info, projects, and skills live in this file.
 // ============================================================
 
@@ -12,7 +12,7 @@ export const personal = {
   email: "rafaelcarrillo09@gmail.com",
   linkedin: "https://linkedin.com/in/rafaelcxrrllx",
   github: "https://github.com/rafaelcxrrllx",
-  resume: "/Resume.pdf", // place your resume PDF in /public
+  resume: "/public/Resume.pdf", // place your resume PDF in /public
 };
 
 export const skills = [

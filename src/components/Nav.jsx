@@ -7,7 +7,7 @@ export default function Nav({ name }) {
           <li><a href="#projects">Work</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#experience">Experience</a></li>
-          {/* <li><a href="#ai">AI Assistant</a></li> */}
+          <li><a href="#ai">Bio</a></li>
           <li><a href="#contact" className="nav-cta">Let's Talk</a></li>
         </ul>
       </div>

@@ -1,3 +1,4 @@
+
 export default function Hero({ personal }) {
   return (
     <section className="hero" id="hero">

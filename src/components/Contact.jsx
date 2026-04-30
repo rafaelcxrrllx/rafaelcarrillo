@@ -40,7 +40,7 @@ export default function Contact({ personal }) {
               <p style={{ fontSize: '0.8rem', color: 'var(--ink-3)', textTransform: 'uppercase', letterSpacing: '0.1em', fontWeight: 600 }}>Based in</p>
               <p style={{ fontFamily: 'var(--font-display)', fontSize: '1.5rem', fontWeight: 700, letterSpacing: '-0.02em' }}>{personal.location}</p>
               <div style={{ borderTop: '1px solid var(--border)', marginTop: '12px', paddingTop: '24px' }}>
-                <p style={{ fontSize: '0.8rem', color: 'var(--ink-3)', textTransform: 'uppercase', letterSpacing: '0.1em', fontWeight: 600, marginBottom: '12px' }}>Availability</p>
+                <p style={{ fontSize: '0.8rem', color: 'var(--ink-3)', textTransform: 'uppercase', letterSpacing: '0.1em', fontWeight: 600, marginBottom: '12px' }}>Status</p>
                 <span style={{
                   background: '#E6F4EA',
                   color: '#2D7A3A',
@@ -53,13 +53,16 @@ export default function Contact({ personal }) {
                   gap: '6px',
                 }}>
                   <span style={{ width: 6, height: 6, borderRadius: '50%', background: '#2D7A3A', display: 'block' }} />
-                  Available Now
+                  Vibecoding somewhere in LA
                 </span>
               </div>
             </div>
           </div>
         </div>
       </div>
+      
     </section>
+
+    
   );
 }
