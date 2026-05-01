@@ -13,7 +13,7 @@ export default function Home() {
     useFadeIn();
   return (
     <>
-        <Nav />
+        <Nav name={personal.name} />
         <br/>
         <br/>
         <Hero personal={personal} />

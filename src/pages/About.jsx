@@ -24,9 +24,16 @@ export default function About() {
     <main style={{ paddingTop: 'var(--nav-h)' }}>
 
       <Nav/>
+      {/* Hero */}
       <section>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center' }}>
+          <div className="about-hero-grid" style={{
+            display: 'grid',
+            gridTemplateColumns: '1fr 1fr',
+            gap: '80px',
+            alignItems: 'center',
+          }}>
+            {/* Text */}
             <div>
               <p className="section-label fade-up">About</p>
               <h1 className="fade-up" style={{
@@ -35,15 +42,15 @@ export default function About() {
                 fontWeight: 800,
                 letterSpacing: '-0.03em',
                 lineHeight: 1.1,
-                marginBottom: '28px'
+                marginBottom: '28px',
               }}>
-                Designed in<br /><em style={{ fontStyle: 'normal', color: 'var(--accent)' }}>South Central.</em>
+                Designed in<br />
+                <em style={{ fontStyle: 'normal', color: 'var(--accent)' }}>South Central.</em>
               </h1>
               <div className="fade-up" style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
-                <a href={personal.resume} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                  Download Resume
+                <a href="#about" className="btn btn-primary" rel="noopener noreferrer">
+                  Read more →
                 </a>
-                <Link to="/work" className="btn btn-secondary">View My Work</Link>
               </div>
             </div>
 
@@ -61,11 +68,15 @@ export default function About() {
                 justifyContent: 'center',
               }}>
                 {personal.photo ? (
-                  <img src={personal.photo} alt={personal.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  <img
+                    src={personal.photo}
+                    alt={personal.name}
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                  />
                 ) : (
                   <div style={{ textAlign: 'center', color: 'var(--ink-3)' }}>
                     <div style={{ fontSize: '4rem', marginBottom: '12px' }}>◎</div>
-                    <p style={{ fontSize: '0.85rem' }}>Photo of the author</p>
+                    <p style={{ fontSize: '0.85rem' }}>Add photo.jpg to /public</p>
                   </div>
                 )}
               </div>
@@ -75,8 +86,8 @@ export default function About() {
       </section>
 
       {/* Story */}
-      <section style={{ background: 'var(--surface)' }}>
-        <div className="container" style={{ maxWidth: '760px' }}>
+      <section id="about" style={{ background: 'var(--surface)' }}>
+        <div  className="container" style={{ maxWidth: '760px' }}>
           <p className="section-label fade-up">My Story</p>
 
           {[

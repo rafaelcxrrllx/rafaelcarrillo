@@ -13,16 +13,20 @@ export default function Footer({ personal }) {
             </p>
             <div className="contact-links">
               <a href={`mailto:${personal.email}`} className="contact-link">
-                <span className="contact-link-icon">✉</span>
+                <span className="contact-link-icon"><img width={20} height={20} src="../icons/mail.svg"/> </span>
                 {personal.email}
               </a>
               <a href={personal.linkedin} className="contact-link" target="_blank" rel="noopener noreferrer">
-                <span className="contact-link-icon">in</span>
+                <span className="contact-link-icon"><img width={20} height={20} src="../icons/linkedin.svg"/> </span>
                 LinkedIn
               </a>
               <a href={personal.github} className="contact-link" target="_blank" rel="noopener noreferrer">
-                <span className="contact-link-icon">⌥</span>
+                <span className="contact-link-icon"><img width={20} height={20} src="../icons/github.svg"/> </span>
                 GitHub
+              </a>
+              <a href={personal.instagram} className="contact-link" target="_blank" rel="noopener noreferrer">
+                <span className="contact-link-icon"><img width={20} height={20} src="../icons/instagram.svg"/> </span>
+                Instagram
               </a>
             </div>
           </div>
