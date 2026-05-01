@@ -1,14 +1,17 @@
+import { Link, useLocation } from 'react-router-dom';
+
 export default function Nav({ name }) {
+ const { pathname } = useLocation();
+
   return (
+    
     <nav className="nav">
       <div className="nav-inner">
-        <a href="#hero" className="nav-logo">RC ✦</a>
+        <Link className='nav-logo' to="/home">RC ✦</Link>
         <ul className="nav-links">
-          <li><a href="#projects">Work</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#ai">Bio</a></li>
-          <li><a href="#contact" className="nav-cta">Let's Talk</a></li>
+          <li><Link to="/work">Work</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link className='nav-cta' to="/contact">Let's Talk</Link></li>
         </ul>
       </div>
     </nav>
