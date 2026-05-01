@@ -43,7 +43,7 @@ export const projects = [
     accent: "#2A6B5E",
     year: "2024",
     role: "UX/UI Designer",
-    duration: "Concept Project",
+    duration: "Multi-week Design Sprint",
     team: "Solo",
     caseStudy: {
       overview: "Pain Psychologist LA is a mental health practice specializing in chronic pain. Their existing online presence failed to communicate warmth, safety, or clarity — all critical for patients already under stress. I took on this project to redesign the full website experience with an emotional-first lens.",
@@ -66,7 +66,7 @@ export const projects = [
     accent: "#2E4FD8",
     year: "2024",
     role: "UX/UI Designer",
-    duration: "Concept Project",
+    duration: "Multi-week Design Sprint",
     team: "Solo",
     caseStudy: {
       overview: "Cargo Liner is a logistics and shipping platform concept designed to solve one of the most persistent problems in supply chain UX: making complex, data-heavy information readable and actionable. The goal was to design an enterprise-grade experience that felt intuitive rather than overwhelming.",
@@ -92,7 +92,7 @@ export const projects = [
     duration: "Multi-week Design Sprint",
     team: "Solo",
     caseStudy: {
-      overview: "Barrio Athletics is an athletic clothing brand rooted in LA culture. Their existing eCommerce site wasn't doing the brand justice — weak visual identity, poor product discovery, and a mobile experience that was losing customers. I led a team of 4 designers through a full redesign sprint to fix all of it.",
+      overview: "Barrio Athletics is an athletic clothing brand rooted in south central culture. Founder Henry Gallardo came to me asking for me to build him an elite ecommerce website for his brand.",
       problem: "The original site had three core problems: the brand story wasn't coming through, products were hard to find and browse, and the mobile experience was broken. For a brand built on community and identity, the site felt generic. Customers weren't connecting, and the shopping flow had too much friction to convert.",
       research: "We ran a full UX audit of the existing site — mapping the shopping flow, identifying drop-off points, and flagging usability issues. We did a competitive analysis of brands like Nike, Gymshark, and Adidas to understand what high-performing athletic eCommerce looks like. We studied mobile shopping behavior trends and conversion patterns. The key insight: streetwear customers shop with their eyes first — visual hierarchy and brand identity are conversion tools.",
       process: "As design lead, I structured the sprint and divided ownership across the team. We started by redefining the information architecture — reorganizing collections and categories for intuitive discovery. I designed the hero section and overall visual system, establishing the typography, spacing, and component library the team would build from. We ran usability reviews on each other's work throughout. Mobile-first was non-negotiable — every layout decision started at 375px and expanded up.",
