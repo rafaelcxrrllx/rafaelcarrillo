@@ -46,7 +46,7 @@ export default function Work() {
             UX projects spanning healthcare, logistics, and eCommerce — each one a real problem, a real process, and a real solution.
           </p>
 
-          <div className="filter-bar fade-up">
+          {/* <div className="filter-bar fade-up">
             {allTags.map(tag => (
               <button
                 key={tag}
@@ -56,7 +56,7 @@ export default function Work() {
                 {tag}
               </button>
             ))}
-          </div>
+          </div> */}
 
           <div className="projects-grid" style={{ marginTop: '48px' }}>
             {filtered.map((project, i) => (

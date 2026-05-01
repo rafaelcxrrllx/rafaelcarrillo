@@ -1,5 +1,7 @@
-import { useState, useMemo } from 'react';
-
+import { useState, useMemo, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { projects } from '../data.js';
+import Nav from '../components/Nav.jsx';
 
 export default function Projects({ projects }) {
   const [activeFilter, setActiveFilter] = useState('All');
@@ -23,7 +25,7 @@ export default function Projects({ projects }) {
           Each project is a story — a problem worth solving, and a solution worth sharing.
         </p>
 
-        <div className="filter-bar fade-up">
+        {/* <div className="filter-bar fade-up">
           {allTags.map(tag => (
             <button
               key={tag}
@@ -33,41 +35,41 @@ export default function Projects({ projects }) {
               {tag}
             </button>
           ))}
-        </div>
+        </div> */}
 
-        <div className="projects-grid">
-          {filtered.map((project, i) => (
-            <a
-              key={project.id}
-              href={project.link}
-              className="project-card fade-up"
-              style={{ transitionDelay: `${i * 0.08}s` }}
-              target={project.link !== '#' ? '_blank' : undefined}
-              rel="noopener noreferrer"
-            >
-              <div
-                className="project-thumb"
-                style={{ background: project.color, color: project.accent }}
+        <div className="projects-grid" style={{ marginTop: '48px' }}>
+            {filtered.map((project, i) => (
+              <Link
+                key={project.id}
+                to={`/work/${project.slug}`}
+                className="project-card fade-up"
+                style={{ transitionDelay: `${i * 0.08}s` }}
               >
-                {project.image
-                  ? <img src={project.image} alt={project.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                  : project.title.split(' ').slice(0, 2).join(' ')
-                }
-              </div>
-              <div className="project-body">
-                <p className="project-year">{project.year}</p>
-                <h3 className="project-title">{project.title}</h3>
-                <p className="project-subtitle">{project.subtitle}</p>
-                <p className="project-desc">{project.description}</p>
-                <div className="tags">
-                  {project.tags.map(tag => (
-                    <span key={tag} className="tag">{tag}</span>
-                  ))}
+                <div className="project-thumb" style={{ background: project.color, color: project.accent }}>
+                  {project.image
+                    ? <img src={project.image} alt={project.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    : <span style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(1.5rem, 3vw, 2.5rem)', fontWeight: 800, letterSpacing: '-0.02em', textAlign: 'center', padding: '0 24px' }}>{project.title}</span>
+                  }
                 </div>
-              </div>
-            </a>
-          ))}
-        </div>
+                <div className="project-body">
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
+                    <p className="project-year">{project.year}</p>
+                    <span style={{ fontSize: '0.75rem', color: 'var(--ink-3)' }}>{project.team} · {project.role}</span>
+                  </div>
+                  <h3 className="project-title">{project.title}</h3>
+                  <p className="project-subtitle">{project.subtitle}</p>
+                  <p className="project-desc">{project.description}</p>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <div className="tags">
+                      {project.tags.slice(0, 3).map(tag => <span key={tag} className="tag">{tag}</span>)}
+                    </div>
+                    <span style={{ fontSize: '0.85rem', color: 'var(--accent)', fontWeight: 600 }}>Read Case Study →</span>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+
       </div>
     </section>
   );
