@@ -21,6 +21,7 @@ export default function Home() {
         <Skills skills={skills} />
         <Experience experience={experience}/>
         <Contact personal={personal}/>  
+        
     </>
   )
 }
