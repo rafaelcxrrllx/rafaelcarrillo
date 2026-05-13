@@ -1,0 +1,106 @@
+.nowPlayingCard {
+  flex-shrink: 0;
+  border-radius: 40px;
+  border: 1.5px solid var(--border);
+  background: var(--surface);
+  box-shadow: none;
+  align-items: center;
+  width: 300px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  transition: all var(--transition);
+}
+
+.nowPlayingCard:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  transition: all var(--transition);
+}
+
+.nowPlayingCard a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.nowPlayingCard a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.nowPlayingImage img {
+  border-radius: 40px;
+  border: 1px solid var(--border);
+  box-shadow: none;
+  transition: all var(--transition);
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  margin: 16px;
+  margin-top: 22px;
+  object-fit: cover;
+}
+
+.nowPlayingImage img:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all var(--transition);
+}
+
+#nowPlayingDetails {
+  justify-content: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 54%;
+  height: 100%;
+  gap: 2px;
+}
+
+.nowPlayingTitle, .playlistName {
+  flex-shrink: 0;
+  color: var(--ink);
+  white-space: nowrap;
+  text-align: left;
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nowPlayingArtist, .playlistHeader {
+  text-align: left;
+  flex-shrink: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  font-size: 0.75rem;
+  color: var(--ink-3);
+  font-family: var(--font-body);
+}
+
+.nowPlayingTime {
+  text-align: left;
+  font-size: 0.72rem;
+  color: var(--ink-3);
+  font-family: var(--font-body);
+}
+
+.nowPlayingState {
+  text-align: center;
+  width: 20%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nowPlayingState img {
+  filter: none;
+  width: 24px;
+  opacity: 0.4;
+}

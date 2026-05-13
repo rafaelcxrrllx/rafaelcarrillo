@@ -1,3 +1,5 @@
+import NowPlaying from "./NowPlaying";
+
 export default function Footer({ personal }) {
   return (
     <section id="contact" className="contact-section">
@@ -57,8 +59,13 @@ export default function Footer({ personal }) {
                   gap: '6px',
                 }}>
                   <span style={{ width: 6, height: 6, borderRadius: '50%', background: '#2D7A3A', display: 'block' }} />
-                  Vibecoding somewhere in LA
+                  Started watching Jujutsu Kaisen!
                 </span>
+              </div>
+              <div style={{ borderTop: '1px solid var(--border)', marginTop: '12px', paddingTop: '24px' }}>
+                <p style={{ fontSize: '0.8rem', color: 'var(--ink-3)', textTransform: 'uppercase', letterSpacing: '0.1em', fontWeight: 600, marginBottom: '12px' }}>Now Playing</p>
+              
+                 <NowPlaying/>
               </div>
             </div>
           </div>
