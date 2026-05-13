@@ -238,6 +238,20 @@ code {
 @media (max-width: 768px) {
   .nav-links { display: none; }
   .nav-hamburger { display: flex; }
+  .nowPlayingCard {
+  flex-shrink: 0;
+  border-radius: 40px;
+  border: 1.5px solid var(--border);
+  background: var(--surface);
+  box-shadow: none;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  transition: all var(--transition);
+}
+
 }
 
 /* About hero — stack on mobile, text first */
