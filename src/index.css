@@ -245,7 +245,7 @@ code {
   background: var(--surface);
   box-shadow: none;
   align-items: center;
-  width: 100%;
+  width: 276px;
   height: 80px;
   display: flex;
   justify-content: flex-start;
