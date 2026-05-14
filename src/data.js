@@ -131,7 +131,7 @@ export const projects = [
 
 export const experience = [
   {
-    company: "Insight Global | Exponent",
+    company: "Eˣponent",
     role: "Research Operations Assistant",
     period: "Apr 2026 - Present",
     description: "Coordinating end-to-end logistics for research materials, ensuring accurate and timely delivery across multiple locations.",
