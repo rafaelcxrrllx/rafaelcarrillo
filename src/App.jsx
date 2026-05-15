@@ -19,6 +19,7 @@ import Home from './pages/Home'
 import Contact from './pages/Contact'
 import Work from './pages/Work'
 import CaseStudy from './pages/CaseStudy.jsx';
+import Cursor from './components/Cursor.jsx';
 
 
 
@@ -27,10 +28,11 @@ function App() {
   const [count, setCount] = useState(0)
   useFadeIn();
   return (
+
     <>
 
       {/* navbar can go here */}
-
+      <Cursor />
       <Routes>
 
         <Route path="/" element={<Home />} />

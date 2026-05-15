@@ -58,7 +58,7 @@ export const projects = [
     id: 2,
     slug: "cargo-liner",
     title: "Cargo Liner",
-    subtitle: "Logistics & Shipping Platform",
+    subtitle: "Pet & Cargo Liner eCommerce Redesign",
     description: "Designed a cargo liner platform feature that allows users to create complex customized cargo liners through a clear, step-by-step, and intuitive interface experience for pet owners.",
     tags: ["Web", "Dashboard Design", "Enterprise UX", "Data Visualization", "Systems Design"],
     image: "../projects/cargoliner.jpg",
@@ -131,7 +131,7 @@ export const projects = [
 
 export const experience = [
   {
-    company: "Eˣponent",
+    company: "Exponent",
     role: "Research Operations Assistant",
     period: "Apr 2026 - Present",
     description: "Coordinating end-to-end logistics for research materials, ensuring accurate and timely delivery across multiple locations.",
