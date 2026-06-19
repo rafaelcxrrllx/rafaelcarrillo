@@ -1,3 +1,4 @@
+import { color } from "framer-motion";
 import NowPlaying from "./NowPlaying";
 
 export default function Footer({ personal }) {
@@ -59,7 +60,7 @@ export default function Footer({ personal }) {
                   gap: '6px',
                 }}>
                   <span style={{ width: 6, height: 6, borderRadius: '50%', background: '#2D7A3A', display: 'block' }} />
-                  Started watching Jujutsu Kaisen!
+                  Earning my CompTIA+ !
                 </span>
               </div>
               <div style={{ borderTop: '1px solid var(--border)', marginTop: '12px', paddingTop: '24px' }}>

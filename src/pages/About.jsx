@@ -91,9 +91,11 @@ export default function About() {
           <p className="section-label fade-up">My Story</p>
 
           {[
-            "I grew up in South Central LA — a place that shaped how I see the world and the people in it. From a young age, two things kept me grounded: coding and drawing. One was logic, the other was feeling. UX design turned out to be where both of those things live at once.",
-            "I studied at UC Irvine, where I started connecting the dots between technology and human behavior. That curiosity led me deeper — I'm now focused on Human-Computer Interaction research and working toward graduate school, where I want to explore how design can be more equitable, more intuitive, and more human.",
-            "When I'm not designing or researching, you'll find me on a hike, at planet fitness, at the beach with a matcha, watching Yu Yu Hakusho, or hanging out with my family, friends, or my dog Zeus!",
+          "I grew up in South Central Los Angeles, a place that taught me resilience, curiosity, and the value of community. From an early age, I was fascinated by two things: technology and creativity. Whether I was drawing, playing video games, or teaching myself how things worked, I was always driven by a desire to learn and play.",
+          "That curiosity led me to UC Irvine, where I studied the intersection of computer science, human psychology, and design-thinking. Over time, I discovered that my passion wasn't limited to one discipline—it was about understanding systems, learning continuously, and using technology to create meaningful impact.", 
+          "Today, my work spans from research operations, project management, web development, academia, and emerging technologies. I'm particularly interested in how technology can empower people, improve everyday experiences, and help build a better future. Whether I'm developing software, studying IT and cloud technologies, or exploring new ideas, I'm motivated by a simple belief: learning is a lifelong pursuit, and innovation starts with curiosity.", 
+          "Outside of work, you'll find me at the gym, hiking local trails, reading, watching anime, exploring new places, spending time with family and friends, or hanging out with my dog, Zeus."
+       
           ].map((para, i) => (
             <p key={i} className="fade-up" style={{
               fontSize: '1.1rem',
@@ -114,15 +116,25 @@ export default function About() {
         <div className="container">
           <p className="section-label fade-up">Outside of Work</p>
           <h2 className="section-title fade-up">Interests</h2>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', marginTop: '40px' }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: "center", gap: '16px', marginTop: '40px' }}>
             {[
-              { icon: '🐕', label: 'My Dog' },
-              { icon: '⛰️', label: 'Hiking' },
-              { icon: '🏋️', label: 'Gym' },
+              { icon: '✝️', label: 'Faith' },
+              { icon: '⛰️', label: 'Nature' },
+              { icon: '🔭', label: 'Space' },
               { icon: '🍵', label: 'Matcha' },
               { icon: '🏖️', label: 'Beach' },
               { icon: '🎌', label: 'Anime' },
-              { icon: '🔬', label: 'HCI Research' },
+              { icon: '🔬', label: 'HCI' },
+              { icon: '🖥️', label: 'Tech' },
+              { icon: '🎧', label: 'Music' },
+              { icon: '🍽️', label: 'Food' },
+              { icon: '🇲🇽', label: 'Travel' },
+              { icon: '🏀', label: 'Sports' },
+              { icon: '📚', label: 'Books' },
+              { icon: '💨', label: 'Runs' },
+              { icon: '🐕', label: 'Zeus' },
+              { icon: '🏋️', label: 'Gym' },
+
             ].map(({ icon, label }, i) => (
               <div key={label} className="fade-up" style={{
                 background: 'var(--surface)',

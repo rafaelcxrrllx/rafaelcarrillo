@@ -1,4 +1,6 @@
 
+import SpinningBadge from './SpinningBadge.jsx';
+
 export default function Hero({ personal }) {
   return (
     <section className="hero" id="hero">
@@ -18,7 +20,8 @@ export default function Hero({ personal }) {
           </a>
         </div>
       </div>
-   
+      <SpinningBadge />
+
     </section>
   );
 }
