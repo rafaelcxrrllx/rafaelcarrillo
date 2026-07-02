@@ -136,11 +136,18 @@ export const projects = [
 
 
 export const experience = [
+
+   {
+    company: "Paybotx",
+    role: "Technology Specialist",
+    period: "Jun 2026 - Present",
+    description: "Providing technical support for POS systems and payment processing hardware. Troubleshoot hardware, software, and connectivity issues for merchants.",
+  },
   {
     company: "Exponent",
     role: "Research Operations Assistant",
     period: "Apr 2026 - Present",
-    description: "Coordinating end-to-end logistics for research materials, ensuring accurate and timely delivery across multiple locations.",
+    description: "Coordinated end-to-end logistics for research materials, ensuring accurate and timely delivery across multiple locations.",
   },
   {
     company: "Tata Elxsi",
@@ -166,10 +173,10 @@ export const experience = [
     period: "Jun 2023 — Jun 2024",
     description: "Led a cross-functional team of 4 designers to build a volunteer management system serving 4,000+ users, supporting large-scale coordination between volunteers and administrators.",
   },
-   {
-    company: "Social and Technological Action Research Lab at UC IRVINE",
-    role: "Research Assistant",
-    period: "Dec 2022 — Jun 2023",
-    description: "Conducted co-design and behavioral research sessions with 20+ participants to explore technology solutions for noise-sensitivity and sensory experience challenges.",
-  },
+  //  {
+  //   company: "Social and Technological Action Research Lab at UC IRVINE",
+  //   role: "Research Assistant",
+  //   period: "Dec 2022 — Jun 2023",
+  //   description: "Conducted co-design and behavioral research sessions with 20+ participants to explore technology solutions for noise-sensitivity and sensory experience challenges.",
+  // },
 ];
