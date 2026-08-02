@@ -5,7 +5,7 @@
 
 export const personal = {
   name: "Rafael Carrillo",
-  title: "UX Designer",
+  title: "Tech Specialist",
   tagline: "Hi, my name is Rafael",
   bio: "I build technological solutions that create real-world impact.",
     location: "Los Angeles, CA",
@@ -146,7 +146,7 @@ export const experience = [
   {
     company: "Exponent",
     role: "Research Operations Assistant",
-    period: "Apr 2026 - Present",
+    period: "Apr 2026 - July 2026",
     description: "Coordinated end-to-end logistics for research materials, ensuring accurate and timely delivery across multiple locations.",
   },
   {
